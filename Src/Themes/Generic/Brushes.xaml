@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="ToolWindowBorderBrush" Color="#FF808080" />
+
+    <SolidColorBrush x:Key="ToolWindowInactiveTabTextBrush" Color="#FF808080" />
+
+    <SolidColorBrush x:Key="DocumentWindowBorderBrush" Color="#FF99B4D1" />
+
+    <SolidColorBrush x:Key="DocumentWindowBorderBodyBrush" Color="#FFD7E4F2" />
+
+    <SolidColorBrush x:Key="DocumentWindowInnerBorderBrush" Color="#FFFFFFFF" />
+</ResourceDictionary>

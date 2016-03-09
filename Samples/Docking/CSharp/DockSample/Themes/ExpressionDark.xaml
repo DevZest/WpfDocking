@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+	<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ExpressionDark/Microsoft.ExpressionDark.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/Hyperlink.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/ContextMenu.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

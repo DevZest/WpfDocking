@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="{x:Type dz:DockControl}">
+        <Setter Property="Background" Value="{DynamicResource NormalBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+    </Style>
+</ResourceDictionary>

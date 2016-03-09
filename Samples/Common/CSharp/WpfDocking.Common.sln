@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownButtonSample", "DropDownButtonSample\DropDownButtonSample.csproj", "{761145D4-2918-4154-BE0E-3824BFB78FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseCollectionViewSourceSample", "ReverseCollectionViewSourceSample\ReverseCollectionViewSourceSample.csproj", "{8D60611A-DA68-4465-9C2C-FD83FF82659B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitContainerSample", "SplitContainerSample\SplitContainerSample.csproj", "{28A876F0-56FA-4F67-BDE6-BAB4CAA68B97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowPanelAndWindowControlSample", "WindowPanelAndWindowControlSample\WindowPanelAndWindowControlSample.csproj", "{72609F7F-C7BF-4BA3-B463-444E1F966E46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdornerManagerSample", "AdornerManagerSample\AdornerManagerSample.csproj", "{C158E2EB-6D68-4810-962D-928FC4635ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDocking", "..\..\..\Src\WpfDocking.csproj", "{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{761145D4-2918-4154-BE0E-3824BFB78FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761145D4-2918-4154-BE0E-3824BFB78FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761145D4-2918-4154-BE0E-3824BFB78FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761145D4-2918-4154-BE0E-3824BFB78FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D60611A-DA68-4465-9C2C-FD83FF82659B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D60611A-DA68-4465-9C2C-FD83FF82659B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D60611A-DA68-4465-9C2C-FD83FF82659B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D60611A-DA68-4465-9C2C-FD83FF82659B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A876F0-56FA-4F67-BDE6-BAB4CAA68B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A876F0-56FA-4F67-BDE6-BAB4CAA68B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A876F0-56FA-4F67-BDE6-BAB4CAA68B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A876F0-56FA-4F67-BDE6-BAB4CAA68B97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72609F7F-C7BF-4BA3-B463-444E1F966E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72609F7F-C7BF-4BA3-B463-444E1F966E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72609F7F-C7BF-4BA3-B463-444E1F966E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72609F7F-C7BF-4BA3-B463-444E1F966E46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>82e2ce77-fcbd-49b7-ad7c-5e04666602d7</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>DevZest.WpfDocking</Id>
+    <Title>DevZest.WpfDocking</Title>
+    <Authors>DevZest</Authors>
+    <Owners>DevZest</Owners>
+    <Summary>A docking library to integrate undo/redo-able tabbed docking, floating and auto hide window management into your application in minutes.</Summary>
+    <Description>Activate this product by executing LicenseConsole.exe under package "tools" folder, and then obtain a 30 days free trial evaluation license, or a purchased product license. See documentation for more information.</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>http://www.devzest.com/WpfDocking.aspx</ProjectUrl>
+    <LicenseUrl>http://www.devzest.com/Buy.aspx?Product=WpfDocking</LicenseUrl>
+    <Copyright>Copyright © DevZest</Copyright>
+    <Tags>DevZest WPF Docking</Tags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\..\Doc\Help\Documentation.chm">
+      <Link>Documentation.chm</Link>
+    </Content>
+    <Content Include="..\..\Src\bin\Release\DevZest.WpfDocking.dll">
+      <Link>tools\LicenseConsole\DevZest.WpfDocking.dll</Link>
+    </Content>
+    <Content Include="..\packages\DevZest.LicenseConsole.2.0.0\tools\DevZest.Licensing.dll">
+      <Link>tools\LicenseConsole\DevZest.Licensing.dll</Link>
+    </Content>
+    <Content Include="..\packages\DevZest.LicenseConsole.2.0.0\tools\LicenseConsole.exe">
+      <Link>tools\LicenseConsole\LicenseConsole.exe</Link>
+    </Content>
+    <Content Include="Readme.txt" />
+    <Content Include="tools\LicenseConsole\LicenseAgreement.rtf" />
+    <Content Include="tools\LicenseConsole\LicenseConsole.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\WpfDocking.Deploy.csproj" />
+  </ItemGroup>
+  <Import Project="..\NuGetPackageVersion.props" />
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

@@ -1,0 +1,42 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <DataTemplate DataType="{x:Type docking:DockPaneSplit}">
+        <ContentPresenter x:Name="contentPresenter" />
+        <DataTemplate.Triggers>
+            <DataTrigger Binding="{Binding Path=ChildrenVisibility}" Value="None">
+                <Setter TargetName="contentPresenter" Property="Content" Value="x:Null" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=ChildrenVisibility}" Value="Child1Only">
+                <Setter TargetName="contentPresenter" Property="Content" Value="{Binding Path=(docking:DockPaneSplit.Child1)}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=ChildrenVisibility}" Value="Child2Only">
+                <Setter TargetName="contentPresenter" Property="Content" Value="{Binding Path=(docking:DockPaneSplit.Child2)}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=ChildrenVisibility}" Value="Both">
+                <Setter TargetName="contentPresenter" Property="Content" Value="{Binding}" />
+                <Setter TargetName="contentPresenter" Property="ContentTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <common:SplitContainer
+                                IsSplitterTopLeft="{Binding Path=(docking:DockPaneSplit.IsSplitterTopLeft)}"
+                                Orientation="{Binding Path=(docking:DockPaneSplit.Orientation)}"
+                                SplitterDistance="{Binding Path=(docking:DockPaneSplit.SplitterDistance)}">
+                                <common:SplitContainer.Child1>
+                                    <ContentPresenter Content="{Binding Path=(docking:DockPaneSplit.Child1)}" />
+                                </common:SplitContainer.Child1>
+                                <common:SplitContainer.Child2>
+                                    <ContentPresenter Content="{Binding Path=(docking:DockPaneSplit.Child2)}" />
+                                </common:SplitContainer.Child2>
+                            </common:SplitContainer>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </DataTrigger>
+        </DataTemplate.Triggers>
+    </DataTemplate>
+</ResourceDictionary>

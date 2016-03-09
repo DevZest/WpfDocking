@@ -1,0 +1,71 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="{x:Type dz:ToolWindowCaption}">
+        <Style.Resources>
+            <ResourceDictionary>
+                <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type dz:ToolWindowCaption}">
+                    <ControlTemplate.Resources>
+                        <dz:IsAutoHideValueConverter x:Key="IsAutoHideConverter" />
+                    </ControlTemplate.Resources>
+
+                    <Grid Name="grid" Background="{DynamicResource CaptionBrush}" dz:DockManager.CanDrag="True">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" x:Name="autoHideColumnDefinition" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="captionTextBlock" Margin="2,0,0,0" VerticalAlignment="Center" Foreground="{DynamicResource CaptionTextBrush}"
+                            Grid.Column="0" Text="{Binding Title}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+
+                        <dz:InertButton x:Name="dropDownButton"
+                            Grid.Column="1" Margin="4,2,2,2" ToolTip="Option"
+                            Foreground="{DynamicResource CaptionButtonBrush}"
+                            ContentTemplate="{DynamicResource DropDownButtonTemplate}"
+                            DropDown="{Binding TabContextMenu}" />
+                        <dz:InertButton x:Name="autoHideButton" Command="dz:DockCommands.ToggleAutoHide" CommandTarget="{Binding}"
+                            Grid.Column="2" Margin="2" ToolTip="Auto Hide"
+                            Foreground="{DynamicResource CaptionButtonBrush}"
+                            ContentTemplate="{DynamicResource AutoHideButtonTemplate}" />
+                        <dz:InertButton x:Name="performCloseButton" Command="dz:DockCommands.PerformClose" CommandTarget="{Binding}"
+                            Grid.Column="3" Margin="2,2,4,2" ToolTip="Close"
+                            Foreground="{DynamicResource CaptionButtonBrush}"
+                            ContentTemplate="{DynamicResource CloseButtonTemplate}" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=DockPosition}" Value="Floating" />
+                                <Condition Binding="{Binding Path=FirstPane.FloatingWindow.CountOfVisiblePanes}" Value="1" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter TargetName="grid" Property="Visibility" Value="Collapsed" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsActiveItem}" Value="True">
+                            <Setter TargetName="grid" Property="Background" Value="{DynamicResource ActiveCaptionBrush}" />
+                            <Setter TargetName="captionTextBlock" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                            <Setter TargetName="dropDownButton" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                            <Setter TargetName="autoHideButton" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                            <Setter TargetName="performCloseButton" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DockPosition}" Value="Floating">
+                            <Setter TargetName="autoHideColumnDefinition" Property="Width" Value="0" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=DockPosition, Converter={StaticResource IsAutoHideConverter}}" Value="False">
+                            <Setter TargetName="grid" Property="dz:DockManager.TargetPosition" Value="Fill" />
+                            <Setter TargetName="grid" Property="dz:DockManager.TargetItem" Value="{Binding}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=DockPosition, Converter={StaticResource IsAutoHideConverter}}" Value="True">
+                            <Setter TargetName="autoHideButton" Property="ContentTemplate" Value="{DynamicResource DockButtonTemplate}" />
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </ResourceDictionary>
+        </Style.Resources>
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+    </Style>
+    
+</ResourceDictionary>

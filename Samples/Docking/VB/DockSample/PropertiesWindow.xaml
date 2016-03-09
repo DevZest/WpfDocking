@@ -1,0 +1,16 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.PropertiesWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Icon="Resources/Toolbox.png"
+    AllowedDockTreePositions="ToolWindow"
+    DefaultDockPosition="Right"
+    Title="Properties"
+    TabText="Properties"
+    Style="{DynamicResource {x:Type dz:DockItem}}"    
+    HideOnPerformClose="True">
+    <TextBox
+        Background="Transparent"
+        Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}" />
+</dz:DockItem>

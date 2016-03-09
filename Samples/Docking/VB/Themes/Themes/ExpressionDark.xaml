@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+	<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ExpressionDark/Brushes.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/InertButton.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DockControl.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DockTreeControl.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DockItem.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/ToolWindow.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/ToolWindowTab.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/AutoHideTab.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/AutoHideClient.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/AutoHideWindow.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DocumentWindow.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DocumentTab.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/PreviewOverlay.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/WindowSwitcher.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DockTreeClientOverlay.xaml"/>
+        <ResourceDictionary Source="ExpressionDark/DockPaneControlOverlay.xaml"/>
+
+        <ResourceDictionary Source="ExpressionDark/WpfFloatingWindow.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.Source>
+                <dz:ConditionalUriExtension
+                    Condition="{x:Static dz:FloatingWindow.CanBeNative}"
+                    True="ExpressionDark/NativeFloatingWindow.xaml"
+                    False="Empty.xaml" />
+            </ResourceDictionary.Source>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

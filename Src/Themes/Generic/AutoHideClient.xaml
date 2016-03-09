@@ -1,0 +1,71 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:DevZest.Windows"                    
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+    <Style TargetType="{x:Type primitives:AutoHideClient}">
+        <Style.Resources>
+            <DataTemplate x:Key="SplitterTemplate">
+                <Rectangle Fill="{Binding RelativeSource={RelativeSource AncestorType={x:Type primitives:AutoHideClient}}, Path=Background}" />
+            </DataTemplate>
+            
+            <ControlTemplate x:Key="LeftAutoHide" TargetType="{x:Type primitives:AutoHideClient}">
+                <local:SplitContainer Orientation="Horizontal" IsSplitterTopLeft="True" SplitterDistance="{Binding AutoHideSize}"
+                    SplitterTemplate="{StaticResource SplitterTemplate}">
+                    <local:SplitContainer.Child1>
+                        <primitives:AutoHideWindow x:Name="PART_AutoHideWindow" Content="{TemplateBinding SelectedItem}"/>
+                    </local:SplitContainer.Child1>
+                </local:SplitContainer>
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="RightAutoHide" TargetType="{x:Type primitives:AutoHideClient}">
+                <local:SplitContainer Orientation="Horizontal" IsSplitterTopLeft="False" SplitterDistance="{Binding AutoHideSize}"
+                    SplitterTemplate="{StaticResource SplitterTemplate}">
+                    <local:SplitContainer.Child2>
+                        <primitives:AutoHideWindow x:Name="PART_AutoHideWindow" Content="{TemplateBinding SelectedItem}" />
+                    </local:SplitContainer.Child2>
+                </local:SplitContainer>
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="TopAutoHide" TargetType="{x:Type primitives:AutoHideClient}">
+                <local:SplitContainer Orientation="Vertical" IsSplitterTopLeft="True" SplitterDistance="{Binding AutoHideSize}"
+                    SplitterTemplate="{StaticResource SplitterTemplate}">
+                    <local:SplitContainer.Child1>
+                        <primitives:AutoHideWindow x:Name="PART_AutoHideWindow" Content="{TemplateBinding SelectedItem}" />
+                    </local:SplitContainer.Child1>
+                </local:SplitContainer>
+            </ControlTemplate>
+
+            <ControlTemplate x:Key="BottomAutoHide" TargetType="{x:Type primitives:AutoHideClient}">
+                <local:SplitContainer Orientation="Vertical" IsSplitterTopLeft="False" SplitterDistance="{Binding AutoHideSize}"
+                    SplitterTemplate="{StaticResource SplitterTemplate}">
+                    <local:SplitContainer.Child2>
+                        <primitives:AutoHideWindow x:Name="PART_AutoHideWindow" Content="{TemplateBinding SelectedItem}" />
+                    </local:SplitContainer.Child2>
+                </local:SplitContainer>
+            </ControlTemplate>
+
+        </Style.Resources>
+        <Setter Property="DataContext" Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=SelectedItem}" />
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Background" Value="#FFF0F0F0" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DockPosition}" Value="LeftAutoHide">
+                <Setter Property="Template" Value="{StaticResource LeftAutoHide}" />
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding DockPosition}" Value="RightAutoHide">
+                <Setter Property="Template" Value="{StaticResource RightAutoHide}" />
+            </DataTrigger>
+            
+            <DataTrigger Binding="{Binding DockPosition}" Value="TopAutoHide">
+                <Setter Property="Template" Value="{StaticResource TopAutoHide}" />
+            </DataTrigger>
+            
+            <DataTrigger Binding="{Binding DockPosition}" Value="BottomAutoHide">
+                <Setter Property="Template" Value="{StaticResource BottomAutoHide}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

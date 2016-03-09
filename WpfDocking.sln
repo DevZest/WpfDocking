@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDocking", "Src\WpfDocking.csproj", "{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockSample", "Samples\Docking\CSharp\DockSample\DockSample.csproj", "{B71028F4-AE16-4799-9790-A0EF12E239C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowDockSample", "Samples\Docking\CSharp\WindowDockSample\WindowDockSample.csproj", "{F520DA28-54EF-424F-83D9-19D3101A6BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserDockSample", "Samples\Docking\CSharp\BrowserDockSample\BrowserDockSample.csproj", "{C61E086E-5AC5-4C7A-975A-BEF82E1E9163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart", "Samples\Docking\CSharp\QuickStart\QuickStart.csproj", "{C158E2EB-6D68-4810-962D-928FC4635ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Themes", "Samples\Docking\CSharp\Themes\Themes.csproj", "{73FBC079-5689-4E6A-BD77-4AD61DAD9085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9675F84A-4146-4E52-A6A3-8C8FD24B10FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71028F4-AE16-4799-9790-A0EF12E239C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71028F4-AE16-4799-9790-A0EF12E239C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71028F4-AE16-4799-9790-A0EF12E239C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71028F4-AE16-4799-9790-A0EF12E239C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F520DA28-54EF-424F-83D9-19D3101A6BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F520DA28-54EF-424F-83D9-19D3101A6BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F520DA28-54EF-424F-83D9-19D3101A6BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F520DA28-54EF-424F-83D9-19D3101A6BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61E086E-5AC5-4C7A-975A-BEF82E1E9163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E086E-5AC5-4C7A-975A-BEF82E1E9163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E086E-5AC5-4C7A-975A-BEF82E1E9163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E086E-5AC5-4C7A-975A-BEF82E1E9163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C158E2EB-6D68-4810-962D-928FC4635ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73FBC079-5689-4E6A-BD77-4AD61DAD9085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FBC079-5689-4E6A-BD77-4AD61DAD9085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FBC079-5689-4E6A-BD77-4AD61DAD9085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FBC079-5689-4E6A-BD77-4AD61DAD9085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

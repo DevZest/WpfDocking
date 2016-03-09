@@ -1,0 +1,63 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="{x:Type dz:ToolWindow}">
+        <Style.Resources>
+            <DataTemplate x:Key="OverlayTemplate">
+                <dz:PreviewOverlay />
+            </DataTemplate>
+
+            <dz:Overlay x:Key="Overlay" ContentTemplate="{StaticResource OverlayTemplate}" />
+
+            <DataTemplate x:Key="AutoHideButtonTemplate">
+                <Path StrokeThickness="1" Stroke="{Binding RelativeSource={RelativeSource AncestorType=dz:InertButton}, Path=Foreground}"
+                            Data="M2.5,6.5 L2.5,0.5 L6.5,0.5 L6.5,6.5 M5.5,0.5 L5.5,6.5 M0,6.5 L9,6.5 M4.5,6 L4.5,10" />
+            </DataTemplate>
+
+            <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type dz:ToolWindow}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="captionGrid" Background="{DynamicResource NormalBrush}"
+                        dz:DockManager.CanDrag="True"
+                        dz:DockManager.TargetPosition="Fill"
+                        dz:DockManager.TargetItem="{Binding SelectedItem}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <dz:ToolWindowTabStrip Margin="10,0,0,0"  ItemsSource="{Binding Path=VisibleItems}" />
+                        <dz:InertButton x:Name="autoHideButton" Command="dz:DockCommands.ToggleAutoHide" CommandTarget="{Binding SelectedItem}"
+                            Grid.Column="1" ToolTip="Turn on AutoHide"
+                            ContentTemplate="{StaticResource AutoHideButtonTemplate}" />
+                        <dz:InertButton x:Name="performCloseButton" Command="dz:DockCommands.PerformClose"
+                            Grid.Column="2" Margin="2,2,4,2" ToolTip="Close All"
+                            ContentTemplate="{DynamicResource CloseButtonTemplate}" />
+                    </Grid>
+                    <ContentPresenter SnapsToDevicePixels="True" x:Name="contentPresenter" Grid.Row="1" Content="{Binding SelectedItem}" />
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <DataTrigger Binding="{Binding ElementName=captionGrid, Path=IsMouseOver}" Value="True">
+                        <Setter TargetName="captionGrid" Property="Background" Value="{DynamicResource LightBrush}" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=DockPosition}" Value="Floating">
+                        <Setter TargetName="autoHideButton" Property="Visibility" Value="Collapsed" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Tab">
+                        <Setter TargetName="contentPresenter" Property="dz:DockManager.Overlay" Value="{StaticResource Overlay}" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding CountOfVisibleItems}" Value="1">
+                        <Setter TargetName="performCloseButton" Property="ToolTip" Value="Close" />
+                    </DataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Style.Resources>
+        
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+    </Style>
+</ResourceDictionary>

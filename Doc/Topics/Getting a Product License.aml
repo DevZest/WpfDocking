@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="565309e2-6ca3-4c3f-86e1-e0d6786ef704" revisionNumber="1">
+  <developerWalkthroughDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>You must get a Product License to use this product. You can obtain an Evaluation License or
+    Paid License from DevZest through <application>License Console</application> (internet connection or email access required).</para>
+    </introduction>
+    <procedure>
+      <title>Get a Product License through License Console</title>
+      <steps class="ordered">
+        <step>
+          <content>
+            <para>Launch the <application>License Console</application> program installed with this product:</para>
+            <mediaLink>
+              <image xlink:href="LicenseConsole1" />
+            </mediaLink>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>Click <ui>Change...</ui> button.</para>
+            <mediaLink>
+              <image xlink:href="LicenseConsole2" />
+            </mediaLink>
+            <para>Enter information in the fields then click button <ui>OK</ui>. Make sure the check box
+          <ui>I Accept the License Agreement</ui> is checked.</para>
+            <para>You can get a Free Feature License or Evaluate License without a license key, or a Paid License with a license key, via
+          calling web service directly or sending an email message. Choose "Via Email" when your internet connection is not available,
+          or having problem calling web service directly.</para>
+            <alert class="note">Make sure to enter your real, workable e-mail address here so that you can open
+          a support ticket to receive our product support. For more information on our product support, see
+          <link xlink:href="d8f5976a-adad-4ec2-8ce3-453573754044" />.</alert>
+          </content>
+        </step>
+        <step>
+          <content>
+            <para>A Free Feature License obtained without a license key:</para>
+            <mediaLink>
+              <image xlink:href="LicenseConsole3" />
+            </mediaLink>
+            <para>An Evaluation License obtained without a license key:</para>
+            <mediaLink>
+              <image xlink:href="LicenseConsole4" />
+            </mediaLink>
+            <para>A Paid License obtained with a license key:</para>
+            <mediaLink>
+              <image xlink:href="LicenseConsole5" />
+            </mediaLink>
+          </content>
+        </step>
+      </steps>
+    </procedure>
+  </developerWalkthroughDocument>
+</topic>

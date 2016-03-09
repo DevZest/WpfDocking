@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="fc4db5f9-11ae-468e-a2a7-9891ffda7513" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Undo/Redo is one of the pieces of functionality that users expect to see but is often overlooked, perhaps because it
+    is hard to implement. WPF Docking makes your application more user friendly to allow the end user to undo/redo the window
+    layout change easily.</para>
+    </introduction>
+    <section address="Section1">
+      <title>Undo Unit and Undo/Redo Stack</title>
+      <content>
+        <para>Undo/redo is performed based on undo unit, which consists of one or more window layout change(s).
+      By default, one single window layout change forms a undo unit automatically, however you can call
+      <codeEntityReference>M:DevZest.Windows.Docking.DockControl.BeginUndoUnit</codeEntityReference> and
+      <codeEntityReference>M:DevZest.Windows.Docking.DockControl.EndUndoUnit</codeEntityReference> to group
+      multiple window layout changes together as one single undo unit.</para>
+        <para>WPF Docking maintains two stacks of undo units for undo and redo respectively:</para>
+        <list class="bullet">
+          <listItem>Window layout change pushes undo unit into undo stack and clears the redo stack;</listItem>
+          <listItem>Undo the window layout by calling <codeEntityReference>M:DevZest.Windows.Docking.DockControl.Undo</codeEntityReference>
+        will pop the last undo unit from undo stack, perform the undo, and push this undo unit into redo stack;</listItem>
+          <listItem>Redo the window layout by calling <codeEntityReference>M:DevZest.Windows.Docking.DockControl.Redo</codeEntityReference>
+        will pop the last undo unit from redo stack, perform the redo, and push this undo unit back into undo stack.</listItem>
+        </list>
+        <para>The <codeEntityReference>P:DevZest.Windows.Docking.DockControl.MaxUndoLevel</codeEntityReference>
+      property controls the size of undo/redo stack.</para>
+        <para>Since the content of <token>DockItem</token> may intercept the system undo/redo command, WPF Docking implements its own
+      <codeEntityReference>P:DevZest.Windows.Docking.DockCommands.Undo</codeEntityReference>
+      command with key gesture of CTRL-U and <codeEntityReference>P:DevZest.Windows.Docking.DockCommands.Redo</codeEntityReference>
+      command with key gesture of CTRL-R.</para>
+      </content>
+    </section>
+    <section address="Section2">
+      <title>DockItem Undo/Redo Reference</title>
+      <content>
+        <para>To undo closing of <token>DockItem</token>, an instance of <token>DockItem</token> object needs to be retrieved. Instead of
+      always holding <token>DockItem</token> object directly in the undo stack and keep it from being garbage collected, an instance of
+      <token>IDockItemUndoRedoReference</token>
+      returned by <token>DockItem.UndoRedoReference</token> property is stored, or both undo and redo stack are cleared if
+      <token>DockItem.UndoRedoReference</token> property returns null. The default implementation of 
+      <token>DockItem.UndoRedoReference</token> property returns this <token>DockItem</token> itself
+      or null depending on the <token>DockItem.HideOnPerformClose</token> property:</para>
+        <table>
+          <tableHeader>
+            <row>
+              <entry>HideOnPerformClose Value</entry>
+              <entry>Returns</entry>
+              <entry>Description</entry>
+            </row>
+          </tableHeader>
+          <row>
+            <entry>True</entry>
+            <entry>This DockItem</entry>
+            <entry>HideOnPerformClose property is true suggests this is a singleton DockItem. It's okay to
+            hold this DockItem object directly in the undo stack and keep it from being garbage collected.</entry>
+          </row>
+          <row>
+            <entry>False</entry>
+            <entry>Null</entry>
+            <entry>When closing the DockItem, both undo and redo stack are cleared.</entry>
+          </row>
+        </table>
+        <para>You may override <token>DockItem.UndoRedoReference</token> property to provide your own implementation, such
+      as returning a custom <token>IDockItemUndoRedoReference</token> object holding a weak reference of the DockItem and recreate
+      it when necessary, as demonstrated by <application>DockSample</application>'s <application>Document</application> class.
+      </para>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

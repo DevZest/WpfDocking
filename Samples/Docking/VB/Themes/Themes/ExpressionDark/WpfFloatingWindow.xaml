@@ -1,0 +1,64 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+    
+    <Style TargetType="{x:Type dz:WpfFloatingWindow}">
+        <Style.Resources>
+            <ControlTemplate x:Key="Template" TargetType="{x:Type dz:WpfFloatingWindow}">
+                <Grid Background="{TemplateBinding Background}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4" />
+                        <RowDefinition Height="4" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="4" />
+                        <RowDefinition Height="4" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition Width="4" />
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.RowSpan="5" Grid.ColumnSpan="5" BorderThickness="1" BorderBrush="{DynamicResource GlyphBrush}" />
+                    <Rectangle Cursor="SizeNWSE" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftTop" />
+                    <Rectangle Cursor="SizeNWSE" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftTop" />
+                    <Rectangle Cursor="SizeNS" Grid.Column="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeTop" />
+                    <Rectangle Cursor="SizeNESW" Grid.Column="3" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightTop" />
+                    <Rectangle Cursor="SizeNESW" Grid.Column="4" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightTop" />
+                    <Rectangle Cursor="SizeWE" Grid.Row="2" Grid.Column="4" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRight" />
+                    <Rectangle Cursor="SizeNWSE" Grid.Row="3" Grid.Column="4" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightBottom" />
+                    <Rectangle Cursor="SizeNWSE" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightBottom" />
+                    <Rectangle Cursor="SizeNS" Grid.Row="4" Grid.Column="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeBottom" />
+                    <Rectangle Cursor="SizeNESW" Grid.Row="4" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftBottom" />
+                    <Rectangle Cursor="SizeNESW" Grid.Row="3" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftBottom" />
+                    <Rectangle Cursor="SizeWE" Grid.Row="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeft" />
+                    <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="captionRow" Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Border x:Name="captionBorder" Background="Transparent" dz:DockManager.CanDrag="True">
+                            <dz:InertButton Command="dz:DockCommands.PerformClose"
+                                Margin="2,2,4,2" HorizontalAlignment="Right" ToolTip="Close All"
+                                ContentTemplate="{DynamicResource CloseButtonTemplate}" />
+                        </Border>
+                        <ContentPresenter Grid.Row="1" Content="{Binding DockTree}" />
+                    </Grid>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <DataTrigger Binding="{Binding CountOfVisiblePanes}" Value="1">
+                        <Setter TargetName="captionRow" Property="Height" Value="0" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding ElementName=captionBorder, Path=IsMouseOver}" Value="True">
+                        <Setter TargetName="captionBorder" Property="Background" Value="{DynamicResource LightBrush}" />
+                    </DataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Style.Resources>
+        <Setter Property="Background" Value="{DynamicResource NormalBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Template" Value="{StaticResource Template}" />
+    </Style>
+</ResourceDictionary>

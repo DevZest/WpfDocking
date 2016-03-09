@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:common="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <primitives:IsFloatingValueConverter x:Key="IsFloatingConverter" />
+
+    <primitives:IsAutoHideValueConverter x:Key="IsAutoHideConverter" />
+    
+    <common:MapConverter x:Key="MapConverter" />
+    
+    <ContextMenu x:Shared="False" x:Key="{ComponentResourceKey {x:Type docking:DockItem}, TabContextMenu}">
+        <MenuItem Header="Floating"
+            CommandTarget="{Binding}"
+            Command="docking:DockCommands.ToggleFloating"
+            IsChecked="{Binding DockPosition, Mode=OneWay, Converter={StaticResource IsFloatingConverter}}" />
+        <MenuItem Header="Auto Hide"
+            CommandTarget="{Binding}"
+            Command="docking:DockCommands.ToggleAutoHide"
+            IsChecked="{Binding DockPosition, Mode=OneWay, Converter={StaticResource IsAutoHideConverter}}" />
+        <MenuItem
+            CommandTarget="{Binding}"
+            Command="docking:DockCommands.PerformClose">
+            <MenuItem.Header>
+                <Binding Path="HideOnPerformClose">
+                    <Binding.Converter>
+                        <common:MapConverter>
+                            <common:Mapping To="Hide">
+                                <common:Mapping.From>
+                                    <sys:Boolean>True</sys:Boolean>
+                                </common:Mapping.From>
+                            </common:Mapping>
+                            <common:Mapping To="Close">
+                                <common:Mapping.From>
+                                    <sys:Boolean>False</sys:Boolean>
+                                </common:Mapping.From>
+                            </common:Mapping>
+                        </common:MapConverter>
+                    </Binding.Converter>
+                </Binding>
+            </MenuItem.Header>
+        </MenuItem>
+    </ContextMenu>
+
+</ResourceDictionary>

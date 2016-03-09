@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="093008e3-113d-4518-bd72-1c3208d2d15b" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>This section provides information intended for developers that are new to WPF Docking.</para>
+    </introduction>
+    <section>
+      <title>In This Section</title>
+      <content>
+        <list class="nobullet">
+          <listItem>
+            <link xlink:href="6187785e-c23f-4b4f-86a1-e171ada969ab" />
+          </listItem>
+          <listItem>
+            <link xlink:href="565309e2-6ca3-4c3f-86e1-e0d6786ef704" />
+          </listItem>
+          <listItem>
+            <link xlink:href="6ba1b358-28ef-452f-83fb-48ed9d8854d9" />
+          </listItem>
+          <listItem>
+            <link xlink:href="d8f5976a-adad-4ec2-8ce3-453573754044" />
+          </listItem>
+        </list>
+      </content>
+    </section>
+  </developerConceptualDocument>
+</topic>

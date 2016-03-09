@@ -1,0 +1,30 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Title="DockControl Sample"
+    WindowState="Maximized">
+    <dz:DockControl>
+        <dz:DockItem TabText="Welcome" Title="Welcome" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Document}">
+            <FlowDocumentScrollViewer>
+                <FlowDocumentScrollViewer.Document>
+                    <FlowDocument FontFamily="Calibri" FontSize="14.5" TextAlignment="Left">
+                        <Paragraph FontSize="22" FontWeight="Bold">Welcome to DevZest Docking</Paragraph>
+                    </FlowDocument>
+                </FlowDocumentScrollViewer.Document>
+            </FlowDocumentScrollViewer>
+        </dz:DockItem>
+        <dz:DockItem TabText="Saved State" Title="Saved State" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Bottom}">
+            <TextBox />
+        </dz:DockItem>
+        <dz:DockItem TabText="Output" Title="Output" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Bottom}">
+            <TextBox />
+        </dz:DockItem>
+        <dz:DockItem TabText="Solution Explorer" Title="Solution Explorer" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Right}">
+            <TextBox />
+        </dz:DockItem>
+        <dz:DockItem TabText="Properties" Title="Properties" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Right}">
+            <TextBox />
+        </dz:DockItem>
+    </dz:DockControl>
+</Window>

@@ -1,0 +1,37 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Content="Button" Grid.Row="0">
+            <dz:AdornerManager.AdornerTemplate>
+                <DataTemplate>
+                    <Grid Opacity="0.5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Blue"/>
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic" Text="{Binding Content}" />
+                    </Grid>
+                </DataTemplate>
+            </dz:AdornerManager.AdornerTemplate>
+        </Button>
+        <Button Content="Button" Grid.Row="1">
+            <dz:AdornerManager.Adorner>
+                <Grid Opacity="0.5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="Blue"/>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic" Text="{Binding Content}" />
+                </Grid>
+            </dz:AdornerManager.Adorner>
+        </Button>
+    </Grid>
+</Window>

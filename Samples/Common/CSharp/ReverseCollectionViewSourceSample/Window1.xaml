@@ -1,0 +1,24 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:dz="http://schemas.devzest.com/presentation">
+    <Window.Resources>
+        <x:Array x:Key="SourceData" Type="sys:String">
+            <sys:String>Item1</sys:String>
+            <sys:String>Item2</sys:String>
+            <sys:String>Item3</sys:String>
+            <sys:String>Item4</sys:String>
+        </x:Array>
+        <CollectionViewSource x:Key="CollectionView" Source="{StaticResource SourceData}" />
+        <dz:ReverseCollectionViewSource x:Key="ReverseCollectionView" Source="{StaticResource SourceData}" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Source={StaticResource CollectionView}}" />
+        <ListBox Grid.Column="1" ItemsSource="{Binding Source={StaticResource ReverseCollectionView}}" />
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content xml:space="preserve" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <item id="DockControl"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockControl</ddue:codeEntityReference></item>
+  <item id="DockItem"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockItem</ddue:codeEntityReference></item>
+  <item id="DockItem.HideOnPerformClose"><ddue:codeEntityReference>P:DevZest.Windows.Docking.DockItem.HideOnPerformClose</ddue:codeEntityReference></item>
+  <item id="DockItem.Save"><ddue:codeEntityReference qualifyHint="true" autoUpgrade="true" >M:DevZest.Windows.Docking.DockItem.Save</ddue:codeEntityReference></item>
+  <item id="DockItem.UndoRedoReference"><ddue:codeEntityReference>P:DevZest.Windows.Docking.DockItem.UndoRedoReference</ddue:codeEntityReference></item>
+  <item id="DockItemReference"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockItemReference</ddue:codeEntityReference></item>
+  <item id="DockLayout"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockLayout</ddue:codeEntityReference></item>
+  <item id="DockPane"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockPane</ddue:codeEntityReference></item>
+  <item id="DockPaneNode"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockPaneNode</ddue:codeEntityReference></item>
+  <item id="DockPaneSplit"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockPaneSplit</ddue:codeEntityReference></item>
+  <item id="DockTree"><ddue:codeEntityReference>T:DevZest.Windows.Docking.DockTree</ddue:codeEntityReference></item>
+  <item id="IDockItemUndoRedoReference"><ddue:codeEntityReference>T:DevZest.Windows.Docking.IDockItemUndoRedoReference</ddue:codeEntityReference></item>
+</content>

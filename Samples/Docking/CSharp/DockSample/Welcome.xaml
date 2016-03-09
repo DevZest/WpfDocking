@@ -1,0 +1,132 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.Welcome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Icon="Resources/Document.png"
+    Title="Welcome"
+    TabText="Welcome"
+    DefaultDockPosition="Document"
+    Description="Demostrate DevZest Docking features"
+    Style="{DynamicResource {x:Type dz:DockItem}}"    
+    HideOnPerformClose="True">
+    <FlowDocumentScrollViewer>
+        <FlowDocumentScrollViewer.Document>
+            <FlowDocument FontFamily="Calibri" FontSize="14.5" TextAlignment="Left">
+                <Paragraph FontSize="22" FontWeight="Bold">Welcome to DevZest WPF Docking</Paragraph>
+                <Paragraph>This application demonstrates the DevZest WPF Docking, a library to Integrate undo/redo-able tabbed docking,
+                    floating and auto hide window management into your application in minutes. To get the full source code of this
+                    application, together with other samples, templates and documentation, download the WPF Docking installation
+                    package from our website <Hyperlink NavigateUri="http://www.devzest.com">http://www.devzest.com</Hyperlink>.
+                </Paragraph>
+                <Paragraph>This application behaves slightly different when running as XBAP hosted in a browser: the floating windows
+                    are confined to the bounds of the browser window, so they cannot be maximized in VS2010 theme; and to invoke window
+                    switching you must use Ctrl-1 instead of Ctrl-Tab because WPF cannot detect Ctrl-Tab in a browser hosted application.</Paragraph>
+                <Paragraph FontSize="18" FontWeight="Bold">Features:</Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="100" />
+                        <TableColumn Width="Auto" />
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Mouse and Keyboard</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>You can easily arrange the window layout by using mouse and keyboard:</Paragraph>
+                                <List Margin="0">
+                                    <ListItem>
+                                        <Paragraph>Drag window caption or tab and drop following the docking guides and preview.
+                                            Press ESC to cancel the drag and drop, <Run FontWeight="Bold">
+                                            hold down CTRL key for floating only drag and drop, or hold down SHIFT key to dock to full
+                                            edge of DockControl.</Run>
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Drag and drop the splitter to resize the window.
+                                            <Run FontWeight="Bold">Double click the splitter to auto-size
+                                            the window.</Run>
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Double click the window caption to toggle window between floating and docked,
+                                        or maximize/restore the window depends on the current theme.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph FontWeight="Bold">SHIFT+Click the dock tree splitter
+                                        to send the dock tree to back of Z-order, taking the full edge.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Click the tab or window caption to activate the window.
+                                            <Run FontWeight="Bold">Press CTRL-TAB (or CTRL-1 in XBAP application)
+                                            to show the window switcher.</Run>
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph FontWeight="Bold">Press CTRL-U to undo window layout change,
+                                        CTRL-R to redo.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Click the "pin" button to show window as auto-hide or docked.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Click the "X" button or press CTRL-F4 to close/hide window.</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Main Menu</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>You can access the following features through application main menu. You may refer to the source
+                                    code to find out how easily these are implemented:</Paragraph>
+                                <List Margin="0">
+                                    <ListItem>
+                                        <Paragraph>Create/Close document window.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Save/load window layout to/from XML in "Saved State" window.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Undo/redo window layout through "Edit" Menu.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Show and activate tool window through "View" Menu.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Show and activate document window through "Window" Menu.</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Context Menu</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>You can access the following built-in context menus:</Paragraph>
+                                <List Margin="0">
+                                    <ListItem>
+                                        <Paragraph>Right click the window caption or tab, or click the drop down button of tool window
+                                            caption, to show the context menu specified by the TabContextMenu property of dockable item
+                                            currently active.
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Click the drop down button of document window to show list of active files.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Right click the auto-hide strip to show list of auto-hide windows.</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer.Document>
+    </FlowDocumentScrollViewer>
+</dz:DockItem>

@@ -1,0 +1,16 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <DataTemplate x:Key="DropDownButtonTemplate">
+        <Path Fill="{Binding RelativeSource={RelativeSource AncestorType={x:Type primitives:InertButton}}, Path=Foreground}" Data="M0,4 L9,4 L4,8 Z" />
+    </DataTemplate>
+
+    <DataTemplate x:Key="CloseButtonTemplate">
+        <Path StrokeThickness="1" Stroke="{Binding RelativeSource={RelativeSource AncestorType={x:Type primitives:InertButton}}, Path=Foreground}" Data="M0,0 L7,7 M7,0 L0,7" />
+    </DataTemplate>
+
+</ResourceDictionary>

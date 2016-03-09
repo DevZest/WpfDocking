@@ -1,0 +1,85 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="dz:DocumentTab">
+        <Style.Resources>
+            <SolidColorBrush x:Key="Background" Color="Transparent" />
+            <SolidColorBrush x:Key="SelectedBackground" Color="#FF4A5D80" />
+            <SolidColorBrush x:Key="ActiveDocumentBackground" Color="#FFCED4DF" />
+            <SolidColorBrush x:Key="SelectedCloseButtonForeground" Color="#FFCED4DF" />
+            <SolidColorBrush x:Key="ActiveCloseButtonForeground" Color="#FF5F6673" />
+            <SolidColorBrush x:Key="HoverBorderBrush" Color="#FF9BA7B7" />
+            <LinearGradientBrush x:Key="HoverBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6F7776" Offset="0" />
+                <GradientStop Color="#FF4C5C74" Offset="1" />
+            </LinearGradientBrush>
+
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="2,2,0,0" />
+            </Style>
+            <DataTemplate x:Key="OverlayContentTemplate">
+                <Border Style="{StaticResource {x:Type Border}}">
+                    <dz:PreviewOverlay />
+                </Border>
+            </DataTemplate>
+            <dz:Overlay Content=" " x:Key="Overlay" ContentTemplate="{StaticResource OverlayContentTemplate}" />
+        </Style.Resources>
+        <Setter Property="Margin" Value="0,2,0,-4" />
+        <Setter Property="Background" Value="{StaticResource Background}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dz:DocumentTab" >
+                    <Border x:Name="border" Background="{TemplateBinding Background}">
+                        <StackPanel x:Name="stackPanel" Orientation="Horizontal" Margin="2,2,2,6">
+                            <TextBlock Text="{Binding TabText}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                            <dz:InertButton x:Name="performCloseButton" Visibility="Hidden" Command="dz:DockCommands.PerformClose" CommandTarget="{Binding}"
+                                Margin="4,0,0,0" ToolTip="Close" ContentTemplate="{DynamicResource CloseButtonTemplate}"
+                                VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                            <Setter TargetName="performCloseButton" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="performCloseButton" Property="Foreground" Value="{StaticResource SelectedCloseButtonForeground}" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsActiveDocument}" Value="True">
+                            <Setter TargetName="performCloseButton" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="performCloseButton" Property="Foreground" Value="{StaticResource ActiveCloseButtonForeground}" />
+                        </DataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding ElementName=border, Path=IsMouseOver}" Value="True" />
+                                <Condition Binding="{Binding IsSelected}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Background" Value="{StaticResource HoverBackgroundBrush}" />
+                            <Setter TargetName="border" Property="BorderThickness" Value="1,1,1,0" />
+                            <Setter TargetName="stackPanel" Property="Margin" Value="1,1,1,6" />
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource HoverBorderBrush}" />
+                            <Setter TargetName="performCloseButton" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="performCloseButton" Property="Foreground" Value="{StaticResource HoverBorderBrush}" />
+                        </MultiDataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                <Setter Property="Background" Value="{StaticResource SelectedBackground}" />
+                <Setter Property="Panel.ZIndex" Value="1" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsActiveDocument}" Value="True">
+                <Setter Property="Background" Value="{StaticResource ActiveDocumentBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsActiveItem}" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ActiveCaptionBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Tab">
+                <Setter Property="dz:DockManager.Overlay" Value="{StaticResource Overlay}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

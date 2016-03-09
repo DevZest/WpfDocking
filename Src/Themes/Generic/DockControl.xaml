@@ -1,0 +1,67 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+    xmlns:local="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <Style TargetType="{x:Type docking:DockControl}">
+        <Style.Resources>
+            <DataTemplate x:Key="PreviewTemplate">
+                <primitives:PreviewOverlay />
+            </DataTemplate>
+
+            <primitives:Overlay x:Key="Overlay" IsFloatingWindowPreview="True" ContentTemplate="{StaticResource PreviewTemplate}" />
+            
+            <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type docking:DockControl}">
+                <Grid Background="{TemplateBinding Background}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <primitives:AutoHideStrip Grid.Row="0" Grid.Column="1" Placement="Top"
+                            DataContext="{TemplateBinding TopDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <primitives:AutoHideStrip Grid.Row="1" Grid.Column="0" Placement="Left"
+                            DataContext="{TemplateBinding LeftDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <primitives:AutoHideStrip Grid.Row="1" Grid.Column="2" Placement="Right"
+                            DataContext="{TemplateBinding RightDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <primitives:AutoHideStrip Grid.Row="2" Grid.Column="1" Placement="Bottom"
+                            DataContext="{TemplateBinding BottomDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <primitives:DockTreeClient
+                            DockControl="{Binding RelativeSource={x:Static RelativeSource.TemplatedParent}}"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+                    <primitives:AutoHideClient
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            DockControl="{Binding RelativeSource={x:Static RelativeSource.TemplatedParent}}" />
+                </Grid>
+            </ControlTemplate>
+        </Style.Resources>
+        <Setter Property="primitives:DockManager.IsEnabled" Value="True" />
+        <Setter Property="Background" Value="#F2F5FB" />
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+        <Style.Triggers>
+            <Trigger Property="primitives:DockManager.FloatingWindowStrategy" Value="Native">
+                <Setter Property="primitives:WindowSwitcher.Hotkey" Value="CTRL+Tab" />
+            </Trigger>
+            <Trigger Property="primitives:DockManager.FloatingWindowStrategy" Value="Wpf">
+                <Setter Property="primitives:WindowSwitcher.Hotkey" Value="CTRL+1" />
+            </Trigger>
+            <Trigger Property="primitives:DockManager.Preview" Value="Floating">
+                <Setter Property="primitives:DockManager.Overlay" Value="{StaticResource Overlay}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

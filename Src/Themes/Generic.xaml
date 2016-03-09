@@ -1,0 +1,53 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/ToolWindowCaption.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/PreviewOverlay.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTreeControl.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTreeClientOverlay.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockPaneControl.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockPaneControlOverlay.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/SplitContainer.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockControl.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockItem.TabContextMenu.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockItem.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/AutoHideStrip.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/AutoHideTab.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/AutoHideClient.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/AutoHideWindow.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/WpfFloatingWindowClient.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/WpfFloatingWindow.xaml" />
+        <!--
+            Visual Studio bug, must use property element syntax:
+            http://www.hardcodet.net/2008/04/nested-markup-extension-bug
+        -->
+        <ResourceDictionary>
+            <ResourceDictionary.Source>
+                <local:ConditionalUriExtension
+                    Condition="{x:Static docking:FloatingWindow.CanBeNative}"
+                    True="DevZest.WpfDocking;component/Themes/Generic/NativeFloatingWindow.xaml"
+                    False="DevZest.WpfDocking;component/Themes/Generic/Empty.xaml" />
+            </ResourceDictionary.Source>
+        </ResourceDictionary>
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTreeClient.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTreeSplit.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTreeSplitter.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockTree.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockPaneSplit.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DockPane.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/ToolWindow.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/ToolWindowTabStrip.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/ToolWindowTab.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DocumentWindow.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DocumentTabStrip.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/DocumentTab.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/WindowSwitcher.xaml" />
+        <ResourceDictionary Source="DevZest.WpfDocking;component/Themes/Generic/InertButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

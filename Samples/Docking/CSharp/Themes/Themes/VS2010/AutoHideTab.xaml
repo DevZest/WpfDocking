@@ -1,0 +1,58 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="dz:AutoHideTab">
+        <Style.Resources>
+            <SolidColorBrush x:Key="BackgroundBrush" Color="#FF4A5D80" />
+            <SolidColorBrush x:Key="BorderBrush" Color="Transparent" />
+            <SolidColorBrush x:Key="HoverBorderBrush" Color="#FF9BA7B7" />
+            <LinearGradientBrush x:Key="HoverBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF6F7776" Offset="0" />
+                <GradientStop Color="#FF4C5C74" Offset="1" />
+            </LinearGradientBrush>
+
+        </Style.Resources>
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="dz:AutoHideTab" >
+                    <Border x:Name="border" SnapsToDevicePixels="True" Padding="4,2" Background="{TemplateBinding Background}" BorderBrush="{StaticResource BorderBrush}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Margin="0,0,3,0" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Path=Icon}" Stretch="None" />
+                            <TextBlock SnapsToDevicePixels="True" VerticalAlignment="Center" Text="{Binding TabText}" TextWrapping="NoWrap"  TextTrimming="CharacterEllipsis" />
+                        </StackPanel>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding DockPosition}" Value="LeftAutoHide">
+                            <Setter TargetName="border" Property="BorderThickness" Value="1,1,1,0" />
+                            <Setter TargetName="border" Property="CornerRadius" Value="2,2,0,0" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DockPosition}" Value="BottomAutoHide">
+                            <Setter TargetName="border" Property="BorderThickness" Value="1,1,1,0" />
+                            <Setter TargetName="border" Property="CornerRadius" Value="2,2,0,0" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DockPosition}" Value="RightAutoHide">
+                            <Setter TargetName="border" Property="BorderThickness" Value="1,0,1,1" />
+                            <Setter TargetName="border" Property="CornerRadius" Value="0,0,2,2" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DockPosition}" Value="TopAutoHide">
+                            <Setter TargetName="border" Property="BorderThickness" Value="1,0,1,1" />
+                            <Setter TargetName="border" Property="CornerRadius" Value="0,0,2,2" />
+                        </DataTrigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource HoverBorderBrush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource HoverBackgroundBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+</ResourceDictionary>

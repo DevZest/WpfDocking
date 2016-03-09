@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="{x:Type dz:DockControl}">
+        <Style.Resources>
+            <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type dz:DockControl}">
+                <Grid Background="{TemplateBinding Background}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <dz:AutoHideStrip Grid.Row="0" Grid.Column="1" Placement="Top" Margin="0,0,0,4" 
+                            DataContext="{TemplateBinding TopDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <dz:AutoHideStrip Grid.Row="1" Grid.Column="0" Placement="Left" Margin="0,0,4,0"
+                            DataContext="{TemplateBinding LeftDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <dz:AutoHideStrip Grid.Row="1" Grid.Column="2" Placement="Right" Margin="4,0,0,0"
+                            DataContext="{TemplateBinding RightDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <dz:AutoHideStrip Grid.Row="2" Grid.Column="1" Placement="Bottom" Margin="0,4,0,0"
+                            DataContext="{TemplateBinding BottomDockTree}"
+                            ItemsSource="{Binding Path=AutoHideItems}" />
+                    <dz:DockTreeClient
+                            DockControl="{Binding RelativeSource={x:Static RelativeSource.TemplatedParent}}"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+                    <dz:AutoHideClient Margin="-4"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            DockControl="{Binding RelativeSource={x:Static RelativeSource.TemplatedParent}}" />
+                </Grid>
+            </ControlTemplate>
+        </Style.Resources>
+        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+    </Style>
+</ResourceDictionary>

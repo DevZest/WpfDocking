@@ -1,0 +1,116 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="OuterBorderBrush" Color="#ADB2BA"/>
+
+    <LinearGradientBrush x:Key="OuterBackground" 
+        StartPoint="0,0"
+        EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#F8FAFC"
+                          Offset="0"/>
+            <GradientStop Color="#E8EBF0"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="InnerBorderBrush" Color="#FF45597C"/>
+
+    <LinearGradientBrush x:Key="InnerBackground" 
+        StartPoint="0,0"
+        EndPoint="0,1">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Color="#FEEEC0"
+                          Offset="0"/>
+            <GradientStop Color="#F9D79C"
+                          Offset="1"/>
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <DataTemplate x:Key="LeftGuide">
+        <Border BorderBrush="{StaticResource OuterBorderBrush}"
+                Background="{StaticResource OuterBackground}"
+                BorderThickness="1"
+                CornerRadius="2"
+                Width="32"
+                Height="32">
+            <Grid Margin="3">
+                <Border 
+                    Margin="0,0,12,0"
+					BorderBrush="{StaticResource InnerBorderBrush}"
+					Background="{StaticResource InnerBackground}"
+					BorderThickness="1,3,1,1" CornerRadius="0,0,1,1"/>
+                <Path StrokeThickness="0" Margin="0,0,2,0" Fill="{StaticResource InnerBorderBrush}" VerticalAlignment="Center" HorizontalAlignment="Right" Data="M0,0 -4,4 0,8 z"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="RightGuide">
+        <Border BorderBrush="{StaticResource OuterBorderBrush}"
+                Background="{StaticResource OuterBackground}"
+                BorderThickness="1"
+                CornerRadius="2"
+                Width="32"
+                Height="32">
+            <Grid Margin="3">
+                <Border 
+                    Margin="12,0,0,0"
+					BorderBrush="{StaticResource InnerBorderBrush}"
+					Background="{StaticResource InnerBackground}"
+					BorderThickness="1,3,1,1" CornerRadius="0,0,1,1"/>
+                <Path StrokeThickness="0" Margin="2,0,0,0" Fill="{StaticResource InnerBorderBrush}" VerticalAlignment="Center" HorizontalAlignment="Left" Data="M0,0 4,4 0,8 z"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="TopGuide">
+        <Border BorderBrush="{StaticResource OuterBorderBrush}"
+                Background="{StaticResource OuterBackground}"
+                BorderThickness="1"
+                CornerRadius="2"
+                Width="32"
+                Height="32">
+            <Grid Margin="3">
+                <Border 
+                    Margin="0,0,0,12"
+					BorderBrush="{StaticResource InnerBorderBrush}"
+					Background="{StaticResource InnerBackground}"
+					BorderThickness="1,3,1,1" CornerRadius="0,0,1,1"/>
+                <Path StrokeThickness="0" Margin="0,0,0,2" Fill="{StaticResource InnerBorderBrush}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Data="M0,0 4,-4 8,0 z"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="BottomGuide">
+        <Border BorderBrush="{StaticResource OuterBorderBrush}"
+                Background="{StaticResource OuterBackground}"
+                BorderThickness="1"
+                CornerRadius="2"
+                Width="32"
+                Height="32">
+            <Grid Margin="3">
+                <Border 
+                    Margin="0,12,0,0"
+					BorderBrush="{StaticResource InnerBorderBrush}"
+					Background="{StaticResource InnerBackground}"
+					BorderThickness="1,3,1,1" CornerRadius="0,0,1,1"/>
+                <Path StrokeThickness="0" Margin="0,2,0,0" Fill="{StaticResource InnerBorderBrush}" VerticalAlignment="Top" HorizontalAlignment="Center" Data="M0,0 4,4 8,0 z"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="FillGuide">
+        <Border BorderBrush="{StaticResource OuterBorderBrush}"
+                Background="{StaticResource OuterBackground}"
+                BorderThickness="1"
+                CornerRadius="2"
+                Width="32"
+                Height="32">
+            <Border 
+                Margin="3"
+				BorderBrush="{StaticResource InnerBorderBrush}"
+				Background="{StaticResource InnerBackground}"
+				BorderThickness="1,3,1,1" CornerRadius="0,0,1,1"/>
+        </Border>
+    </DataTemplate>
+</ResourceDictionary>

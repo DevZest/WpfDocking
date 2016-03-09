@@ -1,0 +1,100 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:DevZest.Windows"
+    xmlns:docking="clr-namespace:DevZest.Windows.Docking"
+    xmlns:primitives="clr-namespace:DevZest.Windows.Docking.Primitives">
+
+    <Style TargetType="{x:Type primitives:ToolWindowCaption}">
+        <Style.Resources>
+            <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type primitives:ToolWindowCaption}">
+                <ControlTemplate.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.MergedDictionaries>
+                            <ResourceDictionary Source="DockWindow.InertButton.xaml" />
+                        </ResourceDictionary.MergedDictionaries>
+
+                        <SolidColorBrush x:Key="BrushActiveCaption" Color="#FF99B4D1" />
+
+                        <SolidColorBrush x:Key="BrushInactiveCaption" Color="#FFD7E4F2" />
+
+                        <SolidColorBrush x:Key="BrushActiveCaptionText" Color="#FF000000" />
+
+                        <SolidColorBrush x:Key="BrushInactiveCaptionText" Color="#FF808080" />
+
+                        <primitives:IsAutoHideValueConverter x:Key="IsAutoHideConverter" />
+
+                        <DataTemplate x:Key="AutoHideButtonTemplate">
+                            <Path StrokeThickness="1" Stroke="{Binding RelativeSource={RelativeSource AncestorType=primitives:InertButton}, Path=Foreground}"
+                            Data="M2.5,6.5 L2.5,0.5 L6.5,0.5 L6.5,6.5 M5.5,0.5 L5.5,6.5 M0,6.5 L9,6.5 M4.5,6 L4.5,10" />
+                        </DataTemplate>
+
+                        <DataTemplate x:Key="DockButtonTemplate" DataType="{x:Type Button}">
+                            <Path StrokeThickness="1" Stroke="{Binding RelativeSource={RelativeSource AncestorType=primitives:InertButton}, Path=Foreground}"
+                            Data="M0,4.5 L3,4.5 M3.5,0 L3.5,9 M3,2.5 L9.5,2.5 L9.5,6.5 L3.5,6.5 M9,5.5 L3,5.5" />
+                        </DataTemplate>
+                    </ResourceDictionary>
+                </ControlTemplate.Resources>
+
+                <Grid Name="grid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" x:Name="autoHideColumnDefinition" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="captionTextBlock" Margin="2,0,0,0" VerticalAlignment="Center"
+                        Grid.Column="0" Text="{Binding Title}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+
+                    <primitives:InertButton x:Name="dropDownButton"
+                        Grid.Column="1" Margin="4,2,2,2" ToolTip="Option"
+                        ContentTemplate="{StaticResource DropDownButtonTemplate}"
+                        DropDown="{Binding TabContextMenu}" />
+                    <primitives:InertButton x:Name="autoHideButton" Command="docking:DockCommands.ToggleAutoHide" CommandTarget="{Binding}"
+                        Grid.Column="2" Margin="2" ToolTip="Auto Hide"
+                        ContentTemplate="{StaticResource AutoHideButtonTemplate}" />
+                    <primitives:InertButton x:Name="performCloseButton" Command="docking:DockCommands.PerformClose" CommandTarget="{Binding}"
+                        Grid.Column="3" Margin="2,2,4,2" ToolTip="Close"
+                        ContentTemplate="{StaticResource CloseButtonTemplate}" />
+                </Grid>
+
+                <ControlTemplate.Triggers>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding Path=DockPosition}" Value="Floating" />
+                            <Condition Binding="{Binding Path=FirstPane.FloatingWindow.CountOfVisiblePanes}" Value="1" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter TargetName="grid" Property="Visibility" Value="Collapsed" />
+                    </MultiDataTrigger>
+                    <DataTrigger Binding="{Binding Path=(UIElement.IsKeyboardFocusWithin)}" Value="True">
+                        <Setter TargetName="grid" Property="Panel.Background" Value="{StaticResource BrushActiveCaption}" />
+                        <Setter TargetName="captionTextBlock" Property="Foreground" Value="{StaticResource BrushActiveCaptionText}" />
+                        <Setter TargetName="dropDownButton" Property="Foreground" Value="{StaticResource BrushActiveCaptionText}" />
+                        <Setter TargetName="autoHideButton" Property="Foreground" Value="{StaticResource BrushActiveCaptionText}" />
+                        <Setter TargetName="performCloseButton" Property="Foreground" Value="{StaticResource BrushActiveCaptionText}" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(UIElement.IsKeyboardFocusWithin)}" Value="False">
+                        <Setter TargetName="grid" Property="Panel.Background" Value="{StaticResource BrushInactiveCaption}" />
+                        <Setter TargetName="captionTextBlock" Property="Foreground" Value="{StaticResource BrushInactiveCaptionText}" />
+                        <Setter TargetName="dropDownButton" Property="Foreground" Value="{StaticResource BrushInactiveCaptionText}" />
+                        <Setter TargetName="autoHideButton" Property="Foreground" Value="{StaticResource BrushInactiveCaptionText}" />
+                        <Setter TargetName="performCloseButton" Property="Foreground" Value="{StaticResource BrushInactiveCaptionText}" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding DockPosition}" Value="Floating">
+                        <Setter TargetName="autoHideColumnDefinition" Property="Width" Value="0" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=DockPosition, Converter={StaticResource IsAutoHideConverter}}" Value="False">
+                        <Setter TargetName="grid" Property="primitives:DockManager.CanDrag" Value="True" />
+                        <Setter TargetName="grid" Property="primitives:DockManager.TargetPosition" Value="Fill" />
+                        <Setter TargetName="grid" Property="primitives:DockManager.TargetItem" Value="{Binding}" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=DockPosition, Converter={StaticResource IsAutoHideConverter}}" Value="True">
+                        <Setter TargetName="autoHideButton" Property="ContentTemplate" Value="{StaticResource DockButtonTemplate}" />
+                    </DataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Style.Resources>
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+    </Style>
+    
+</ResourceDictionary>

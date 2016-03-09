@@ -1,0 +1,32 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.SolutionExplorer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    x:Name="_dockItem"
+    Icon="Resources/SolutionExplorer.png"
+    AllowedDockTreePositions="ToolWindow"
+    DefaultDockPosition="Right"
+    Title="Solution Explorer - Sample"
+    TabText="SolutionExplorer"
+    Style="{DynamicResource {x:Type dz:DockItem}}"    
+    HideOnPerformClose="True">
+    <TreeView Background="Transparent">
+        <TreeView.Resources>
+            <Style TargetType="TreeViewItem">
+                <Setter Property="Foreground" Value="{Binding ElementName=_dockItem, Path=Foreground}" />
+            </Style>
+        </TreeView.Resources>
+        <TreeViewItem Header="Sample Solution" IsExpanded="True">
+            <TreeViewItem Header="Sample File 1" />
+            <TreeViewItem Header="Sample File 2" />
+            <TreeViewItem Header="Sample File 3" />
+            <TreeViewItem Header="Sample File 4" />
+            <TreeViewItem Header="Sample File 5" />
+            <TreeViewItem Header="Sample File 6" />
+            <TreeViewItem Header="Sample File 7" />
+            <TreeViewItem Header="Sample File 8" />
+            <TreeViewItem Header="Sample File 9" />
+        </TreeViewItem>
+    </TreeView>
+</dz:DockItem>

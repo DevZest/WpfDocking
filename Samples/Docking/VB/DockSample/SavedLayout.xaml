@@ -1,0 +1,25 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.SavedLayout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Icon="Resources/SavedState.png"
+    AllowedDockTreePositions="ToolWindow"
+    DefaultDockPosition="Bottom"
+    Title="Saved Layout"
+    TabText="Saved Layout"
+    Style="{DynamicResource {x:Type dz:DockItem}}"    
+    HideOnPerformClose="True">
+    <TextBox
+        x:Name="textBox"
+        Background="Transparent"
+        Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"
+        VerticalScrollBarVisibility="Auto"
+        IsReadOnly="True">
+        <TextBox.ContextMenu>
+            <ContextMenu>
+                <MenuItem Command="ApplicationCommands.Copy" />
+            </ContextMenu>
+        </TextBox.ContextMenu>
+    </TextBox>
+</dz:DockItem>

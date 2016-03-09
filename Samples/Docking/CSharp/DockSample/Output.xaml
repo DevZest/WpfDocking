@@ -1,0 +1,26 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.Output"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Icon="Resources/Output.png"
+    AllowedDockTreePositions="ToolWindow"
+    DefaultDockPosition="Bottom"
+    Title="Output"
+    TabText="Output"
+    Style="{DynamicResource {x:Type dz:DockItem}}"
+    HideOnPerformClose="True">
+    <TextBox
+        x:Name="textBox"
+        Background="Transparent"
+        Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"
+        VerticalScrollBarVisibility="Auto"
+        IsReadOnly="True">
+        <TextBox.ContextMenu>
+            <ContextMenu>
+                <MenuItem Command="ApplicationCommands.Copy" />
+                <MenuItem Header="Clear All" Click="OnClearAllClick" />
+            </ContextMenu>
+        </TextBox.ContextMenu>
+    </TextBox>
+</dz:DockItem>

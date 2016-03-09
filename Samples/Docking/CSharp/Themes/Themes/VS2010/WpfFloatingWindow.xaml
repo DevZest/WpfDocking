@@ -1,0 +1,111 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+    
+    <Style TargetType="{x:Type dz:WpfFloatingWindow}">
+        <Style.Resources>
+            <ControlTemplate x:Key="Template" TargetType="{x:Type dz:WpfFloatingWindow}">
+                <ControlTemplate.Resources>
+                    <DataTemplate x:Key="FloatingWindowCaptionTemplate" DataType="{x:Type dz:WpfFloatingWindow}">
+                        <Grid Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <dz:InertButton x:Name="performCloseButton" Grid.Column="1" Margin="0,-5,0,5" VerticalAlignment="Top"
+                                Command="dz:DockCommands.PerformClose"
+                                ToolTip="Close"
+                                Foreground="{DynamicResource CaptionButtonBrush}"
+                                ContentTemplate="{DynamicResource CloseButtonTemplate}" />
+                        </Grid>
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding WindowState}" Value="Maximized">
+                                <Setter TargetName="performCloseButton" Property="Margin" Value="0,-1,0,1" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+
+                    <DataTemplate x:Key="DockItemCaptionTemplate" DataType="{x:Type dz:DockItem}">
+                        <Grid Name="grid" Background="{DynamicResource CaptionBrush}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock x:Name="captionTextBlock" Margin="2,0,0,0" VerticalAlignment="Center" Foreground="{DynamicResource CaptionTextBrush}"
+                                Grid.Column="0" Text="{Binding Title}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/>
+
+                            <dz:InertButton x:Name="dropDownButton"
+                                Grid.Column="1" Margin="4,2,2,2" ToolTip="Option"
+                                Foreground="{DynamicResource CaptionButtonBrush}"
+                                ContentTemplate="{DynamicResource DropDownButtonTemplate}"
+                                DropDown="{Binding TabContextMenu}" />
+                            <dz:InertButton x:Name="performCloseButton" Command="dz:DockCommands.PerformClose"
+                                Grid.Column="3" Margin="2,2,4,2" ToolTip="Close"
+                                Foreground="{DynamicResource CaptionButtonBrush}"
+                                ContentTemplate="{DynamicResource CloseButtonTemplate}" />
+                        </Grid>
+
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding Path=IsActiveItem}" Value="True">
+                                <Setter TargetName="grid" Property="Background" Value="{DynamicResource ActiveCaptionBrush}" />
+                                <Setter TargetName="captionTextBlock" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                                <Setter TargetName="dropDownButton" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                                <Setter TargetName="performCloseButton" Property="Foreground" Value="{DynamicResource ActiveCaptionTextBrush}" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ControlTemplate.Resources>
+
+                <Grid Background="{TemplateBinding Background}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition x:Name="topBorderRow" Height="4" />
+                        <RowDefinition Height="4" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="4" />
+                        <RowDefinition x:Name="bottomBorderRow" Height="4" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition x:Name="leftBorderColumn" Width="4" />
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="4" />
+                        <ColumnDefinition x:Name="rightBorderColumn" Width="4" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Cursor="SizeNWSE" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftTop" />
+                    <Rectangle Cursor="SizeNWSE" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftTop" />
+                    <Rectangle Cursor="SizeNS" Grid.Column="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeTop" />
+                    <Rectangle Cursor="SizeNESW" Grid.Column="3" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightTop" />
+                    <Rectangle Cursor="SizeNESW" Grid.Column="4" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightTop" />
+                    <Rectangle Cursor="SizeWE" Grid.Row="2" Grid.Column="4" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRight" />
+                    <Rectangle Cursor="SizeNWSE" Grid.Row="3" Grid.Column="4" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightBottom" />
+                    <Rectangle Cursor="SizeNWSE" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeRightBottom" />
+                    <Rectangle Cursor="SizeNS" Grid.Row="4" Grid.Column="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeBottom" />
+                    <Rectangle Cursor="SizeNESW" Grid.Row="4" Grid.ColumnSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftBottom" />
+                    <Rectangle Cursor="SizeNESW" Grid.Row="3" Grid.RowSpan="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeftBottom" />
+                    <Rectangle Cursor="SizeWE" Grid.Row="2" Fill="Transparent" dz:WindowControl.Hotspot="ResizeLeft" />
+                    <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="captionRow" Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <ContentPresenter x:Name="captionPresenter" dz:DockManager.CanDrag="True"
+                            Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}}" ContentTemplate="{StaticResource FloatingWindowCaptionTemplate}" />
+                        <ContentPresenter Grid.Row="1" Content="{Binding DockTree}" />
+                    </Grid>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <DataTrigger Binding="{Binding CountOfVisiblePanes}" Value="1">
+                        <Setter TargetName="captionPresenter" Property="Content" Value="{Binding FirstVisiblePane.SelectedItem}" />
+                        <Setter TargetName="captionPresenter" Property="ContentTemplate" Value="{StaticResource DockItemCaptionTemplate}" />
+                    </DataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Style.Resources>
+        <Setter Property="ClipToBounds" Value="True" />
+        <Setter Property="Background" Value="{DynamicResource DefaultBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
+        <Setter Property="Template" Value="{StaticResource Template}" />
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,17 @@
+﻿<dz:DockItem
+    x:Class="DevZest.DockSample.Document"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dz="http://schemas.devzest.com/presentation/docking"
+    Icon="Resources/Document.png"
+    DefaultDockPosition="Document"
+    Style="{DynamicResource {x:Type dz:DockItem}}"
+    HideOnPerformClose="False">
+    <FlowDocumentScrollViewer Background="Transparent">
+        <FlowDocumentScrollViewer.Document>
+            <FlowDocument FontFamily="Calibri" FontSize="14.5" TextAlignment="Left">
+                <Paragraph x:Name="paragraph" >Sample document</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer.Document>
+    </FlowDocumentScrollViewer>
+</dz:DockItem>

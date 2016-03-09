@@ -1,0 +1,107 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+
+    <Style TargetType="{x:Type dz:DockTreeClientOverlay}">
+        <Style.Resources>
+            <ControlTemplate x:Key="ControlTemplate" TargetType="{x:Type dz:DockTreeClientOverlay}">
+                <ControlTemplate.Resources>
+                    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="BorderBrush" Value="Transparent" />
+                    </Style>
+                </ControlTemplate.Resources>
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{TemplateBinding TopTreeHeight}" />
+                        <RowDefinition Height="{TemplateBinding TopSplitterHeight}" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="{TemplateBinding BottomSplitterHeight}" />
+                        <RowDefinition Height="{TemplateBinding BottomTreeHeight}" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="{TemplateBinding LeftTreeWidth}" />
+                        <ColumnDefinition Width="{TemplateBinding LeftSplitterWidth}" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="{TemplateBinding RightSplitterWidth}" />
+                        <ColumnDefinition Width="{TemplateBinding RightTreeWidth}" />
+                    </Grid.ColumnDefinitions>
+                    <Border x:Name="leftGuide" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.ColumnSpan="5" BorderThickness="2,0,0,0" Width="20"
+                            Visibility="{TemplateBinding IsLeftGuideVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            dz:DockManager.TargetPosition="Left" />
+                    <Border x:Name="rightGuide" HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.ColumnSpan="5" BorderThickness="0,0,2,0" Width="20"
+                            Visibility="{TemplateBinding IsRightGuideVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            dz:DockManager.TargetPosition="Right" />
+                    <Border x:Name="topGuide" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.RowSpan="5" BorderThickness="0,2,0,0" Height="20"
+                            Visibility="{TemplateBinding IsTopGuideVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            dz:DockManager.TargetPosition="Top" />
+                    <Border x:Name="bottomGuide" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Grid.RowSpan="5" BorderThickness="0,0,0,2" Height="20"
+                            Visibility="{TemplateBinding IsBottomGuideVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                            dz:DockManager.TargetPosition="Bottom" />
+                    <Grid x:Name="leftAndRightPreviewClient" Grid.ColumnSpan="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <dz:PreviewOverlay x:Name="leftAndRightPreview" Visibility="Hidden" />
+                    </Grid>
+                    <Grid x:Name="topAndBottomPreviewClient" Grid.RowSpan="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <dz:PreviewOverlay x:Name="topAndBottomPreview" Visibility="Hidden" />
+                    </Grid>
+                    <dz:PreviewOverlay x:Name="documentPreview" Grid.Row="2" Grid.Column="2" Visibility="Hidden" />
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.IsShiftKeyDown)}" Value="True">
+                        <Setter TargetName="leftGuide" Property="Grid.RowSpan" Value="5" />
+                        <Setter TargetName="rightGuide" Property="Grid.RowSpan" Value="5" />
+                        <Setter TargetName="topGuide" Property="Grid.ColumnSpan" Value="5" />
+                        <Setter TargetName="bottomGuide" Property="Grid.ColumnSpan" Value="5" />
+                        <Setter TargetName="leftAndRightPreviewClient" Property="Grid.RowSpan" Value="5" />
+                        <Setter TargetName="topAndBottomPreviewClient" Property="Grid.ColumnSpan" Value="5" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.IsShiftKeyDown)}" Value="False">
+                        <Setter TargetName="leftGuide" Property="Grid.Row" Value="2" />
+                        <Setter TargetName="rightGuide" Property="Grid.Row" Value="2" />
+                        <Setter TargetName="topGuide" Property="Grid.Column" Value="2" />
+                        <Setter TargetName="bottomGuide" Property="Grid.Column" Value="2" />
+                        <Setter TargetName="leftAndRightPreviewClient" Property="Grid.Row" Value="2" />
+                        <Setter TargetName="topAndBottomPreviewClient" Property="Grid.Column" Value="2" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Left">
+                        <Setter TargetName="leftGuide" Property="BorderBrush" Value="{DynamicResource DockGuideBrush}" />
+                        <Setter TargetName="leftAndRightPreview" Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Right">
+                        <Setter TargetName="rightGuide" Property="BorderBrush" Value="{DynamicResource DockGuideBrush}" />
+                        <Setter TargetName="leftAndRightPreview" Property="Grid.Column" Value="2" />
+                        <Setter TargetName="leftAndRightPreview" Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Top">
+                        <Setter TargetName="topGuide" Property="BorderBrush" Value="{DynamicResource DockGuideBrush}" />
+                        <Setter TargetName="topAndBottomPreview" Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Bottom">
+                        <Setter TargetName="bottomGuide" Property="BorderBrush" Value="{DynamicResource DockGuideBrush}" />
+                        <Setter TargetName="topAndBottomPreview" Property="Grid.Row" Value="2" />
+                        <Setter TargetName="topAndBottomPreview" Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding Path=(dz:DockManager.Preview)}" Value="Fill">
+                        <Setter TargetName="documentPreview" Property="Visibility" Value="Visible" />
+                    </DataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Style.Resources>
+
+        <Setter Property="Template" Value="{StaticResource ControlTemplate}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="09cb0d87-281c-4803-92f4-937d4e54bd64" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>Although rarely used directly, the objects described in this topic can help you to
+    further understance the window layout and how WPF Docking can be customized.</para>
+    </introduction>
+    <section address="Section1">
+      <title>DockTree to DockPane</title>
+      <content>
+        <para>
+          <token>DockControl</token> contains N+5 <token>DockTree</token>, where N is the
+      number of floating windows (accessible through <codeEntityReference>P:DevZest.Windows.Docking.DockControl.FloatingWindows</codeEntityReference> collection),
+      plus <codeEntityReference>P:DevZest.Windows.Docking.DockControl.LeftDockTree</codeEntityReference>,
+      <codeEntityReference>P:DevZest.Windows.Docking.DockControl.TopDockTree</codeEntityReference>,
+      <codeEntityReference>P:DevZest.Windows.Docking.DockControl.RightDockTree</codeEntityReference>,
+      <codeEntityReference>P:DevZest.Windows.Docking.DockControl.BottomDockTree</codeEntityReference> and
+      <codeEntityReference>P:DevZest.Windows.Docking.DockControl.DocumentDockTree</codeEntityReference>, which docked
+      to lef, top, right, bottom and fill respectively.</para>
+        <para>For floating windows, the Z-order is determined by the order of window being activated,
+      reflected by <codeEntityReference>P:DevZest.Windows.Docking.DockControl.FloatingWindows</codeEntityReference> collection.
+      </para>
+        <para>For docked <token>DockTree</token>, the Z-order is determined by the
+      <codeEntityReference>P:DevZest.Windows.Docking.DockControl.DockTreeZOrder</codeEntityReference> property.</para>
+        <para>The <codeEntityReference>P:DevZest.Windows.Docking.DockTree.RootNode</codeEntityReference> property of <token>DockTree</token>
+      represents a binary tree of <token>DockPaneNode</token> objects: <token>DockPaneSplit</token> as non-leaf nodes, and
+      <token>DockPane</token> as leaf nodes.</para>
+        <para>Auto-hide <token>DockPane</token> is reflected in 
+       <codeEntityReference>P:DevZest.Windows.Docking.DockTree.AutoHidePanes</codeEntityReference> collection of containing
+       <token>DockTree</token> and the
+       <codeEntityReference>P:DevZest.Windows.Docking.DockPaneSplit.ChildrenVisibility</codeEntityReference> property of
+       its parent <token>DockPaneSplit</token> (if any).</para>
+      </content>
+    </section>
+    <section address="Section2">
+      <title>DockPane to DockItem</title>
+      <content>
+        <para>
+          <token>DockPane</token> contains a collection of <token>DockItem</token> objects, shown as tabbed, through its
+  	  <codeEntityReference>P:DevZest.Windows.Docking.DockPane.Items</codeEntityReference> property. A <token>DockItem</token>
+  	  can have two parent <token>DockPane</token>: <codeEntityReference>P:DevZest.Windows.Docking.DockItem.FirstPane</codeEntityReference>
+  	  and <codeEntityReference>P:DevZest.Windows.Docking.DockItem.SecondPane</codeEntityReference>, one for floating and one
+  	  for non-floating. It is always invisible in the <codeEntityReference>P:DevZest.Windows.Docking.DockItem.SecondPane</codeEntityReference>,
+  	  reflected by the <codeEntityReference>P:DevZest.Windows.Docking.DockPane.VisibleItems</codeEntityReference> property.</para>
+      </content>
+    </section>
+    <section address="Section3">
+      <title>Customization</title>
+      <content>
+        <para>WPF Docking is fully customizable through styling and templating. The best practice is to take the 
+        <b>Themes</b> project in the installed <b>Samples</b> as a base to start.</para>
+      </content>
+    </section>
+    <relatedTopics>
+      <!-- One or more of the following:
+         - A local link
+         - An external link
+         - A code entity reference
+
+    <link xlink:href="Other Topic's ID"/>
+    <link xlink:href="Other Topic's ID">Link inner text</link>
+
+    <externalLink>
+        <linkText>Link text</linkText>
+        <linkAlternateText>Optional alternate link text</linkAlternateText>
+        <linkUri>URI</linkUri>
+    </externalLink>
+
+    <codeEntityReference>API member ID</codeEntityReference>
+
+    Examples:
+
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+    <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+    <externalLink>
+        <linkText>SHFB on CodePlex</linkText>
+        <linkAlternateText>Go to CodePlex</linkAlternateText>
+        <linkUri>http://www.codeplex.com/SHFB</linkUri>
+    </externalLink>
+
+    <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+    <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+    <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+    -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

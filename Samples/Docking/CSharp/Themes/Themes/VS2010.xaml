@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:dz="http://schemas.devzest.com/presentation/docking">
+	<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="VS2010/Brushes.xaml"/>
+        <ResourceDictionary Source="VS2010/InertButton.xaml"/>
+        <ResourceDictionary Source="VS2010/DockControl.xaml"/>
+        <ResourceDictionary Source="VS2010/DockTreeControl.xaml"/>
+        <ResourceDictionary Source="VS2010/ToolWindowCaption.xaml"/>
+        <ResourceDictionary Source="VS2010/ToolWindow.xaml"/>
+        <ResourceDictionary Source="VS2010/ToolWindowTab.xaml"/>
+        <ResourceDictionary Source="VS2010/AutoHideTab.xaml"/>
+        <ResourceDictionary Source="VS2010/AutoHideClient.xaml"/>
+        <ResourceDictionary Source="VS2010/DocumentWindow.xaml"/>
+        <ResourceDictionary Source="VS2010/DocumentTab.xaml"/>
+        <ResourceDictionary Source="VS2010/PreviewOverlay.xaml"/>
+        <ResourceDictionary Source="VS2010/WindowSwitcher.xaml"/>
+        <ResourceDictionary Source="VS2010/DockTreeClientOverlay.xaml"/>
+        <ResourceDictionary Source="VS2010/DockPaneControlOverlay.xaml"/>
+        <ResourceDictionary Source="VS2010/WpfFloatingWindow.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.Source>
+                <dz:ConditionalUriExtension
+                    Condition="{x:Static dz:FloatingWindow.CanBeNative}"
+                    True="VS2010/NativeFloatingWindow.xaml"
+                    False="Empty.xaml" />
+            </ResourceDictionary.Source>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
