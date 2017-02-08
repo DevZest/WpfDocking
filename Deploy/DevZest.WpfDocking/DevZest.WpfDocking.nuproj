@@ -23,11 +23,11 @@
     <Authors>DevZest</Authors>
     <Owners>DevZest</Owners>
     <Summary>A docking library to integrate undo/redo-able tabbed docking, floating and auto hide window management into your application in minutes.</Summary>
-    <Description>Activate this product by executing LicenseConsole.exe under package "tools" folder, and then obtain a 30 days free trial evaluation license, or a purchased product license. See documentation for more information.</Description>
+    <Description>A docking library to integrate undo/redo-able tabbed docking, floating and auto hide window management into your application in minutes.</Description>
     <ReleaseNotes>
     </ReleaseNotes>
-    <ProjectUrl>http://www.devzest.com/WpfDocking.aspx</ProjectUrl>
-    <LicenseUrl>http://www.devzest.com/Buy.aspx?Product=WpfDocking</LicenseUrl>
+    <ProjectUrl>https://github.com/DevZest/WpfDocking</ProjectUrl>
+    <LicenseUrl>https://opensource.org/licenses/mit-license.php</LicenseUrl>
     <Copyright>Copyright © DevZest</Copyright>
     <Tags>DevZest WPF Docking</Tags>
     <NoPackageAnalysis>true</NoPackageAnalysis>
@@ -36,18 +36,7 @@
     <Content Include="..\..\Doc\Help\Documentation.chm">
       <Link>Documentation.chm</Link>
     </Content>
-    <Content Include="..\..\Src\bin\Release\DevZest.WpfDocking.dll">
-      <Link>tools\LicenseConsole\DevZest.WpfDocking.dll</Link>
-    </Content>
-    <Content Include="..\packages\DevZest.LicenseConsole.2.0.0\tools\DevZest.Licensing.dll">
-      <Link>tools\LicenseConsole\DevZest.Licensing.dll</Link>
-    </Content>
-    <Content Include="..\packages\DevZest.LicenseConsole.2.0.0\tools\LicenseConsole.exe">
-      <Link>tools\LicenseConsole\LicenseConsole.exe</Link>
-    </Content>
     <Content Include="Readme.txt" />
-    <Content Include="tools\LicenseConsole\LicenseAgreement.rtf" />
-    <Content Include="tools\LicenseConsole\LicenseConsole.exe.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Src\WpfDocking.Deploy.csproj" />
