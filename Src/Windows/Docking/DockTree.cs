@@ -281,6 +281,8 @@ namespace DevZest.Windows.Docking
                 _floatingWindow.CountOfVisiblePanes = _visiblePanes.Count;
                 _floatingWindow.FirstVisiblePane = _visiblePanes.Count == 0 ? null : _visiblePanes[0];
                 _floatingWindow.IsVisible = IsVisible;
+                if (_panes.Count == 0) // Fix bug #1 https://github.com/DevZest/WpfDocking/issues/1
+                    _floatingWindow.DockControl.RemoveFloatingWindow(_floatingWindow);
             }
             _isDirty = false;
         }
