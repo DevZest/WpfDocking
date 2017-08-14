@@ -26,12 +26,6 @@
             </Setter.Value>
         </Setter>
         <Style.Triggers>
-            <DataTrigger Binding="{Binding IsVisible}" Value="False">
-                <Setter Property="Visibility" Value="Hidden" />
-            </DataTrigger>
-            <DataTrigger Binding="{Binding IsVisible}" Value="True">
-                <Setter Property="Visibility" Value="Visible" />
-            </DataTrigger>
             <DataTrigger Binding="{Binding CountOfVisiblePanes}" Value="1">
                 <Setter Property="Title" Value="{Binding FirstVisiblePane.SelectedItem.Title}" />
             </DataTrigger>

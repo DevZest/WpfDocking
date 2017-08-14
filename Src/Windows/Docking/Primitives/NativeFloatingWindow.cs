@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Globalization;
 using System.Security.Permissions;
+using System.ComponentModel;
 
 namespace DevZest.Windows.Docking.Primitives
 {
@@ -291,6 +292,47 @@ namespace DevZest.Windows.Docking.Primitives
             Width = bounds.Width;
             Height = bounds.Height;
             EndInit();
+        }
+
+        protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+            if (e.Property == DataContextProperty)
+                OnFloatingWindowChanged(e.OldValue as FloatingWindow, e.NewValue as FloatingWindow);
+        }
+
+        // Workaround Issue #1 https://github.com/DevZest/WpfDocking/issues/1
+        private void OnFloatingWindowChanged(FloatingWindow oldValue, FloatingWindow newValue)
+        {
+            if (oldValue != null)
+                DetachIsVisibleChangedHandler(oldValue);
+            if (newValue != null)
+            {
+                RefreshVisibility();
+                AttachIsVisibleChangedHandler(newValue);
+            }
+        }
+
+        private void AttachIsVisibleChangedHandler(FloatingWindow floatingWindow)
+        {
+            var dpd = DependencyPropertyDescriptor.FromProperty(FloatingWindow.IsVisibleProperty, floatingWindow.GetType());
+            dpd.AddValueChanged(floatingWindow, OnIsVisibleChanged);
+        }
+
+        private void DetachIsVisibleChangedHandler(FloatingWindow floatingWindow)
+        {
+            var dpd = DependencyPropertyDescriptor.FromProperty(FloatingWindow.IsVisibleProperty, floatingWindow.GetType());
+            dpd.RemoveValueChanged(floatingWindow, OnIsVisibleChanged);
+        }
+
+        private void OnIsVisibleChanged(object sender, EventArgs e)
+        {
+            RefreshVisibility();
+        }
+
+        private void RefreshVisibility()
+        {
+            Visibility = FloatingWindow.IsVisible ? Visibility.Visible : Visibility.Hidden;
         }
     }
 }
