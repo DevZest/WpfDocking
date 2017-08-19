@@ -292,7 +292,8 @@ namespace DevZest.Windows.Docking.Primitives
 
         private void SetupFadeCloseAnimation()
         {
-            if (VisualChild == null)
+            var visualChild = VisualChild;
+            if (visualChild == null)
                 return;
 
             DoubleAnimation doubleAnimation = new DoubleAnimation();
@@ -300,7 +301,7 @@ namespace DevZest.Windows.Docking.Primitives
             doubleAnimation.To = 0;
             doubleAnimation.Duration = AnimationDuration;
             AnimationClock = doubleAnimation.CreateClock();
-            VisualChild.ApplyAnimationClock(UIElement.OpacityProperty, AnimationClock);
+            visualChild.ApplyAnimationClock(UIElement.OpacityProperty, AnimationClock);
         }
 
         private void OnAnimationCompleted(object sender, EventArgs e)
