@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: detailed_window_hierarchy_and_customization
+  name: Detailed Window Hierarchy and Customization
+  href: articles/detailed_window_hierarchy_and_customization.html
 - uid: DevZest.Windows
   name: DevZest.Windows
   href: api/DevZest.Windows.html

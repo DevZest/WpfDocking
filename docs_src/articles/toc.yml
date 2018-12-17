@@ -6,3 +6,5 @@
   href: saving_and_loading_window_layout.md
 - name: Implementing Undo Redo
   href: implementing_undo_redo.md
+- name: Detailed Window Hierarchy and Customization
+  href: detailed_window_hierarchy_and_customization.md
