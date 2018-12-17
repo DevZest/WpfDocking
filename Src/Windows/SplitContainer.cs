@@ -50,7 +50,7 @@ namespace DevZest.Windows
     /// </remarks>
     /// <example>
     ///     The following example shows a sample use of <see cref="SplitContainer" />.
-    ///     <code lang="xaml" source="..\Samples\Common\CSharp\SplitContainerSample\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\Samples\Common\CSharp\SplitContainerSample\Window1.xaml" />
     /// </example>
     public partial class SplitContainer : FrameworkElement
     {

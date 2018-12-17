@@ -70,7 +70,7 @@ namespace DevZest.Windows.Docking
     /// </para>
     /// </remarks>
     /// <example>
-    ///     <code lang="xaml" source="..\Samples\Docking\CSharp\QuickStart\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\..\Samples\Docking\CSharp\QuickStart\Window1.xaml" />
     /// </example>
     [ContentProperty("DockItems")]
     public partial class DockControl : Control
@@ -327,7 +327,7 @@ namespace DevZest.Windows.Docking
         /// also reflects this association.</para>
         /// <para>Calling <see cref="DockItem.Close">DockItem.Close</see> removes
         /// the <see cref="DockItem"/> from the collection.</para>
-        /// <para>Calling <see cref="O:DevZest.Windows.Docking.DockItem.Show" /> implicitly
+        /// <para>Calling <see cref="DockItem.Show(DockControl)" /> implicitly
         /// adds <see cref="DockItem"/> in the collection if it's not yet associated.</para></remarks>
         public DockItemCollection DockItems
         {

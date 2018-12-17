@@ -1,9 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Documents;
+﻿using System.Windows;
 
 namespace DevZest.Windows
 {
@@ -18,7 +13,7 @@ namespace DevZest.Windows
     /// <para>Setting adorner for specified <see cref="FrameworkElement"/> will clear the adorner previously set, no matter using
     /// <see cref="P:DevZest.Windows.AdornerManager.Adorner"/> or <see cref="P:DevZest.Windows.AdornerManager.AdornerTemplate" /> attached properties.</para></remarks>
     /// <example>The following example demostrates the usage of <see cref="P:DevZest.Windows.AdornerManager.Adorner"/> and <see cref="P:DevZest.Windows.AdornerManager.AdornerTemplate" /> attached property:
-    ///     <code lang="xaml" source="..\Samples\Common\CSharp\AdornerManagerSample\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\Samples\Common\CSharp\AdornerManagerSample\Window1.xaml" />
     /// </example>
     public static partial class AdornerManager
     {

@@ -11,7 +11,7 @@ namespace DevZest.Windows
     /// <example>
     ///     This example demostrates use of <see cref="WindowPanel"/> and <see cref="WindowControl"/> 
     ///     (reference to assembly PresentationFramework.Classic.dll required):
-    ///     <code lang="xaml" source="..\Samples\Common\CSharp\WindowPanelAndWindowControlSample\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\Samples\Common\CSharp\WindowPanelAndWindowControlSample\Window1.xaml" />
     /// </example>
     public partial class WindowPanel : Panel
     {

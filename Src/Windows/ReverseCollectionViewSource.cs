@@ -9,7 +9,7 @@ namespace DevZest.Windows
     /// <summary>Represents the Extensible Application Markup Language (XAML) proxy of the CollectionView class, in a reversed order.</summary>
     /// <remarks>The <see cref="ReverseCollectionViewSource"/> class only works when <see cref="CollectionViewSource.View"/> is <see cref="ListCollectionView"/>(<see cref="CollectionViewSource.Source"/> is <see cref="IList"/>). Otherwise, it works as base class <see cref="CollectionViewSource"/>.</remarks>
     /// <example>
-    ///     <code lang="xaml" source="..\Samples\Common\CSharp\ReverseCollectionViewSourceSample\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\Samples\Common\CSharp\ReverseCollectionViewSourceSample\Window1.xaml" />
     /// </example>
     public class ReverseCollectionViewSource : CollectionViewSource
     {

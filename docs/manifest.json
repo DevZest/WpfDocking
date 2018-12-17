@@ -1,0 +1,1172 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Weifen/Documents/DevZest/WpfDocking/docs_src",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.AdornerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.AdornerManager.html",
+          "hash": "htCyuWI+X/JVSZVhMYFgrw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.ConditionalUriExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.ConditionalUriExtension.html",
+          "hash": "kgHLNFQqx367StCAyaax+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.AllowedDockTreePositions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.AllowedDockTreePositions.html",
+          "hash": "Bq7gPude2Wc61S7b6Zi32g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockCommands.html",
+          "hash": "VTpMd6xqex87oRmBTTdKfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockControl.html",
+          "hash": "stOTxjKAZKgIA6c4DOQ9Hw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockControlTreePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockControlTreePosition.html",
+          "hash": "yXuPUHHZQ2SEK/He64dHgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItem.html",
+          "hash": "+E4ra1WHjQLgUCuTc8rrxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItemCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItemCollection.html",
+          "hash": "/kjUtM0Q+VfMrEIwD69B5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItemReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItemReference.html",
+          "hash": "N514lP2P4bsejSkhRYYayg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItemShowMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItemShowMethod.html",
+          "hash": "kGafz2ppEtnwcQkeToshOg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItemStateChangeMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItemStateChangeMethod.html",
+          "hash": "JbDVNxmFRROA55TUP5OzuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockItemStateEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockItemStateEventArgs.html",
+          "hash": "hF2NO6O71OdPk5XDBebK2Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockLayout.html",
+          "hash": "ae69nOVXyRsZCjV50xjTDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockPane.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockPane.html",
+          "hash": "rEO1ueNusye3U3EWuloDjQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockPaneCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockPaneCollection.html",
+          "hash": "mGcacpBMWwacS/f2S2GtXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockPaneNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockPaneNode.html",
+          "hash": "DeYD4NRvHdLtQUlD6Ey98A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockPaneSplit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockPaneSplit.html",
+          "hash": "eJNj5Mc6TvPsZoxC+xcArw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockPosition.html",
+          "hash": "/Z4bufU3EIcVZWn0q2vX5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockTree.html",
+          "hash": "Gu4GgdOgkdLUzaFar9em/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockTreePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockTreePosition.html",
+          "hash": "8Oz6SkTTbuYLm8xF0ZE6OQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockTreeZOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockTreeZOrder.html",
+          "hash": "6Hb+q/jvjMcLKxgu3D8mzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.DockTreeZOrderConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.DockTreeZOrderConverter.html",
+          "hash": "MwbDuRyNjrB2pDxGKlrdfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.FloatingWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.FloatingWindow.html",
+          "hash": "e88CHk0PJh/g/5MrvCmfGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.FloatingWindowCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.FloatingWindowCollection.html",
+          "hash": "o75nFsDLKSfWCVVu/6zbJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.IDockItemUndoRedoReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.IDockItemUndoRedoReference.html",
+          "hash": "UDjLh14Fp6CEriC0pIYRVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHide.html",
+          "hash": "8GQ2KC3Okz2so1HUf4RjsQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideAnimation.html",
+          "hash": "JSgfdpVlLUVo13phljAyeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideClient.html",
+          "hash": "ncXZQdogBz+TCx5N5BBJPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideStrip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideStrip.html",
+          "hash": "k1aWA9W1j5cFZMlDYuTt6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideTab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideTab.html",
+          "hash": "8ILkgIS4298R40b13U1/bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideWindow.html",
+          "hash": "3qjy5WNLRuGmer9vNzJzrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockManager.html",
+          "hash": "EjFgH15Hm5P8u+ky3DbN0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControl.html",
+          "hash": "e6FILQmhnDJCXKTPSa0rIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControlOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControlOverlay.html",
+          "hash": "C3gF+LVaz0V5Qy8+HAWoeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClient.html",
+          "hash": "2jDoESHzVo3MGpcjR3hRHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClientOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClientOverlay.html",
+          "hash": "0nnYpPpD9K+7ENQtNVW6zQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeControl.html",
+          "hash": "txIm0AQRNkDr6yjqt/m0yg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplit.html",
+          "hash": "zCnw4XKqCW77sCSq/Xh5jg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitControl.html",
+          "hash": "chFCTinrtdGB+P+PqtpUpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitter.html",
+          "hash": "GaIfidrlvgaTeMe0s8FsNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindow.html",
+          "hash": "58uJzNUjtuK6dKszeh8v3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindowTab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindowTab.html",
+          "hash": "aZzk9yG/6dAd0KQkj7YBZA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTab.html",
+          "hash": "5pNeighOekdi9jCirHToag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabPanel.html",
+          "hash": "W+NyArQyiJ1nSbB5n8ZG9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabStrip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabStrip.html",
+          "hash": "rVqCldj8U+V5At4H7ezGNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentWindow.html",
+          "hash": "/VXBMhUTc/CzewZLeY0MoA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.DropPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.DropPosition.html",
+          "hash": "6J5NgqgQaADJQ6ZMZKNSKw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.FloatingWindowStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.FloatingWindowStrategy.html",
+          "hash": "w+FMMViOLRL3aKR9AqQShg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.InertButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.InertButton.html",
+          "hash": "CQDC2unBkFZK44O3qkSVjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.IsAutoHideValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.IsAutoHideValueConverter.html",
+          "hash": "NUAelEAf7o/yUxo9TznuMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.IsFloatingValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.IsFloatingValueConverter.html",
+          "hash": "FOEwZe8LbTDvJXJ/kVLkKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.NativeFloatingWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.NativeFloatingWindow.html",
+          "hash": "XXVSOTL0n9cyseOvPXF1GA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.Overlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.Overlay.html",
+          "hash": "udxcJ2hhGUlzrBSnqZdrLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.PreviewOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.PreviewOverlay.html",
+          "hash": "UzFaj8pOCeZTpNSK+ZGc3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.TabBorder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.TabBorder.html",
+          "hash": "ToUnIcV5TGQ3/d0YHifafQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindow.html",
+          "hash": "J/bQj2HBYct0NHFHQMw72w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowCaption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowCaption.html",
+          "hash": "myMtwJur5BPh8VINjgZGVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTab.html",
+          "hash": "2Ggf4vwpOvBJil5MJXZ+bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabPanel.html",
+          "hash": "sxurWLspoavtXXuPqFJb8Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabStrip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabStrip.html",
+          "hash": "9RJJFJHVYBTY8+kHNJFA9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.WindowSwitcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.WindowSwitcher.html",
+          "hash": "v+2zst501LMlERpgeKQV6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.WindowViewbox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.WindowViewbox.html",
+          "hash": "9BdzfFZF6Gg1yGzmZVXp4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindow.html",
+          "hash": "LsqgtvVUUK7LEXPNVt7idw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindowClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindowClient.html",
+          "hash": "7YoN5gA3PGrjCb0HGphvog=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.Primitives.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.Primitives.html",
+          "hash": "CwY00OLY27KMAatVj/PbkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowAction.html",
+          "hash": "pMDXT8ls2+1MYX48ek6FvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowAsDockPositionAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowAsDockPositionAction.html",
+          "hash": "x53WZYstawb3fd4ADT7YgQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowAsFloatingAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowAsFloatingAction.html",
+          "hash": "KviKXcq8ySH39rjsfOvMXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowAsSidePaneAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowAsSidePaneAction.html",
+          "hash": "zJ71CkNF0MaakcYMyKc0/g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowAsTabbedAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowAsTabbedAction.html",
+          "hash": "A96CDcLK8fYga3YOlHcGjA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.ShowInDockTreeAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.ShowInDockTreeAction.html",
+          "hash": "ErtLJn6+I/hz79MNG5IH1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.SplitChildrenVisibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.SplitChildrenVisibility.html",
+          "hash": "smeCnfT4nehimTMfdGioqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Docking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Docking.html",
+          "hash": "Zzrt5OOllzqKLLwjJWNSkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.DropDownButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.DropDownButton.html",
+          "hash": "qJaih4NehbI4ZGrn8wEk6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.FallbackBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.FallbackBehavior.html",
+          "hash": "QvplcnU59GBNeN3PcEE1uw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.MapConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.MapConverter.html",
+          "hash": "8vOEU5w7dQqLij3f+po1Tw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.Mapping.html",
+          "hash": "CmSOm2/+Xc87HODOgM0izw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.ReverseCollectionViewSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.ReverseCollectionViewSource.html",
+          "hash": "JqmNXBe/0iBqtG4pbcZy3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.ScrollButtonVisibilityConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.ScrollButtonVisibilityConverter.html",
+          "hash": "OdA5OBMxH+BGmUGDJYxxRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.SplitContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.SplitContainer.html",
+          "hash": "6MqXUS5UrF+qcxGCS3l2lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.SplitterDistance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.SplitterDistance.html",
+          "hash": "795PCIB5vfssVHF7hoBo4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.SplitterDistanceConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.SplitterDistanceConverter.html",
+          "hash": "tC3oBGQL9DJG+yJlECbK7Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.SplitterUnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.SplitterUnitType.html",
+          "hash": "kU2AysJ+f9dmFL3d1I6VCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.StyleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.StyleManager.html",
+          "hash": "VW3JG8MWZjFVpJikDb8bqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.WindowControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.WindowControl.html",
+          "hash": "PyoiTnQGspRNrVoMhI8Ncg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.WindowHotspot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.WindowHotspot.html",
+          "hash": "zxotH+5IN0AG+Ma2iMbcTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.WindowPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.WindowPanel.html",
+          "hash": "8l+BIIHsw1kVPZQ/N3x1RQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DevZest.Windows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DevZest.Windows.html",
+          "hash": "pNHU4/YX6Ank8RHKkOdB0A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "h6y3iZGg6fh/ViuM++WNZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "vUmHEIk8A+JuI3daoUCnGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "0u+uPXXaEDyJeeQdntudHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "34QmmO2Bg5pEEOL6xLgWXQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

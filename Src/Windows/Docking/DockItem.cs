@@ -17,7 +17,7 @@ namespace DevZest.Windows.Docking
     /// <para>Use <see cref="AllowedDockTreePositions" />, <see cref="AutoHideSize" />, <see cref="DefaultDockPosition" />, 
     /// <see cref="Description" />, <see cref="Icon"/>, <see cref="TabContextMenu" />,
     /// <see cref="TabText"/> and <see cref="Title"/> properties to customize the DockItem.</para>
-    /// <para>Call <see cref="O:DevZest.Windows.Docking.DockItem.Show">Show</see> method to show the DockItem; call
+    /// <para>Call <see cref="Show(DockControl)">Show</see> method to show the DockItem; call
     /// <see cref="Activate">Activate</see> method to activate the DockItem; call
     /// <see cref="Close">Close</see> method to close the DockItem (disconnect the DockItem from DockControl); call
     /// <see cref="PerformClose">PerformClose</see> method to close or hide the DockItem, depending on the value of
@@ -60,9 +60,9 @@ namespace DevZest.Windows.Docking
     ///       </item>
     ///       <item>The <see cref="IsAutoHide"/> property indicates whether this DockItem is in auto-hide mode.</item>
     ///     </list>
-    ///     <para>Call <see cref="O:DevZest.Windows.Docking.DockItem.ToggleAutoHide">ToggleAutoHide</see> method to toggle the auto hide
-    ///     state of the DockItem's <see cref="FirstPane" />; call <see cref="O:DevZest.Windows.Docking.DockItem.ToggleFloating">
-    ///     ToggleFloating</see> method to toggle the floating state of the DockItem.</para>
+    ///     <para>Call <see cref="ToggleAutoHide(DockItemShowMethod)">ToggleAutoHide</see> method to toggle the auto hide
+    ///     state of the DockItem's <see cref="FirstPane" />; call <see cref="ToggleFloating(DockItemShowMethod)">ToggleFloating</see>
+    ///     method to toggle the floating state of the DockItem.</para>
     ///     </description>
     ///   </item>
     /// </list>

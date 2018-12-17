@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DockLayout
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DockLayout
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Windows.Docking.DockLayout">
+  
+  
+  <h1 id="DevZest_Windows_Docking_DockLayout" data-uid="DevZest.Windows.Docking.DockLayout" class="text-break">Class DockLayout
+  </h1>
+  <div class="markdown level0 summary"><p>Represents the window layout of <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DockLayout</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Windows.Docking.html">DevZest.Windows.Docking</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.WpfDocking.dll</h6>
+  <h5 id="DevZest_Windows_Docking_DockLayout_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DockLayout</code></pre>
+  </div>
+  <h5 id="DevZest_Windows_Docking_DockLayout_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a> is used to save and load <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>.
+Calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Save">Save()</a> saves the window layout to a <a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a> instance;
+calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__">Load(DockLayout, Func&lt;Object, DockItem&gt;)</a> loads the window layout from a <a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a> instance.
+The <a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a> instance can be persisted to XAML using <span class="xref">System.Windows.Markup.XamlWriter.Save(System.Object)</span>.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_BottomDockTreeHeight.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.BottomDockTreeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L67">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_BottomDockTreeHeight_" data-uid="DevZest.Windows.Docking.DockLayout.BottomDockTreeHeight*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_BottomDockTreeHeight" data-uid="DevZest.Windows.Docking.DockLayout.BottomDockTreeHeight">BottomDockTreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance BottomDockTreeHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The height of the bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. The default value is &quot;1/3*&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_DockItems.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.DockItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L94">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_DockItems_" data-uid="DevZest.Windows.Docking.DockLayout.DockItems*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_DockItems" data-uid="DevZest.Windows.Docking.DockLayout.DockItems">DockItems</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.DockItemReference.html">DockItemReference</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;DockItemReference&gt; DockItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="DevZest.Windows.Docking.DockItemReference.html">DockItemReference</a>&gt;</td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.DockItemReference.html">DockItemReference</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_DockTreeZOrder.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.DockTreeZOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L81">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_DockTreeZOrder_" data-uid="DevZest.Windows.Docking.DockLayout.DockTreeZOrder*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_DockTreeZOrder" data-uid="DevZest.Windows.Docking.DockLayout.DockTreeZOrder">DockTreeZOrder</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the z-order of <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTreeZOrder DockTreeZOrder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTreeZOrder.html">DockTreeZOrder</a></td>
+        <td><p>The z-order of left, right, top and bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> objects. The document
+<a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> is always on top of the Z-order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_LeftDockTreeWidth.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.LeftDockTreeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L28">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_LeftDockTreeWidth_" data-uid="DevZest.Windows.Docking.DockLayout.LeftDockTreeWidth*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_LeftDockTreeWidth" data-uid="DevZest.Windows.Docking.DockLayout.LeftDockTreeWidth">LeftDockTreeWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance LeftDockTreeWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The width of the left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. The default value is &quot;1/3*&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_RightDockTreeWidth.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.RightDockTreeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L41">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_RightDockTreeWidth_" data-uid="DevZest.Windows.Docking.DockLayout.RightDockTreeWidth*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_RightDockTreeWidth" data-uid="DevZest.Windows.Docking.DockLayout.RightDockTreeWidth">RightDockTreeWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance RightDockTreeWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The width of the right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. The default value is &quot;1/3*&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_ShowActions.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.ShowActions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L102">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_ShowActions_" data-uid="DevZest.Windows.Docking.DockLayout.ShowActions*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_ShowActions" data-uid="DevZest.Windows.Docking.DockLayout.ShowActions">ShowActions</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.ShowAction.html">ShowAction</a> objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;ShowAction&gt; ShowActions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.Collection</span>&lt;<a class="xref" href="DevZest.Windows.Docking.ShowAction.html">ShowAction</a>&gt;</td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.ShowAction.html">ShowAction</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout_TopDockTreeHeight.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout.TopDockTreeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L54">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockLayout_TopDockTreeHeight_" data-uid="DevZest.Windows.Docking.DockLayout.TopDockTreeHeight*"></a>
+  <h4 id="DevZest_Windows_Docking_DockLayout_TopDockTreeHeight" data-uid="DevZest.Windows.Docking.DockLayout.TopDockTreeHeight">TopDockTreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance TopDockTreeHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The height of the top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. The default value is &quot;1/3*&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockLayout.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockLayout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockLayout.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

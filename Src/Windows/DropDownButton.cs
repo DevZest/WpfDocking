@@ -11,7 +11,7 @@ namespace DevZest.Windows
     /// <see cref="DropDownButton.IsDropDownOpen" /> property determines if the drop down <see cref="ContextMenu"/> is open.
     /// </remarks>
     /// <example>
-    ///     <code lang="xaml" source="..\Samples\Common\CSharp\DropDownButtonSample\Window1.xaml" />
+    ///     <code lang="xaml" source="..\..\Samples\Common\CSharp\DropDownButtonSample\Window1.xaml" />
     /// </example>
     public class DropDownButton : Button
     {

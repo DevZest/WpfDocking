@@ -294,6 +294,7 @@ namespace DevZest.Windows.Docking.Primitives
             EndInit();
         }
 
+        /// <exclude />
         protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
         {
             base.OnPropertyChanged(e);

@@ -1,0 +1,3782 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DockControl
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DockControl
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Windows.Docking.DockControl">
+  
+  
+  <h1 id="DevZest_Windows_Docking_DockControl" data-uid="DevZest.Windows.Docking.DockControl" class="text-break">Class DockControl
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a control that contains multiple dockable items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Windows.Threading.DispatcherObject</span></div>
+    <div class="level2"><span class="xref">System.Windows.DependencyObject</span></div>
+    <div class="level3"><span class="xref">System.Windows.Media.Visual</span></div>
+    <div class="level4"><span class="xref">System.Windows.UIElement</span></div>
+    <div class="level5"><span class="xref">System.Windows.FrameworkElement</span></div>
+    <div class="level6"><span class="xref">System.Windows.Controls.Control</span></div>
+    <div class="level7"><span class="xref">DockControl</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Windows.Media.Animation.IAnimatable</span></div>
+    <div><span class="xref">System.Windows.IFrameworkInputElement</span></div>
+    <div><span class="xref">System.Windows.IInputElement</span></div>
+    <div><span class="xref">System.ComponentModel.ISupportInitialize</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.BorderBrushProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.BorderThicknessProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.BackgroundProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.ForegroundProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontFamilyProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontSizeProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontStretchProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontStyleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontWeightProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.HorizontalContentAlignmentProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.VerticalContentAlignmentProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.TabIndexProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.IsTabStopProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.PaddingProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.TemplateProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.PreviewMouseDoubleClickEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.MouseDoubleClickEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.OnTemplateChanged(System.Windows.Controls.ControlTemplate, System.Windows.Controls.ControlTemplate)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.OnPreviewMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.OnMouseDoubleClick(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.MeasureOverride(System.Windows.Size)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.ArrangeOverride(System.Windows.Size)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.BorderBrush</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.BorderThickness</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.Background</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.Foreground</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontFamily</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontStretch</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontStyle</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.FontWeight</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.HorizontalContentAlignment</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.VerticalContentAlignment</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.TabIndex</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.IsTabStop</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.Padding</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.Template</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.HandlesScrolling</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.PreviewMouseDoubleClick</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Controls.Control.MouseDoubleClick</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.StyleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OverridesDefaultStyleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.DefaultStyleKeyProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.DataContextProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BindingGroupProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.LanguageProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.NameProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.TagProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.InputScopeProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.RequestBringIntoViewEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SizeChangedEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ActualWidthProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ActualHeightProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.LayoutTransformProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.WidthProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MinWidthProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MaxWidthProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.HeightProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MinHeightProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MaxHeightProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FlowDirectionProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MarginProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.HorizontalAlignmentProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.VerticalAlignmentProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FocusVisualStyleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.CursorProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ForceCursorProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.LoadedEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.UnloadedEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTipProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenuProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTipOpeningEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTipClosingEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenuOpeningEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenuClosingEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnStyleChanged(System.Windows.Style, System.Windows.Style)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ParentLayoutInvalidated(System.Windows.UIElement)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ApplyTemplate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnApplyTemplate()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard, System.Windows.Media.Animation.HandoffBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BeginStoryboard(System.Windows.Media.Animation.Storyboard, System.Windows.Media.Animation.HandoffBehavior, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetVisualChild(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetTemplateChild(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FindResource(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.TryFindResource(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SetResourceReference(System.Windows.DependencyProperty, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnVisualParentChanged(System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetBindingExpression(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SetBinding(System.Windows.DependencyProperty, System.Windows.Data.BindingBase)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SetBinding(System.Windows.DependencyProperty, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetUIParentCore()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BringIntoView()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BringIntoView(System.Windows.Rect)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetFlowDirection(System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SetFlowDirection(System.Windows.DependencyObject, System.Windows.FlowDirection)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MeasureCore(System.Windows.Size)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ArrangeCore(System.Windows.Rect)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnRenderSizeChanged(System.Windows.SizeChangedInfo)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.GetLayoutClip(System.Windows.Size)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MoveFocus(System.Windows.Input.TraversalRequest)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.PredictFocus(System.Windows.Input.FocusNavigationDirection)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnGotFocus(System.Windows.RoutedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BeginInit()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.EndInit()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnInitialized(System.EventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnToolTipOpening(System.Windows.Controls.ToolTipEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnToolTipClosing(System.Windows.Controls.ToolTipEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OnContextMenuClosing(System.Windows.Controls.ContextMenuEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.RegisterName(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.UnregisterName(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FindName(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.AddLogicalChild(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.RemoveLogicalChild(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Style</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.OverridesDefaultStyle</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.DefaultStyleKey</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Triggers</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.TemplatedParent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.VisualChildrenCount</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Resources</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.InheritanceBehavior</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.DataContext</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.BindingGroup</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Language</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Name</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Tag</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.InputScope</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ActualWidth</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ActualHeight</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.LayoutTransform</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Width</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MinWidth</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MaxWidth</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Height</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MinHeight</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.MaxHeight</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FlowDirection</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Margin</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.HorizontalAlignment</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.VerticalAlignment</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.FocusVisualStyle</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Cursor</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ForceCursor</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.IsInitialized</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.IsLoaded</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTip</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenu</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Parent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.TargetUpdated</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SourceUpdated</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.DataContextChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.RequestBringIntoView</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.SizeChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Initialized</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Loaded</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.Unloaded</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTipOpening</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ToolTipClosing</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenuOpening</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.FrameworkElement.ContextMenuClosing</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseLeftButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeftButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseLeftButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeftButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseRightButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseRightButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseRightButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseRightButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseWheelEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseWheelEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseEnterEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeaveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotMouseCaptureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostMouseCaptureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.QueryCursorEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusInAirMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusInAirMoveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusEnterEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusLeaveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusInRangeEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusInRangeEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusOutOfRangeEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusOutOfRangeEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusSystemGestureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusSystemGestureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotStylusCaptureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostStylusCaptureEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusButtonDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusButtonUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewKeyDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.KeyDownEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewKeyUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.KeyUpEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewGotKeyboardFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotKeyboardFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewLostKeyboardFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostKeyboardFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewTextInputEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.TextInputEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewQueryContinueDragEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.QueryContinueDragEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewGiveFeedbackEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GiveFeedbackEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragEnterEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragEnterEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragOverEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragOverEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragLeaveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragLeaveEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDropEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DropEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseDirectlyOverProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseOverProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusOverProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocusWithinProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCapturedProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCaptureWithinProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusDirectlyOverProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCapturedProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCaptureWithinProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocusedProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.AllowDropProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RenderTransformProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RenderTransformOriginProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OpacityProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OpacityMaskProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BitmapEffectProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.EffectProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BitmapEffectInputProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.UidProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.VisibilityProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ClipToBoundsProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ClipProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.SnapsToDevicePixelsProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostFocusEvent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsFocusedProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsEnabledProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsHitTestVisibleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsVisibleProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.FocusableProperty</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock, System.Windows.Media.Animation.HandoffBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline, System.Windows.Media.Animation.HandoffBehavior)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GetAnimationBaseValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RaiseEvent(System.Windows.RoutedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent, System.Delegate)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent, System.Delegate, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RemoveHandler(System.Windows.RoutedEvent, System.Delegate)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.AddToEventRoute(System.Windows.EventRoute, System.Windows.RoutedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseRightButtonDown(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseRightButtonUp(System.Windows.Input.MouseButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseMove(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseMove(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewMouseWheel(System.Windows.Input.MouseWheelEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseEnter(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnMouseLeave(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnGotMouseCapture(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnQueryCursor(System.Windows.Input.QueryCursorEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusDown(System.Windows.Input.StylusDownEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusDown(System.Windows.Input.StylusDownEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusUp(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusUp(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusMove(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusMove(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusInAirMove(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusInAirMove(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusEnter(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusLeave(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusInRange(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusInRange(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusOutOfRange(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusOutOfRange(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusSystemGesture(System.Windows.Input.StylusSystemGestureEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnGotStylusCapture(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnLostStylusCapture(System.Windows.Input.StylusEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusButtonDown(System.Windows.Input.StylusButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewStylusButtonUp(System.Windows.Input.StylusButtonEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnKeyDown(System.Windows.Input.KeyEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewKeyUp(System.Windows.Input.KeyEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnKeyUp(System.Windows.Input.KeyEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnLostKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewTextInput(System.Windows.Input.TextCompositionEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnTextInput(System.Windows.Input.TextCompositionEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnQueryContinueDrag(System.Windows.QueryContinueDragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewGiveFeedback(System.Windows.GiveFeedbackEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnGiveFeedback(System.Windows.GiveFeedbackEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewDragEnter(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnDragEnter(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewDragOver(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnDragOver(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewDragLeave(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnDragLeave(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnPreviewDrop(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnDrop(System.Windows.DragEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsMouseDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsMouseCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsMouseCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsStylusDirectlyOverChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsStylusCapturedChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsStylusCaptureWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnIsKeyboardFocusedChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.InvalidateMeasure()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.InvalidateArrange()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.InvalidateVisual()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnChildDesiredSizeChanged(System.Windows.UIElement)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Measure(System.Windows.Size)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Arrange(System.Windows.Rect)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.UpdateLayout()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.TranslatePoint(System.Windows.Point, System.Windows.UIElement)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.InputHitTest(System.Windows.Point)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.CaptureMouse()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ReleaseMouseCapture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.CaptureStylus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ReleaseStylusCapture()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Focus()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.HitTestCore(System.Windows.Media.PointHitTestParameters)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.HitTestCore(System.Windows.Media.GeometryHitTestParameters)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnLostFocus(System.Windows.RoutedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OnCreateAutomationPeer()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.HasAnimatedProperties</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.InputBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.CommandBindings</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.AllowDrop</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusPlugIns</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DesiredSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMeasureValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsArrangeValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RenderSize</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RenderTransform</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.RenderTransformOrigin</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseDirectlyOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocusWithin</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCaptured</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCaptureWithin</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusDirectlyOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCaptured</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCaptureWithin</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocused</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsInputMethodEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Opacity</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.OpacityMask</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BitmapEffect</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Effect</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.BitmapEffectInput</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Uid</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Visibility</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.ClipToBounds</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Clip</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.SnapsToDevicePixels</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsFocused</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsEnabled</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsEnabledCore</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsHitTestVisible</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsVisible</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Focusable</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PersistId</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseLeftButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeftButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseLeftButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeftButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseRightButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseRightButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseRightButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseRightButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewMouseWheel</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseWheel</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseEnter</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.MouseLeave</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotMouseCapture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostMouseCapture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.QueryCursor</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusInAirMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusInAirMove</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusEnter</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusLeave</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusInRange</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusInRange</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusOutOfRange</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusOutOfRange</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusSystemGesture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusSystemGesture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotStylusCapture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostStylusCapture</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.StylusButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusButtonDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewStylusButtonUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewKeyDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.KeyDown</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewKeyUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.KeyUp</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewGotKeyboardFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotKeyboardFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewLostKeyboardFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostKeyboardFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewTextInput</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.TextInput</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewQueryContinueDrag</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.QueryContinueDrag</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewGiveFeedback</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GiveFeedback</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragEnter</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragEnter</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragOver</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDragLeave</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.DragLeave</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.PreviewDrop</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.Drop</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseDirectlyOverChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocusWithinChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCapturedChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsMouseCaptureWithinChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusDirectlyOverChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCapturedChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsStylusCaptureWithinChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsKeyboardFocusedChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LayoutUpdated</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.GotFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.LostFocus</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsEnabledChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsHitTestVisibleChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.IsVisibleChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.UIElement.FocusableChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.AddVisualChild(System.Windows.Media.Visual)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.RemoveVisualChild(System.Windows.Media.Visual)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject, System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.IsAncestorOf(System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.IsDescendantOf(System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.FindCommonVisualAncestor(System.Windows.DependencyObject)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Visual)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Media3D.Visual3D)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.TransformToDescendant(System.Windows.Media.Visual)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.TransformToVisual(System.Windows.Media.Visual)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.PointToScreen(System.Windows.Point)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.PointFromScreen(System.Windows.Point)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualParent</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualTransform</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualEffect</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualBitmapEffect</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualBitmapEffectInput</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualClip</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualOffset</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualOpacity</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualEdgeMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualBitmapScalingMode</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualOpacityMask</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualXSnappingGuidelines</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Media.Visual.VisualYSnappingGuidelines</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetLocalValueEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.DependencyObjectType</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.IsSealed</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Threading.DispatcherObject.Dispatcher</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Windows.Docking.html">DevZest.Windows.Docking</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.WpfDocking.dll</h6>
+  <h5 id="DevZest_Windows_Docking_DockControl_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DockControl : Control, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources</code></pre>
+  </div>
+  <h5 id="DevZest_Windows_Docking_DockControl_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a> is the center of WPF docking library. It provides the following key services:</p>
+<p>
+<table><thead><tr><th>Service</th><th>Properties and Methods</th></tr></thead><tbody><tr><td>DockItem Management</td><td><a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockItems">DockItems</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Documents">Documents</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FocusedItem">FocusedItem</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveItem">ActiveItem</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveDocument">ActiveDocument</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_SelectedAutoHideItem">SelectedAutoHideItem</a></td></tr><tr><td>DockTree Management</td><td><a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_LeftDockTree">LeftDockTree</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_RightDockTree">RightDockTree</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_TopDockTree">TopDockTree</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BottomDockTree">BottomDockTree</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DocumentDockTree">DocumentDockTree</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_LeftDockTreeWidth">LeftDockTreeWidth</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_RightDockTreeWidth">RightDockTreeWidth</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_TopDockTreeHeight">TopDockTreeHeight</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BottomDockTreeHeight">BottomDockTreeHeight</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockTreeZOrder">DockTreeZOrder</a></td></tr><tr><td>Floating Window Management</td><td><a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FloatingWindows">FloatingWindows</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSize">DefaultFloatingWindowSize</a></td></tr><tr><td>Save/Load</td><td><a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Save">Save()</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__">Load(DockLayout, Func&lt;Object, DockItem&gt;)</a></td></tr><tr><td>Undo/Redo</td><td><a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_MaxUndoLevel">MaxUndoLevel</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_CanUndo">CanUndo</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_CanRedo">CanRedo</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Undo">Undo()</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Redo">Redo()</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a></td></tr></tbody></table>
+</p>
+<p>By default <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a> also uses following services that you can customize through the provided attached properties:</p>
+<p>
+<table><thead><tr><th>Service</th><th>Attached Properties</th></tr></thead><tbody><tr><td>AutoHide</td><td><span class="xref">DevZest.Windows.Docking.Primitives.AutoHide.Animation</span>, <span class="xref">DevZest.Windows.Docking.Primitives.AutoHide.AnimationDuration</span>.</td></tr><tr><td>DockManager</td><td><span class="xref">DevZest.Windows.Docking.Primitives.DockManager.DefaultFloatingPreviewSize</span>, <span class="xref">DevZest.Windows.Docking.Primitives.DockManager.FloatingWindowStrategy</span>.</td></tr><tr><td>DocumentTab</td><td><span class="xref">DevZest.Windows.Docking.Primitives.DocumentTab.ShowsIcon</span>.</td></tr><tr><td>WindowSwitcher</td><td><span class="xref">DevZest.Windows.Docking.Primitives.WindowSwitcher.Hotkey</span></td></tr></tbody></table>
+</p>
+</div>
+  <h5 id="DevZest_Windows_Docking_DockControl_examples"><strong>Examples</strong></h5>
+  <pre><code source="..\..\..\Samples\Docking\CSharp\QuickStart\Window1.xaml">&lt;Window
+xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+xmlns:dz=&quot;http://schemas.devzest.com/presentation/docking&quot;
+Title=&quot;DockControl Sample&quot;
+WindowState=&quot;Maximized&quot;>
+&lt;dz:DockControl>
+&lt;dz:DockItem TabText=&quot;Welcome&quot; Title=&quot;Welcome&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Document}&quot;>
+    &lt;FlowDocumentScrollViewer>
+        &lt;FlowDocumentScrollViewer.Document>
+            &lt;FlowDocument FontFamily=&quot;Calibri&quot; FontSize=&quot;14.5&quot; TextAlignment=&quot;Left&quot;>
+                &lt;Paragraph FontSize=&quot;22&quot; FontWeight=&quot;Bold&quot;>Welcome to DevZest Docking&lt;/Paragraph>
+            &lt;/FlowDocument>
+        &lt;/FlowDocumentScrollViewer.Document>
+    &lt;/FlowDocumentScrollViewer>
+&lt;/dz:DockItem>
+&lt;dz:DockItem TabText=&quot;Saved State&quot; Title=&quot;Saved State&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Bottom}&quot;>
+    &lt;TextBox />
+&lt;/dz:DockItem>
+&lt;dz:DockItem TabText=&quot;Output&quot; Title=&quot;Output&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Bottom}&quot;>
+    &lt;TextBox />
+&lt;/dz:DockItem>
+&lt;dz:DockItem TabText=&quot;Solution Explorer&quot; Title=&quot;Solution Explorer&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Right}&quot;>
+    &lt;TextBox />
+&lt;/dz:DockItem>
+&lt;dz:DockItem TabText=&quot;Properties&quot; Title=&quot;Properties&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Right}&quot;>
+    &lt;TextBox />
+&lt;/dz:DockItem>
+&lt;/dz:DockControl>
+&lt;/Window></code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl__ctor.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L306">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl__ctor_" data-uid="DevZest.Windows.Docking.DockControl.#ctor*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl__ctor" data-uid="DevZest.Windows.Docking.DockControl.#ctor">DockControl()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockControl()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveDocumentProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveDocumentProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L112">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveDocumentProperty" data-uid="DevZest.Windows.Docking.DockControl.ActiveDocumentProperty">ActiveDocumentProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveDocument">ActiveDocument</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ActiveDocumentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveItemProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveItemProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L110">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveItemProperty" data-uid="DevZest.Windows.Docking.DockControl.ActiveItemProperty">ActiveItemProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveItem">ActiveItem</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty ActiveItemProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_BottomDockTreeHeightProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.BottomDockTreeHeightProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L100">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_BottomDockTreeHeightProperty" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTreeHeightProperty">BottomDockTreeHeightProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BottomDockTreeHeight">BottomDockTreeHeight</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty BottomDockTreeHeightProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_BottomDockTreeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.BottomDockTreeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L89">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_BottomDockTreeProperty" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTreeProperty">BottomDockTreeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BottomDockTree">BottomDockTree</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty BottomDockTreeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_CanRedoProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.CanRedoProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L124">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_CanRedoProperty" data-uid="DevZest.Windows.Docking.DockControl.CanRedoProperty">CanRedoProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_CanRedo">CanRedo</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CanRedoProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_CanUndoProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.CanUndoProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L121">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_CanUndoProperty" data-uid="DevZest.Windows.Docking.DockControl.CanUndoProperty">CanUndoProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_CanUndo">CanUndo</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CanUndoProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSizeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DefaultFloatingWindowSizeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L116">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSizeProperty" data-uid="DevZest.Windows.Docking.DockControl.DefaultFloatingWindowSizeProperty">DefaultFloatingWindowSizeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSize">DefaultFloatingWindowSize</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty DefaultFloatingWindowSizeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DockTreeZOrderProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DockTreeZOrderProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L102">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_DockTreeZOrderProperty" data-uid="DevZest.Windows.Docking.DockControl.DockTreeZOrderProperty">DockTreeZOrderProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockTreeZOrder">DockTreeZOrder</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty DockTreeZOrderProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DocumentDockTreeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DocumentDockTreeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L92">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_DocumentDockTreeProperty" data-uid="DevZest.Windows.Docking.DockControl.DocumentDockTreeProperty">DocumentDockTreeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DocumentDockTree">DocumentDockTree</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty DocumentDockTreeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_FocusedItemProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.FocusedItemProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L108">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_FocusedItemProperty" data-uid="DevZest.Windows.Docking.DockControl.FocusedItemProperty">FocusedItemProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FocusedItem">FocusedItem</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty FocusedItemProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_LeftDockTreeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.LeftDockTreeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L80">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_LeftDockTreeProperty" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTreeProperty">LeftDockTreeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_LeftDockTree">LeftDockTree</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty LeftDockTreeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_LeftDockTreeWidthProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.LeftDockTreeWidthProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L94">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_LeftDockTreeWidthProperty" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTreeWidthProperty">LeftDockTreeWidthProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_LeftDockTreeWidth">LeftDockTreeWidth</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty LeftDockTreeWidthProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_MaxUndoLevelProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.MaxUndoLevelProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L118">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_MaxUndoLevelProperty" data-uid="DevZest.Windows.Docking.DockControl.MaxUndoLevelProperty">MaxUndoLevelProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_MaxUndoLevel">MaxUndoLevel</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty MaxUndoLevelProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_RightDockTreeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.RightDockTreeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L83">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_RightDockTreeProperty" data-uid="DevZest.Windows.Docking.DockControl.RightDockTreeProperty">RightDockTreeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_RightDockTree">RightDockTree</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty RightDockTreeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_RightDockTreeWidthProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.RightDockTreeWidthProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L96">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_RightDockTreeWidthProperty" data-uid="DevZest.Windows.Docking.DockControl.RightDockTreeWidthProperty">RightDockTreeWidthProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_RightDockTreeWidth">RightDockTreeWidth</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty RightDockTreeWidthProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_SelectedAutoHideItemProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.SelectedAutoHideItemProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L114">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_SelectedAutoHideItemProperty" data-uid="DevZest.Windows.Docking.DockControl.SelectedAutoHideItemProperty">SelectedAutoHideItemProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_SelectedAutoHideItem">SelectedAutoHideItem</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SelectedAutoHideItemProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_TopDockTreeHeightProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.TopDockTreeHeightProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L98">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_TopDockTreeHeightProperty" data-uid="DevZest.Windows.Docking.DockControl.TopDockTreeHeightProperty">TopDockTreeHeightProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_TopDockTreeHeight">TopDockTreeHeight</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TopDockTreeHeightProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_TopDockTreeProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.TopDockTreeProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L86">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_TopDockTreeProperty" data-uid="DevZest.Windows.Docking.DockControl.TopDockTreeProperty">TopDockTreeProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_TopDockTree">TopDockTree</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TopDockTreeProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveDocument.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L530">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_ActiveDocument_" data-uid="DevZest.Windows.Docking.DockControl.ActiveDocument*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveDocument" data-uid="DevZest.Windows.Docking.DockControl.ActiveDocument">ActiveDocument</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates currently active document <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItem ActiveDocument { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a></td>
+        <td><p>The currently active document <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveItem.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L523">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_ActiveItem_" data-uid="DevZest.Windows.Docking.DockControl.ActiveItem*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveItem" data-uid="DevZest.Windows.Docking.DockControl.ActiveItem">ActiveItem</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates currently active <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItem ActiveItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a></td>
+        <td><p>The currently active <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_ActiveItem_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FocusedItem">FocusedItem</a> changed to <span class="xref">null</span> as a result of clicking focusable controls
+outside <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>, <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveItem">ActiveItem</a> remains unchanged. This is useful
+to get currently active <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> when the keyboard focus is not within <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>,
+such as when a <span class="xref">System.Windows.Controls.MenuItem</span> is clicked.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_BottomDockTree.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.BottomDockTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L455">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_BottomDockTree_" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTree*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_BottomDockTree" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTree">BottomDockTree</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTree BottomDockTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a></td>
+        <td><p>The bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_BottomDockTreeHeight.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.BottomDockTreeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L495">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_BottomDockTreeHeight_" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTreeHeight*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_BottomDockTreeHeight" data-uid="DevZest.Windows.Docking.DockControl.BottomDockTreeHeight">BottomDockTreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance BottomDockTreeHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> height, can be either auto pixel, auto star, pixel or star values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_CanRedo.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.CanRedo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L379">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_CanRedo_" data-uid="DevZest.Windows.Docking.DockControl.CanRedo*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_CanRedo" data-uid="DevZest.Windows.Docking.DockControl.CanRedo">CanRedo</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether the most recent action can be redone. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRedo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the most recent action can be redone; otherwise, <span class="xref">false</span>. This property has no default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_CanUndo.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.CanUndo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L371">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_CanUndo_" data-uid="DevZest.Windows.Docking.DockControl.CanUndo*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_CanUndo" data-uid="DevZest.Windows.Docking.DockControl.CanUndo">CanUndo</h4>
+  <div class="markdown level1 summary"><p>Gets a value that indicates whether the most recent action can be undone. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUndo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the most recent action can be undone; otherwise, <span class="xref">false</span>. This property has no default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSize.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DefaultFloatingWindowSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L563">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSize_" data-uid="DevZest.Windows.Docking.DockControl.DefaultFloatingWindowSize*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_DefaultFloatingWindowSize" data-uid="DevZest.Windows.Docking.DockControl.DefaultFloatingWindowSize">DefaultFloatingWindowSize</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the default size of <a class="xref" href="DevZest.Windows.Docking.FloatingWindow.html">FloatingWindow</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size DefaultFloatingWindowSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.Size</span></td>
+        <td><p>The default size of <a class="xref" href="DevZest.Windows.Docking.FloatingWindow.html">FloatingWindow</a>. The default value is (300,300).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DockItems.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DockItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L332">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_DockItems_" data-uid="DevZest.Windows.Docking.DockControl.DockItems*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_DockItems" data-uid="DevZest.Windows.Docking.DockControl.DockItems">DockItems</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects currently associated with this <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItemCollection DockItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemCollection.html">DockItemCollection</a></td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects, in order of first association with this <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_DockItems_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> is associated with <a class="xref" href="DevZest.Windows.Docking.DockControl.html">DockControl</a> when adding this
+<a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> in the colletion. <a class="xref" href="DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_DockControl">DockControl</a>
+also reflects this association.</p>
+<p>Calling <a class="xref" href="DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Close">Close()</a> removes
+the <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> from the collection.</p>
+<p>Calling <a class="xref" href="DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Show_DevZest_Windows_Docking_DockControl_">Show(DockControl)</a> implicitly
+adds <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> in the collection if it&apos;s not yet associated.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DockTreeZOrder.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DockTreeZOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L504">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_DockTreeZOrder_" data-uid="DevZest.Windows.Docking.DockControl.DockTreeZOrder*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_DockTreeZOrder" data-uid="DevZest.Windows.Docking.DockControl.DockTreeZOrder">DockTreeZOrder</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the z-order of <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> objects. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTreeZOrder DockTreeZOrder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTreeZOrder.html">DockTreeZOrder</a></td>
+        <td><p>The z-order of left, right, top and bottom <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> objects. The document
+<a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> is always on top of the Z-order.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DocumentDockTree.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DocumentDockTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L463">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_DocumentDockTree_" data-uid="DevZest.Windows.Docking.DockControl.DocumentDockTree*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_DocumentDockTree" data-uid="DevZest.Windows.Docking.DockControl.DocumentDockTree">DocumentDockTree</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the document <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTree DocumentDockTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a></td>
+        <td><p>The document <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Documents.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Documents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L356">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Documents_" data-uid="DevZest.Windows.Docking.DockControl.Documents*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Documents" data-uid="DevZest.Windows.Docking.DockControl.Documents">Documents</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects currently displayed as document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItemCollection Documents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemCollection.html">DockItemCollection</a></td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects currently displayed as document, in order of
+<a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a> activation, then <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> activation (last active last).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_FloatingWindows.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.FloatingWindows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L340">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_FloatingWindows_" data-uid="DevZest.Windows.Docking.DockControl.FloatingWindows*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_FloatingWindows" data-uid="DevZest.Windows.Docking.DockControl.FloatingWindows">FloatingWindows</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.FloatingWindow.html">FloatingWindow</a> objects currently created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FloatingWindowCollection FloatingWindows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.FloatingWindowCollection.html">FloatingWindowCollection</a></td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.FloatingWindow.html">FloatingWindow</a> objects currently created, in order of
+activation (last active last).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_FocusedItem.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.FocusedItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L512">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_FocusedItem_" data-uid="DevZest.Windows.Docking.DockControl.FocusedItem*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_FocusedItem" data-uid="DevZest.Windows.Docking.DockControl.FocusedItem">FocusedItem</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> currently has keyboard focus. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItem FocusedItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a></td>
+        <td><p>The <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> currently has keyboard focus.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_LeftDockTree.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.LeftDockTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L431">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_LeftDockTree_" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTree*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_LeftDockTree" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTree">LeftDockTree</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTree LeftDockTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a></td>
+        <td><p>The left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_LeftDockTreeWidth.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.LeftDockTreeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L471">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_LeftDockTreeWidth_" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTreeWidth*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_LeftDockTreeWidth" data-uid="DevZest.Windows.Docking.DockControl.LeftDockTreeWidth">LeftDockTreeWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance LeftDockTreeWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The left <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> width, can be either auto pixel, auto star, pixel or star values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_LogicalChildren.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.LogicalChildren%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L386">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_LogicalChildren_" data-uid="DevZest.Windows.Docking.DockControl.LogicalChildren*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_LogicalChildren" data-uid="DevZest.Windows.Docking.DockControl.LogicalChildren">LogicalChildren</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IEnumerator LogicalChildren { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Windows.FrameworkElement.LogicalChildren</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_MaxUndoLevel.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.MaxUndoLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L363">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_MaxUndoLevel_" data-uid="DevZest.Windows.Docking.DockControl.MaxUndoLevel*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_MaxUndoLevel" data-uid="DevZest.Windows.Docking.DockControl.MaxUndoLevel">MaxUndoLevel</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of undo/redo actions. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxUndoLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The maximum number of undo/redo actions. The default value is <span class="xref">System.Int32.MaxValue</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Panes.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Panes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L348">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Panes_" data-uid="DevZest.Windows.Docking.DockControl.Panes*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Panes" data-uid="DevZest.Windows.Docking.DockControl.Panes">Panes</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a> objects currently created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockPaneCollection Panes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockPaneCollection.html">DockPaneCollection</a></td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a> objects currently created, in order of
+activation (last active last).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_RightDockTree.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.RightDockTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L439">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_RightDockTree_" data-uid="DevZest.Windows.Docking.DockControl.RightDockTree*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_RightDockTree" data-uid="DevZest.Windows.Docking.DockControl.RightDockTree">RightDockTree</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTree RightDockTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a></td>
+        <td><p>The right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_RightDockTreeWidth.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.RightDockTreeWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L479">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_RightDockTreeWidth_" data-uid="DevZest.Windows.Docking.DockControl.RightDockTreeWidth*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_RightDockTreeWidth" data-uid="DevZest.Windows.Docking.DockControl.RightDockTreeWidth">RightDockTreeWidth</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the width of right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance RightDockTreeWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The right <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> width, can be either auto pixel, auto star, pixel or star values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_SelectedAutoHideItem.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.SelectedAutoHideItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L537">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_SelectedAutoHideItem_" data-uid="DevZest.Windows.Docking.DockControl.SelectedAutoHideItem*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_SelectedAutoHideItem" data-uid="DevZest.Windows.Docking.DockControl.SelectedAutoHideItem">SelectedAutoHideItem</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates currently selected auto hide <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItem SelectedAutoHideItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a></td>
+        <td><p>The currently selected auto hide document <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_TopDockTree.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.TopDockTree%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L447">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_TopDockTree_" data-uid="DevZest.Windows.Docking.DockControl.TopDockTree*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_TopDockTree" data-uid="DevZest.Windows.Docking.DockControl.TopDockTree">TopDockTree</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockTree TopDockTree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a></td>
+        <td><p>The top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_TopDockTreeHeight.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.TopDockTreeHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L487">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_TopDockTreeHeight_" data-uid="DevZest.Windows.Docking.DockControl.TopDockTreeHeight*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_TopDockTreeHeight" data-uid="DevZest.Windows.Docking.DockControl.TopDockTreeHeight">TopDockTreeHeight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the height of top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitterDistance TopDockTreeHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
+        <td><p>The top <a class="xref" href="DevZest.Windows.Docking.DockTree.html">DockTree</a> height, can be either auto pixel, auto star, pixel or star values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_UndoUnitLevel.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.UndoUnitLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L772">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_UndoUnitLevel_" data-uid="DevZest.Windows.Docking.DockControl.UndoUnitLevel*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_UndoUnitLevel" data-uid="DevZest.Windows.Docking.DockControl.UndoUnitLevel">UndoUnitLevel</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicates the undo unit level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UndoUnitLevel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The undo unit level. The default value is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_UndoUnitLevel_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a> increases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1,
+and calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a> decreases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1.
+When <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> greater than 0, all undoable operations are considered as
+one single reversible unit of work.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_BeginUndoUnit.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.BeginUndoUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L742">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_BeginUndoUnit_" data-uid="DevZest.Windows.Docking.DockControl.BeginUndoUnit*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_BeginUndoUnit" data-uid="DevZest.Windows.Docking.DockControl.BeginUndoUnit">BeginUndoUnit()</h4>
+  <div class="markdown level1 summary"><p>Marks the beginning of a reversible unit of work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginUndoUnit()</code></pre>
+  </div>
+  <h5 id="DevZest_Windows_Docking_DockControl_BeginUndoUnit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a> and <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a> in tandem.
+Calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a> increases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1,
+and calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a> decreases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1.
+When <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> is greater than 0, all undoable operations are considered as
+one single reversible unit of work.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ClearUndo.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ClearUndo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L843">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_ClearUndo_" data-uid="DevZest.Windows.Docking.DockControl.ClearUndo*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_ClearUndo" data-uid="DevZest.Windows.Docking.DockControl.ClearUndo">ClearUndo()</h4>
+  <div class="markdown level1 summary"><p>Clears all information from the undo redo buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearUndo()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_EndUndoUnit.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.EndUndoUnit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L753">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_EndUndoUnit_" data-uid="DevZest.Windows.Docking.DockControl.EndUndoUnit*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_EndUndoUnit" data-uid="DevZest.Windows.Docking.DockControl.EndUndoUnit">EndUndoUnit()</h4>
+  <div class="markdown level1 summary"><p>Marks the end of a reversible unit of work.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndUndoUnit()</code></pre>
+  </div>
+  <h5 id="DevZest_Windows_Docking_DockControl_EndUndoUnit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a> and <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a> in tandem.
+Calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_BeginUndoUnit">BeginUndoUnit()</a> increases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1,
+and calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_EndUndoUnit">EndUndoUnit()</a> decreases <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> by 1.
+When <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_UndoUnitLevel">UndoUnitLevel</a> is greater than 0, all undoable operations are considered as
+one single reversible unit of work.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Load(DevZest.Windows.Docking.DockLayout%2CSystem.Func%7BSystem.Object%2CDevZest.Windows.Docking.DockItem%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L712">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Load_" data-uid="DevZest.Windows.Docking.DockControl.Load*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__" data-uid="DevZest.Windows.Docking.DockControl.Load(DevZest.Windows.Docking.DockLayout,System.Func{System.Object,DevZest.Windows.Docking.DockItem})">Load(DockLayout, Func&lt;Object, DockItem&gt;)</h4>
+  <div class="markdown level1 summary"><p>Loads the window layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Load(DockLayout layout, Func&lt;object, DockItem&gt; loadDockItemCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a></td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>The specified <a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.Object</span>, <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>&gt;</td>
+        <td><span class="parametername">loadDockItemCallback</span></td>
+        <td><p>Callback to load <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>. This callback
+takes an <span class="xref">System.Object</span> returned by <a class="xref" href="DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Save">Save()</a> method, returns an
+<a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Calling this method will clear all undo stack.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">layout</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockItems">DockItems</a> collection is not empty. Close all <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> before calling <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__">Load(DockLayout, Func&lt;Object, DockItem&gt;)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnActiveDocumentChanged_System_EventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnActiveDocumentChanged(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L618">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnActiveDocumentChanged_" data-uid="DevZest.Windows.Docking.DockControl.OnActiveDocumentChanged*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnActiveDocumentChanged_System_EventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnActiveDocumentChanged(System.EventArgs)">OnActiveDocumentChanged(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveDocumentChanged">ActiveDocumentChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActiveDocumentChanged(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An <span class="xref">System.EventArgs</span> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnActiveDocumentChanged_System_EventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnActiveItemChanged_System_EventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnActiveItemChanged(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L603">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnActiveItemChanged_" data-uid="DevZest.Windows.Docking.DockControl.OnActiveItemChanged*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnActiveItemChanged_System_EventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnActiveItemChanged(System.EventArgs)">OnActiveItemChanged(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveItemChanged">ActiveItemChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnActiveItemChanged(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An <span class="xref">System.EventArgs</span> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnActiveItemChanged_System_EventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnDockItemStateChanged_DevZest_Windows_Docking_DockItemStateEventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnDockItemStateChanged(DevZest.Windows.Docking.DockItemStateEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L672">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanged_" data-uid="DevZest.Windows.Docking.DockControl.OnDockItemStateChanged*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanged_DevZest_Windows_Docking_DockItemStateEventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnDockItemStateChanged(DevZest.Windows.Docking.DockItemStateEventArgs)">OnDockItemStateChanged(DockItemStateEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockItemStateChanged">DockItemStateChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDockItemStateChanged(DockItemStateEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A <a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanged_DevZest_Windows_Docking_DockItemStateEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnDockItemStateChanging_DevZest_Windows_Docking_DockItemStateEventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnDockItemStateChanging(DevZest.Windows.Docking.DockItemStateEventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L657">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanging_" data-uid="DevZest.Windows.Docking.DockControl.OnDockItemStateChanging*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanging_DevZest_Windows_Docking_DockItemStateEventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnDockItemStateChanging(DevZest.Windows.Docking.DockItemStateEventArgs)">OnDockItemStateChanging(DockItemStateEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_DockItemStateChanging">DockItemStateChanging</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDockItemStateChanging(DockItemStateEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>A <a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnDockItemStateChanging_DevZest_Windows_Docking_DockItemStateEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnFocusedItemChanged_System_EventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnFocusedItemChanged(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L588">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnFocusedItemChanged_" data-uid="DevZest.Windows.Docking.DockControl.OnFocusedItemChanged*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnFocusedItemChanged_System_EventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnFocusedItemChanged(System.EventArgs)">OnFocusedItemChanged(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FocusedItemChanged">FocusedItemChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFocusedItemChanged(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An <span class="xref">System.EventArgs</span> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnFocusedItemChanged_System_EventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_OnSelectedAutoHideItemChanged_System_EventArgs_.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.OnSelectedAutoHideItemChanged(System.EventArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L642">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_OnSelectedAutoHideItemChanged_" data-uid="DevZest.Windows.Docking.DockControl.OnSelectedAutoHideItemChanged*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_OnSelectedAutoHideItemChanged_System_EventArgs_" data-uid="DevZest.Windows.Docking.DockControl.OnSelectedAutoHideItemChanged(System.EventArgs)">OnSelectedAutoHideItemChanged(EventArgs)</h4>
+  <div class="markdown level1 summary"><p>Raises the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_SelectedAutoHideItemChanged">SelectedAutoHideItemChanged</a> event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSelectedAutoHideItemChanged(EventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>An <span class="xref">System.EventArgs</span> that contains the event data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="DevZest_Windows_Docking_DockControl_OnSelectedAutoHideItemChanged_System_EventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows derived classes to handle the event without attaching a delegate.
+This is the preferred technique for handling the event in a derived class.</p>
+<p>When overriding in a derived class, be sure to call the base class&apos;s
+method so that registered delegates receive the event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Redo.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Redo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L797">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Redo_" data-uid="DevZest.Windows.Docking.DockControl.Redo*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Redo" data-uid="DevZest.Windows.Docking.DockControl.Redo">Redo()</h4>
+  <div class="markdown level1 summary"><p>Undoes the most recent undo command. In other words, redoes the most recent undo unit on the undo stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Redo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the redo operation was successful; otherwise,
+<span class="xref">false</span>. This method returns <span class="xref">false</span> if the undo stack is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Save.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L699">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Save_" data-uid="DevZest.Windows.Docking.DockControl.Save*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Save" data-uid="DevZest.Windows.Docking.DockControl.Save">Save()</h4>
+  <div class="markdown level1 summary"><p>Saves the current window layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockLayout Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a></td>
+        <td><p>The saved <a class="xref" href="DevZest.Windows.Docking.DockLayout.html">DockLayout</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_Undo.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.Undo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L780">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockControl_Undo_" data-uid="DevZest.Windows.Docking.DockControl.Undo*"></a>
+  <h4 id="DevZest_Windows_Docking_DockControl_Undo" data-uid="DevZest.Windows.Docking.DockControl.Undo">Undo()</h4>
+  <div class="markdown level1 summary"><p>Undoes the most recent undo command. In other words, undoes the most recent undo unit on the undo stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Undo()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the undo operation was successful; otherwise,
+<span class="xref">false</span>. This method returns <span class="xref">false</span> if the undo stack is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveDocumentChanged.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveDocumentChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L686">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveDocumentChanged" data-uid="DevZest.Windows.Docking.DockControl.ActiveDocumentChanged">ActiveDocumentChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the value of the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveDocument">ActiveDocument</a> property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; ActiveDocumentChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_ActiveItemChanged.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.ActiveItemChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L683">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_ActiveItemChanged" data-uid="DevZest.Windows.Docking.DockControl.ActiveItemChanged">ActiveItemChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the value of the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_ActiveItem">ActiveItem</a> property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; ActiveItemChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DockItemStateChanged.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DockItemStateChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L695">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_DockItemStateChanged" data-uid="DevZest.Windows.Docking.DockControl.DockItemStateChanged">DockItemStateChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the state of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DockItemStateEventArgs&gt; DockItemStateChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_DockItemStateChanging.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.DockItemStateChanging%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L692">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_DockItemStateChanging" data-uid="DevZest.Windows.Docking.DockControl.DockItemStateChanging">DockItemStateChanging</h4>
+  <div class="markdown level1 summary"><p>Occurs when the state of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> is changing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;DockItemStateEventArgs&gt; DockItemStateChanging</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="DevZest.Windows.Docking.DockItemStateEventArgs.html">DockItemStateEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_FocusedItemChanged.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.FocusedItemChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L680">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_FocusedItemChanged" data-uid="DevZest.Windows.Docking.DockControl.FocusedItemChanged">FocusedItemChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the value of the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_FocusedItem">FocusedItem</a> property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; FocusedItemChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl_SelectedAutoHideItemChanged.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl.SelectedAutoHideItemChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L689">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockControl_SelectedAutoHideItemChanged" data-uid="DevZest.Windows.Docking.DockControl.SelectedAutoHideItemChanged">SelectedAutoHideItemChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs when the value of the <a class="xref" href="DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_SelectedAutoHideItemChanged">SelectedAutoHideItemChanged</a> property has changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;EventArgs&gt; SelectedAutoHideItemChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<span class="xref">System.EventArgs</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Windows.Media.Animation.IAnimatable</span>
+  </div>
+  <div>
+      <span class="xref">System.Windows.IFrameworkInputElement</span>
+  </div>
+  <div>
+      <span class="xref">System.Windows.IInputElement</span>
+  </div>
+  <div>
+      <span class="xref">System.ComponentModel.ISupportInitialize</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockControl.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockControl.cs/#L75" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

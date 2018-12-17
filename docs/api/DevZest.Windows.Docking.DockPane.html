@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DockPane
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DockPane
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Windows.Docking.DockPane">
+  
+  
+  <h1 id="DevZest_Windows_Docking_DockPane" data-uid="DevZest.Windows.Docking.DockPane" class="text-break">Class DockPane
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a container for a collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Windows.Threading.DispatcherObject</span></div>
+    <div class="level2"><span class="xref">System.Windows.DependencyObject</span></div>
+    <div class="level3"><a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html">DockPaneNode</a></div>
+    <div class="level4"><span class="xref">DockPane</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_DockPositionProperty">DockPaneNode.DockPositionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_DockControlProperty">DockPaneNode.DockControlProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_FloatingWindowProperty">DockPaneNode.FloatingWindowProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_DockPosition">DockPaneNode.DockPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_Parent">DockPaneNode.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_DockControl">DockPaneNode.DockControl</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_FloatingWindow">DockPaneNode.FloatingWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="DevZest.Windows.Docking.DockPaneNode.html#DevZest_Windows_Docking_DockPaneNode_DockTreePosition">DockPaneNode.DockTreePosition</a>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.GetLocalValueEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.DependencyObjectType</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.DependencyObject.IsSealed</span>
+    </div>
+    <div>
+      <span class="xref">System.Windows.Threading.DispatcherObject.Dispatcher</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Windows.Docking.html">DevZest.Windows.Docking</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.WpfDocking.dll</h6>
+  <h5 id="DevZest_Windows_Docking_DockPane_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DockPane : DockPaneNode</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_CountOfVisibleItemsProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.CountOfVisibleItemsProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L16">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockPane_CountOfVisibleItemsProperty" data-uid="DevZest.Windows.Docking.DockPane.CountOfVisibleItemsProperty">CountOfVisibleItemsProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockPane.html#DevZest_Windows_Docking_DockPane_CountOfVisibleItems">CountOfVisibleItems</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty CountOfVisibleItemsProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_SelectedItemProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.SelectedItemProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L18">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_Docking_DockPane_SelectedItemProperty" data-uid="DevZest.Windows.Docking.DockPane.SelectedItemProperty">SelectedItemProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <a class="xref" href="DevZest.Windows.Docking.DockPane.html#DevZest_Windows_Docking_DockPane_SelectedItem">SelectedItem</a> dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty SelectedItemProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_ActiveItems.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.ActiveItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L62">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockPane_ActiveItems_" data-uid="DevZest.Windows.Docking.DockPane.ActiveItems*"></a>
+  <h4 id="DevZest_Windows_Docking_DockPane_ActiveItems" data-uid="DevZest.Windows.Docking.DockPane.ActiveItems">ActiveItems</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of active <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItemCollection ActiveItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemCollection.html">DockItemCollection</a></td>
+        <td><p>A collection of active <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>,
+in order of activation (last active last).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_CountOfVisibleItems.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.CountOfVisibleItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L129">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockPane_CountOfVisibleItems_" data-uid="DevZest.Windows.Docking.DockPane.CountOfVisibleItems*"></a>
+  <h4 id="DevZest_Windows_Docking_DockPane_CountOfVisibleItems" data-uid="DevZest.Windows.Docking.DockPane.CountOfVisibleItems">CountOfVisibleItems</h4>
+  <div class="markdown level1 summary"><p>Gets the number of visible <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CountOfVisibleItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of visible <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_Items.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.Items%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L47">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockPane_Items_" data-uid="DevZest.Windows.Docking.DockPane.Items*"></a>
+  <h4 id="DevZest_Windows_Docking_DockPane_Items" data-uid="DevZest.Windows.Docking.DockPane.Items">Items</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItemCollection Items { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemCollection.html">DockItemCollection</a></td>
+        <td><p>A collection of <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_SelectedItem.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.SelectedItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L75">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockPane_SelectedItem_" data-uid="DevZest.Windows.Docking.DockPane.SelectedItem*"></a>
+  <h4 id="DevZest_Windows_Docking_DockPane_SelectedItem" data-uid="DevZest.Windows.Docking.DockPane.SelectedItem">SelectedItem</h4>
+  <div class="markdown level1 summary"><p>Gets the currently selected <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>. This is a dependency property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItem SelectedItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a></td>
+        <td><p>The currently selected <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane_VisibleItems.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane.VisibleItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L54">View Source</a>
+  </span>
+  <a id="DevZest_Windows_Docking_DockPane_VisibleItems_" data-uid="DevZest.Windows.Docking.DockPane.VisibleItems*"></a>
+  <h4 id="DevZest_Windows_Docking_DockPane_VisibleItems" data-uid="DevZest.Windows.Docking.DockPane.VisibleItems">VisibleItems</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of visible <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DockItemCollection VisibleItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DevZest.Windows.Docking.DockItemCollection.html">DockItemCollection</a></td>
+        <td><p>A collection of visible <a class="xref" href="DevZest.Windows.Docking.DockItem.html">DockItem</a> objects contained by this <a class="xref" href="DevZest.Windows.Docking.DockPane.html">DockPane</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_Docking_DockPane.md&amp;value=---%0Auid%3A%20DevZest.Windows.Docking.DockPane%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/Docking/DockPane.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

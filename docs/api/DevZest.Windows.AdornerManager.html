@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AdornerManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AdornerManager
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DevZest.Windows.AdornerManager">
+  
+  
+  <h1 id="DevZest_Windows_AdornerManager" data-uid="DevZest.Windows.AdornerManager" class="text-break">Class AdornerManager
+  </h1>
+  <div class="markdown level0 summary"><p>Provides attached properties to get or set a <span class="xref">System.Windows.UIElement</span> or <span class="xref">System.Windows.DataTemplate</span> as the adorner of
+<span class="xref">System.Windows.FrameworkElement</span>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AdornerManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DevZest.Windows.html">DevZest.Windows</a></h6>
+  <h6><strong>Assembly</strong>: DevZest.WpfDocking.dll</h6>
+  <h5 id="DevZest_Windows_AdornerManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AdornerManager</code></pre>
+  </div>
+  <h5 id="DevZest_Windows_AdornerManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p><a class="xref" href="DevZest.Windows.AdornerManager.html">AdornerManager</a> provides two attached properties: <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> to get or set <span class="xref">System.Windows.UIElement</span>
+    as adorner of <span class="xref">System.Windows.FrameworkElement</span>; and <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> to get or set <span class="xref">System.Windows.DataTemplate</span>
+    as adorner of <span class="xref">System.Windows.FrameworkElement</span>. You can use these attached properties to declare adorner of
+<span class="xref">System.Windows.FrameworkElement</span> in XAML.</p>
+<p><span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> provides similar functionality as <span class="xref">DevZest.Windows.AdornerManager.Adorner</span>, however it can be used in style setters because
+direct UI child is not allowed. Both way the provided adorner inherits DataContext as adorned element.</p>
+<p>Setting adorner for specified <span class="xref">System.Windows.FrameworkElement</span> will clear the adorner previously set, no matter using
+<span class="xref">DevZest.Windows.AdornerManager.Adorner</span> or <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached properties.</p>
+</div>
+  <h5 id="DevZest_Windows_AdornerManager_examples"><strong>Examples</strong></h5>
+  <p>The following example demostrates the usage of <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> and <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property:</p>
+<pre><code source="..\..\Samples\Common\CSharp\AdornerManagerSample\Window1.xaml">&lt;Window
+xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+xmlns:dz=&quot;http://schemas.devzest.com/presentation&quot;>
+&lt;Grid>
+&lt;Grid.RowDefinitions>
+    &lt;RowDefinition Height=&quot;*&quot; />
+    &lt;RowDefinition Height=&quot;*&quot; />
+&lt;/Grid.RowDefinitions>
+&lt;Button Content=&quot;Button&quot; Grid.Row=&quot;0&quot;>
+    &lt;dz:AdornerManager.AdornerTemplate>
+        &lt;DataTemplate>
+            &lt;Grid Opacity=&quot;0.5&quot;>
+                &lt;Grid.ColumnDefinitions>
+                    &lt;ColumnDefinition />
+                    &lt;ColumnDefinition />
+                &lt;/Grid.ColumnDefinitions>
+                &lt;Rectangle Fill=&quot;Blue&quot;/>
+                &lt;TextBlock VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; FontStyle=&quot;Italic&quot; Text=&quot;{Binding Content}&quot; />
+            &lt;/Grid>
+        &lt;/DataTemplate>
+    &lt;/dz:AdornerManager.AdornerTemplate>
+&lt;/Button>
+&lt;Button Content=&quot;Button&quot; Grid.Row=&quot;1&quot;>
+    &lt;dz:AdornerManager.Adorner>
+        &lt;Grid Opacity=&quot;0.5&quot;>
+            &lt;Grid.ColumnDefinitions>
+                &lt;ColumnDefinition />
+                &lt;ColumnDefinition />
+            &lt;/Grid.ColumnDefinitions>
+            &lt;Rectangle Fill=&quot;Blue&quot;/>
+            &lt;TextBlock VerticalAlignment=&quot;Center&quot; HorizontalAlignment=&quot;Center&quot; FontStyle=&quot;Italic&quot; Text=&quot;{Binding Content}&quot; />
+        &lt;/Grid>
+    &lt;/dz:AdornerManager.Adorner>
+&lt;/Button>
+&lt;/Grid>
+&lt;/Window></code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_AdornerProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.AdornerProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L25">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_AdornerManager_AdornerProperty" data-uid="DevZest.Windows.AdornerManager.AdornerProperty">AdornerProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> attached property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AdornerProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_AdornerTemplateProperty.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.AdornerTemplateProperty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L32">View Source</a>
+  </span>
+  <h4 id="DevZest_Windows_AdornerManager_AdornerTemplateProperty" data-uid="DevZest.Windows.AdornerManager.AdornerTemplateProperty">AdornerTemplateProperty</h4>
+  <div class="markdown level1 summary"><p>Identifies the <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty AdornerTemplateProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_GetAdorner_System_Windows_FrameworkElement_.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.GetAdorner(System.Windows.FrameworkElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L69">View Source</a>
+  </span>
+  <a id="DevZest_Windows_AdornerManager_GetAdorner_" data-uid="DevZest.Windows.AdornerManager.GetAdorner*"></a>
+  <h4 id="DevZest_Windows_AdornerManager_GetAdorner_System_Windows_FrameworkElement_" data-uid="DevZest.Windows.AdornerManager.GetAdorner(System.Windows.FrameworkElement)">GetAdorner(FrameworkElement)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> attached property
+from a given <span class="xref">System.Windows.FrameworkElement</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UIElement GetAdorner(FrameworkElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.FrameworkElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element from which to read the property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.UIElement</span></td>
+        <td><p>The value of <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> attached property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_GetAdornerTemplate_System_Windows_FrameworkElement_.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.GetAdornerTemplate(System.Windows.FrameworkElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L87">View Source</a>
+  </span>
+  <a id="DevZest_Windows_AdornerManager_GetAdornerTemplate_" data-uid="DevZest.Windows.AdornerManager.GetAdornerTemplate*"></a>
+  <h4 id="DevZest_Windows_AdornerManager_GetAdornerTemplate_System_Windows_FrameworkElement_" data-uid="DevZest.Windows.AdornerManager.GetAdornerTemplate(System.Windows.FrameworkElement)">GetAdornerTemplate(FrameworkElement)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property
+from a given <span class="xref">System.Windows.FrameworkElement</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataTemplate GetAdornerTemplate(FrameworkElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.FrameworkElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element from which to read the property value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.DataTemplate</span></td>
+        <td><p>The value of <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_SetAdorner_System_Windows_FrameworkElement_System_Windows_UIElement_.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.SetAdorner(System.Windows.FrameworkElement%2CSystem.Windows.UIElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L78">View Source</a>
+  </span>
+  <a id="DevZest_Windows_AdornerManager_SetAdorner_" data-uid="DevZest.Windows.AdornerManager.SetAdorner*"></a>
+  <h4 id="DevZest_Windows_AdornerManager_SetAdorner_System_Windows_FrameworkElement_System_Windows_UIElement_" data-uid="DevZest.Windows.AdornerManager.SetAdorner(System.Windows.FrameworkElement,System.Windows.UIElement)">SetAdorner(FrameworkElement, UIElement)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> attached property
+to a given <span class="xref">System.Windows.FrameworkElement</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAdorner(FrameworkElement element, UIElement value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.FrameworkElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element on which to set the property value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Windows.UIElement</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of <span class="xref">DevZest.Windows.AdornerManager.Adorner</span> attached property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager_SetAdornerTemplate_System_Windows_FrameworkElement_System_Windows_DataTemplate_.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager.SetAdornerTemplate(System.Windows.FrameworkElement%2CSystem.Windows.DataTemplate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.cs/#L96">View Source</a>
+  </span>
+  <a id="DevZest_Windows_AdornerManager_SetAdornerTemplate_" data-uid="DevZest.Windows.AdornerManager.SetAdornerTemplate*"></a>
+  <h4 id="DevZest_Windows_AdornerManager_SetAdornerTemplate_System_Windows_FrameworkElement_System_Windows_DataTemplate_" data-uid="DevZest.Windows.AdornerManager.SetAdornerTemplate(System.Windows.FrameworkElement,System.Windows.DataTemplate)">SetAdornerTemplate(FrameworkElement, DataTemplate)</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property
+to a given <span class="xref">System.Windows.FrameworkElement</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetAdornerTemplate(FrameworkElement element, DataTemplate value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Windows.FrameworkElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>The element on which to set the property value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Windows.DataTemplate</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of <span class="xref">DevZest.Windows.AdornerManager.AdornerTemplate</span> attached property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_AdornerManager.md&amp;value=---%0Auid%3A%20DevZest.Windows.AdornerManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/AdornerManager.DecoratorAdorner.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
