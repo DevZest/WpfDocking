@@ -8,3 +8,5 @@
   href: implementing_undo_redo.md
 - name: Detailed Window Hierarchy and Customization
   href: detailed_window_hierarchy_and_customization.md
+- name: Known Issues
+  href: known_issues.md

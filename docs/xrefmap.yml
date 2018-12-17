@@ -7568,6 +7568,9 @@ references:
 - uid: implementing_undo_redo
   name: Implementing Undo Redo
   href: articles/implementing_undo_redo.html
+- uid: known_issues
+  name: Known Issues
+  href: articles/known_issues.html
 - uid: programming_model
   name: Programming Model
   href: articles/programming_model.html
