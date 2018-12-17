@@ -1077,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/getting_started.html",
-          "hash": "YceBydeJMMvpglK8R/rqMQ=="
+          "hash": "Eg62h4hOrGTPJcutPjb++w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1104,7 +1104,7 @@
           "hash": "/PQHmkeZ+gK6ioK9dKWzEQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1158,10 +1158,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jM/HoUQy1DkaPYGtE4apVA=="
+          "hash": "dV0ogQ4QHGvuPq/WZ3159A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1194,11 +1194,11 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         }
