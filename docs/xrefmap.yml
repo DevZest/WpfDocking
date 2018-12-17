@@ -7565,3 +7565,6 @@ references:
 - uid: programming_model
   name: Programming Model
   href: articles/programming_model.html
+- uid: saving_and_loading_window_layout
+  name: Saving and Loading Window Layout
+  href: articles/saving_and_loading_window_layout.html

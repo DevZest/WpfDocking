@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Saving and Loading Window Layout </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Saving and Loading Window Layout ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="saving_and_loading_window_layout">
+<h1 id="saving-and-loading-window-layout">Saving and Loading Window Layout</h1>
+
+<p>You can save the window layout as <a class="xref" href="../api/DevZest.Windows.Docking.DockLayout.html">DockLayout</a> object, then load the layout at a later time.</p>
+<h2 id="saving-window-layout-as-docklayout-object">Saving Window Layout as DockLayout Object</h2>
+<p>Simply call <a class="xref" href="../api/DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Save">DockControl.Save</a> method to save the current window layout as a DockLayout object. This DockLayout object, can be further persisted as XAML string:</p>
+<pre><code class="lang-csharp">DockLayout layout = dockControl.Save();
+XmlWriterSettings settings = new XmlWriterSettings();
+settings.Indent = true;
+settings.IndentChars = new string(' ', 4);
+StringBuilder strbuild = new StringBuilder();
+XmlWriter xmlWriter = XmlWriter.Create(strbuild, settings);
+XamlWriter.Save(layout, xmlWriter);
+Console.WriteLine(strbuild.ToString());
+</code></pre>
+<pre><code class="lang-vb">Dim layout As DockLayout = dockControl.Save() 
+Dim settings As New XmlWriterSettings() 
+settings.Indent = True 
+settings.IndentChars = New String(&quot; &quot;c, 4) 
+Dim strbuild As New StringBuilder() 
+Dim xmlWriter As XmlWriter = XmlWriter.Create(strbuild, settings) 
+XamlWriter.Save(layout, xmlWriter) 
+Console.WriteLine(strbuild.ToString())
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The XamlWriter.Save method requires full trust. If you want to save the XAML in partial trust, you must implement your own XAML writer, as demonstrated in DockSample.</p>
+</div>
+<p>A sample of persisted XAML string:</p>
+<pre><code class="lang-xaml">&lt;DockLayout xmlns=&quot;http://schemas.devzest.com/presentation/docking&quot; xmlns:ns2=&quot;clr-namespace:DevZest.DockSample;assembly=DockSample&quot; xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot; DockTreeZOrder=&quot;Right, Left, Top, Bottom&quot;&gt;
+    &lt;DockLayout.DockItems&gt;
+        &lt;DockItemReference&gt;DevZest.DockSample.Output&lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;DevZest.DockSample.SavedState&lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;DevZest.DockSample.PropertiesWindow&lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;DevZest.DockSample.SolutionExplorer&lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;DevZest.DockSample.Welcome&lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;
+            &lt;ns2:Document DocumentId=&quot;1&quot; /&gt;
+        &lt;/DockItemReference&gt;
+        &lt;DockItemReference&gt;
+            &lt;ns2:Document DocumentId=&quot;2&quot; /&gt;
+        &lt;/DockItemReference&gt;
+    &lt;/DockLayout.DockItems&gt;
+    &lt;DockLayout.ShowActions&gt;
+        &lt;ShowAsDockPositionAction DockPosition=&quot;BottomAutoHide&quot; Source=&quot;1&quot; /&gt;
+        &lt;ShowAsSidePaneAction Side=&quot;Left&quot; Size=&quot;*&quot; IsSizeForTarget=&quot;True&quot; Target=&quot;1&quot; Source=&quot;0&quot; /&gt;
+        &lt;ShowAsDockPositionAction DockPosition=&quot;Right&quot; Source=&quot;2&quot; /&gt;
+        &lt;ShowAsTabbedAction Target=&quot;2&quot; Source=&quot;3&quot; /&gt;
+        &lt;ShowAsDockPositionAction DockPosition=&quot;Document&quot; Source=&quot;4&quot; /&gt;
+        &lt;ShowAsTabbedAction Target=&quot;4&quot; Source=&quot;5&quot; /&gt;
+        &lt;ShowAsTabbedAction Target=&quot;4&quot; Source=&quot;6&quot; /&gt;
+    &lt;/DockLayout.ShowActions&gt;
+&lt;/DockLayout&gt;
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>When saving the window layout, an instance of <a class="xref" href="../api/DevZest.Windows.Docking.DockItemReference.html">DockItemReference</a> is created for each DockItem, with its <a class="xref" href="../api/DevZest.Windows.Docking.DockItemReference.html#DevZest_Windows_Docking_DockItemReference_Target">Target</a> property set to the object instance returned by <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Save">DockItem.Save</a> method. By default<a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Save">DockItem.Save</a> method returns the string of the type when <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_HideOnPerformClose">HideOnPerformClose</a> property is true, otherwise returns this DockItem itself. You may override <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Save">DockItem.Save</a> to provide your own implementation. When loading the window layout, you need to provide a callback delegate to convert this saved object back into a <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+</div>
+<h2 id="loading-window-layout-from-docklayout-object">Loading Window Layout from DockLayout Object</h2>
+<p>You can call <a class="xref" href="../api/DevZest.Windows.Docking.DockControl.html#DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__">DockControl.Load</a> method to load the previous saved window layout. This method, takes two parameters, one is the previously saved <a class="xref" href="../api/DevZest.Windows.Docking.DockLayout.html">DockLayout</a>, the other is a callback delegate to convert the object instance as <a class="xref" href="../api/DevZest.Windows.Docking.DockItemReference.html#DevZest_Windows_Docking_DockItemReference_Target">DockItemReference.Target</a> to <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html">DockItem</a>:</p>
+<pre><code class="lang-csharp">private void LoadLayout_Click(object sender, RoutedEventArgs e)
+{
+    ...
+    CloseAll();
+    dockControl.Load(layout, LoadDockItem);
+    ...
+}
+
+private void CloseAll()
+{
+    for (int i = dockControl.DockItems.Count - 1; i &gt;= 0; i--)
+    {
+        DockItem item = dockControl.DockItems[i];
+        item.Close();
+    }
+}
+
+private DockItem LoadDockItem(object obj)
+{
+    if (welcome.GetType().ToString().Equals(obj))
+        return welcome;
+    else if (savedLayout.GetType().ToString().Equals(obj))
+        return savedLayout;
+    else if (output.GetType().ToString().Equals(obj))
+        return output;
+    else if (solutionExplorer.GetType().ToString().Equals(obj))
+        return solutionExplorer;
+    else if (propertiesWindow.GetType().ToString().Equals(obj))
+        return propertiesWindow;
+    else
+        return obj as DockItem;
+}
+</code></pre>
+<pre><code class="lang-vb">Private Sub LoadLayout_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    ...
+    CloseAll()
+    dockControl.Load(layout, AddressOf LoadDockItem)
+    ...
+End Sub
+
+Private Sub CloseAll()
+    Dim i As Integer = (dockControl.DockItems.Count - 1)
+    Do While (i &gt;= 0)
+        Dim item As DockItem = dockControl.DockItems(i)
+        item.Close()
+        i = (i - 1)
+    Loop
+End Sub
+
+Private Function LoadDockItem(ByVal obj As Object) As DockItem
+    If welcome.GetType.ToString.Equals(obj) Then
+        Return welcome
+    ElseIf savedLayout.GetType.ToString.Equals(obj) Then
+        Return savedLayout
+    ElseIf output.GetType.ToString.Equals(obj) Then
+        Return output
+    ElseIf solutionExplorer.GetType.ToString.Equals(obj) Then
+        Return solutionExplorer
+    ElseIf propertiesWindow.GetType.ToString.Equals(obj) Then
+        Return propertiesWindow
+    Else
+        Return CType(obj, DockItem)
+    End If
+End Function
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You must close all DockItem before loading the window layout, otherwise an exception will throw.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/docs_src/articles/saving_and_loading_window_layout.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
