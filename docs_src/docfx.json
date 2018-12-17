@@ -50,6 +50,9 @@
       }
     ],
     "dest": "../docs/",
+    "globalMetadata": {
+      "_appFooter": "<span>Copyright © Weifen Luo | DevZest</span>"
+    },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [

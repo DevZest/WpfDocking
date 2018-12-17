@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.AdornerManager.html",
-          "hash": "htCyuWI+X/JVSZVhMYFgrw=="
+          "hash": "CU+d+wC4RCIrB2RPeKgNjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.ConditionalUriExtension.html",
-          "hash": "kgHLNFQqx367StCAyaax+A=="
+          "hash": "FsmWPSidV5It6bXPOmkeEA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.AllowedDockTreePositions.html",
-          "hash": "Bq7gPude2Wc61S7b6Zi32g=="
+          "hash": "rmukhy0oPv5z12Yy36cZ4Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockCommands.html",
-          "hash": "VTpMd6xqex87oRmBTTdKfQ=="
+          "hash": "w9PRhb3cNz4PpvTaQvlikA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockControl.html",
-          "hash": "stOTxjKAZKgIA6c4DOQ9Hw=="
+          "hash": "MnpoIOnNfnUtbyleaVs4BA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockControlTreePosition.html",
-          "hash": "yXuPUHHZQ2SEK/He64dHgg=="
+          "hash": "Pee3xhca2dRS+xZ0Wu5+Xw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItem.html",
-          "hash": "+E4ra1WHjQLgUCuTc8rrxg=="
+          "hash": "byL1wCm9/faMb/k729wVGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItemCollection.html",
-          "hash": "/kjUtM0Q+VfMrEIwD69B5A=="
+          "hash": "rkyZMNf7skvjhsYkKll7eg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItemReference.html",
-          "hash": "N514lP2P4bsejSkhRYYayg=="
+          "hash": "MidkNLKAEmj61GDLGJOjjg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItemShowMethod.html",
-          "hash": "kGafz2ppEtnwcQkeToshOg=="
+          "hash": "zBCTTVt3z4XT1lVPsl9Hdw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItemStateChangeMethod.html",
-          "hash": "JbDVNxmFRROA55TUP5OzuQ=="
+          "hash": "3kDFcRMRMGjhxP2Pf5nRGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockItemStateEventArgs.html",
-          "hash": "hF2NO6O71OdPk5XDBebK2Q=="
+          "hash": "jNzs5Z15JCd1KKbl+jSByw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockLayout.html",
-          "hash": "ae69nOVXyRsZCjV50xjTDw=="
+          "hash": "P3syx9QHJ4IrSS8DSA/OXw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockPane.html",
-          "hash": "rEO1ueNusye3U3EWuloDjQ=="
+          "hash": "rMtyrQ8/BmUQ8ic3v+u4jg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockPaneCollection.html",
-          "hash": "mGcacpBMWwacS/f2S2GtXA=="
+          "hash": "Zz02RN2DKVOoutOrSuPmaQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockPaneNode.html",
-          "hash": "DeYD4NRvHdLtQUlD6Ey98A=="
+          "hash": "a+IdgG2qkCgqgC1zl66iyA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockPaneSplit.html",
-          "hash": "eJNj5Mc6TvPsZoxC+xcArw=="
+          "hash": "CZ4GQsyP1V0LKjHCtFKkow=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockPosition.html",
-          "hash": "/Z4bufU3EIcVZWn0q2vX5Q=="
+          "hash": "k7Vk/posCuffh9dykz7G0w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockTree.html",
-          "hash": "Gu4GgdOgkdLUzaFar9em/Q=="
+          "hash": "1Jw21TNtTYOfddezUz8jTg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockTreePosition.html",
-          "hash": "8Oz6SkTTbuYLm8xF0ZE6OQ=="
+          "hash": "ljI1sKTbDp+vD2xMTSCqIQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockTreeZOrder.html",
-          "hash": "6Hb+q/jvjMcLKxgu3D8mzA=="
+          "hash": "XsXq9+qdreD+s51s8Dg+Ng=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.DockTreeZOrderConverter.html",
-          "hash": "MwbDuRyNjrB2pDxGKlrdfw=="
+          "hash": "PbvHDLnHvrjV3ngvygCZqA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.FloatingWindow.html",
-          "hash": "e88CHk0PJh/g/5MrvCmfGA=="
+          "hash": "Im134clXoD2VGC7WJ5WALQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.FloatingWindowCollection.html",
-          "hash": "o75nFsDLKSfWCVVu/6zbJg=="
+          "hash": "XWqDSrnF5bO34Z5u2/QOdQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.IDockItemUndoRedoReference.html",
-          "hash": "UDjLh14Fp6CEriC0pIYRVg=="
+          "hash": "V/q9s3kEjKNH+nefPsNMSA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHide.html",
-          "hash": "8GQ2KC3Okz2so1HUf4RjsQ=="
+          "hash": "apd1HWauUrO6Bt8oCB4igA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideAnimation.html",
-          "hash": "JSgfdpVlLUVo13phljAyeA=="
+          "hash": "/x3kpjBHHjg6ikfsUm3VLg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideClient.html",
-          "hash": "ncXZQdogBz+TCx5N5BBJPQ=="
+          "hash": "dJMo50h4UfR8ZI2s1P2BWA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,10 +345,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideStrip.html",
-          "hash": "k1aWA9W1j5cFZMlDYuTt6g=="
+          "hash": "yAafjTlxPAVDTQTonoWtAg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -357,10 +357,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideTab.html",
-          "hash": "8ILkgIS4298R40b13U1/bw=="
+          "hash": "aevH5Klc5nimjhaytVJlAg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -369,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.AutoHideWindow.html",
-          "hash": "3qjy5WNLRuGmer9vNzJzrA=="
+          "hash": "u5ZBs/Pb5aYqzxJK7Dfy4w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -381,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockManager.html",
-          "hash": "EjFgH15Hm5P8u+ky3DbN0Q=="
+          "hash": "x2RePHG2AUsd6VvpQCMO+w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControl.html",
-          "hash": "e6FILQmhnDJCXKTPSa0rIQ=="
+          "hash": "Lgj2DCOFtk/a0RkFuPPC+Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,10 +405,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockPaneControlOverlay.html",
-          "hash": "C3gF+LVaz0V5Qy8+HAWoeA=="
+          "hash": "TgPgMAGRhr6LD4/CC9o12w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -417,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClient.html",
-          "hash": "2jDoESHzVo3MGpcjR3hRHg=="
+          "hash": "Twvd6rfjRiTG8azRkAzNhg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -429,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeClientOverlay.html",
-          "hash": "0nnYpPpD9K+7ENQtNVW6zQ=="
+          "hash": "oCC8BxRq931MDGvdI3gEqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -441,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeControl.html",
-          "hash": "txIm0AQRNkDr6yjqt/m0yg=="
+          "hash": "qvG9HmTL5fmybYc2ZHYLvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -453,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplit.html",
-          "hash": "zCnw4XKqCW77sCSq/Xh5jg=="
+          "hash": "EXcC8M4Dv5ogNS8GOCfXsw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitControl.html",
-          "hash": "chFCTinrtdGB+P+PqtpUpw=="
+          "hash": "oXo7bWMDodIa0pL32Eurug=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -477,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockTreeSplitter.html",
-          "hash": "GaIfidrlvgaTeMe0s8FsNQ=="
+          "hash": "SHOLBRxZGEHor5JhiBBFFw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -489,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindow.html",
-          "hash": "58uJzNUjtuK6dKszeh8v3w=="
+          "hash": "g6Bo36G4+domOgpdnkNBqg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -501,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DockWindowTab.html",
-          "hash": "aZzk9yG/6dAd0KQkj7YBZA=="
+          "hash": "GqWS0JD5H+Ya3rAjkQAc3g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -513,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTab.html",
-          "hash": "5pNeighOekdi9jCirHToag=="
+          "hash": "ODyCEo9mTWtB34Mz6fWAUg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabPanel.html",
-          "hash": "W+NyArQyiJ1nSbB5n8ZG9g=="
+          "hash": "18WWIEvYcvC8sBbqWM/Utw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentTabStrip.html",
-          "hash": "rVqCldj8U+V5At4H7ezGNQ=="
+          "hash": "CAgq33lF8iV4cHHPHkJLVw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -549,10 +549,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DocumentWindow.html",
-          "hash": "/VXBMhUTc/CzewZLeY0MoA=="
+          "hash": "NeAWF5JfYxhuiFLmXMb5WA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -561,10 +561,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.DropPosition.html",
-          "hash": "6J5NgqgQaADJQ6ZMZKNSKw=="
+          "hash": "JNFKAmlpdjukTqsFBV8vvA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -573,10 +573,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.FloatingWindowStrategy.html",
-          "hash": "w+FMMViOLRL3aKR9AqQShg=="
+          "hash": "snB1MWVbFkEleSxYsttj0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,10 +585,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.InertButton.html",
-          "hash": "CQDC2unBkFZK44O3qkSVjw=="
+          "hash": "4m4yDAXHj7mcLLy4hkCL2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -597,10 +597,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.IsAutoHideValueConverter.html",
-          "hash": "NUAelEAf7o/yUxo9TznuMA=="
+          "hash": "QT2RZkKgtjboK6pywsa/HA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -609,10 +609,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.IsFloatingValueConverter.html",
-          "hash": "FOEwZe8LbTDvJXJ/kVLkKQ=="
+          "hash": "qP1iOKbeRmh4K0XsaFXEjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -621,10 +621,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.NativeFloatingWindow.html",
-          "hash": "XXVSOTL0n9cyseOvPXF1GA=="
+          "hash": "9MUEauZD+wdiSYCuytYjMw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -633,10 +633,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.Overlay.html",
-          "hash": "udxcJ2hhGUlzrBSnqZdrLw=="
+          "hash": "1tzlg4qfUBnBH+M/pWitTw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,10 +645,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.PreviewOverlay.html",
-          "hash": "UzFaj8pOCeZTpNSK+ZGc3Q=="
+          "hash": "T+JAVO7CfhJIUzSkyunnMQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -657,10 +657,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.TabBorder.html",
-          "hash": "ToUnIcV5TGQ3/d0YHifafQ=="
+          "hash": "XF4FkDUQKelps0+s8PllRw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -669,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindow.html",
-          "hash": "J/bQj2HBYct0NHFHQMw72w=="
+          "hash": "hRADBUK50s1F5JkNk8euxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -681,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowCaption.html",
-          "hash": "myMtwJur5BPh8VINjgZGVA=="
+          "hash": "hwpBtJTIaQrUm04PRJdVTg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -693,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTab.html",
-          "hash": "2Ggf4vwpOvBJil5MJXZ+bw=="
+          "hash": "k17XwIRnAZmMaF33/Net/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabPanel.html",
-          "hash": "sxurWLspoavtXXuPqFJb8Q=="
+          "hash": "1hBM62mZPYBuA//STKNaXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -717,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.ToolWindowTabStrip.html",
-          "hash": "9RJJFJHVYBTY8+kHNJFA9A=="
+          "hash": "Luy/eGIZZXbr4hnEzXcvDg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -729,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.WindowSwitcher.html",
-          "hash": "v+2zst501LMlERpgeKQV6g=="
+          "hash": "nR0MMgwnWtMqKgmROqMNGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -741,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.WindowViewbox.html",
-          "hash": "9BdzfFZF6Gg1yGzmZVXp4A=="
+          "hash": "Wk7JmGRKwwYvfaBBzUogvw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -753,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindow.html",
-          "hash": "LsqgtvVUUK7LEXPNVt7idw=="
+          "hash": "kHqm+iWayIZZoeGVTbTkBw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.WpfFloatingWindowClient.html",
-          "hash": "7YoN5gA3PGrjCb0HGphvog=="
+          "hash": "aGIZ7SodlQN6DTW5nMh1Mg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -777,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.Primitives.html",
-          "hash": "CwY00OLY27KMAatVj/PbkA=="
+          "hash": "axcAXdpFb7S2ZjnPGnbcVA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -789,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowAction.html",
-          "hash": "pMDXT8ls2+1MYX48ek6FvQ=="
+          "hash": "AmVGaXecFKJHn9spjpWUPA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -801,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowAsDockPositionAction.html",
-          "hash": "x53WZYstawb3fd4ADT7YgQ=="
+          "hash": "t7Jix4b5UJaqoc10smb6MA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -813,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowAsFloatingAction.html",
-          "hash": "KviKXcq8ySH39rjsfOvMXw=="
+          "hash": "ti+4BoLR/icH00Z0wkiK/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,10 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowAsSidePaneAction.html",
-          "hash": "zJ71CkNF0MaakcYMyKc0/g=="
+          "hash": "CJ4a+tQF42fp8FwSqosXjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -837,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowAsTabbedAction.html",
-          "hash": "A96CDcLK8fYga3YOlHcGjA=="
+          "hash": "FFbjsBLBfjOwNKomjEirTA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -849,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.ShowInDockTreeAction.html",
-          "hash": "ErtLJn6+I/hz79MNG5IH1g=="
+          "hash": "Y9gBcP7zKJpPcwwRKBj90A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -861,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.SplitChildrenVisibility.html",
-          "hash": "smeCnfT4nehimTMfdGioqQ=="
+          "hash": "FZF98n4PMJIEkjZe1PWtrw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -873,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Docking.html",
-          "hash": "Zzrt5OOllzqKLLwjJWNSkw=="
+          "hash": "gMoRO+NyGkP5nx5GcCGxGg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.DropDownButton.html",
-          "hash": "qJaih4NehbI4ZGrn8wEk6Q=="
+          "hash": "TR2JtJeK8viVvnNKxQgMqA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -897,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.FallbackBehavior.html",
-          "hash": "QvplcnU59GBNeN3PcEE1uw=="
+          "hash": "K/+8Of+5p/NNmEkA5LNFjA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -909,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.MapConverter.html",
-          "hash": "8vOEU5w7dQqLij3f+po1Tw=="
+          "hash": "8tWnyy8QED9Vu3oeM9HnAA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -921,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.Mapping.html",
-          "hash": "CmSOm2/+Xc87HODOgM0izw=="
+          "hash": "oN1mxo8RyVsIbG+9r7yrpA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -933,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.ReverseCollectionViewSource.html",
-          "hash": "JqmNXBe/0iBqtG4pbcZy3g=="
+          "hash": "Ef2+iTS8UIg1AbQlcem2sw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.ScrollButtonVisibilityConverter.html",
-          "hash": "OdA5OBMxH+BGmUGDJYxxRQ=="
+          "hash": "xz5v4B9TKh08mbIkTqEFFg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -957,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.SplitContainer.html",
-          "hash": "6MqXUS5UrF+qcxGCS3l2lg=="
+          "hash": "rBYzcamXhKfaR5MK4bAGIg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -969,10 +969,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.SplitterDistance.html",
-          "hash": "795PCIB5vfssVHF7hoBo4Q=="
+          "hash": "yA8mbTLsMDsuirvTUe5iXg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -981,10 +981,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.SplitterDistanceConverter.html",
-          "hash": "tC3oBGQL9DJG+yJlECbK7Q=="
+          "hash": "BdzeeHO8nif6MPBdRwQ46w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -993,10 +993,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.SplitterUnitType.html",
-          "hash": "kU2AysJ+f9dmFL3d1I6VCg=="
+          "hash": "PEi4cmsz91hrocX+T6MtKg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.StyleManager.html",
-          "hash": "VW3JG8MWZjFVpJikDb8bqQ=="
+          "hash": "ujU48UYZTxNA+s3S4MzZJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1017,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.WindowControl.html",
-          "hash": "PyoiTnQGspRNrVoMhI8Ncg=="
+          "hash": "3mhROeWJDgoOYFe/Cllbzg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1029,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.WindowHotspot.html",
-          "hash": "zxotH+5IN0AG+Ma2iMbcTw=="
+          "hash": "Nq8wh4v8ulp1smqMHoyCxA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1041,10 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.WindowPanel.html",
-          "hash": "8l+BIIHsw1kVPZQ/N3x1RQ=="
+          "hash": "bA8fAh0H4goMEeIF7uDw7w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1053,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/DevZest.Windows.html",
-          "hash": "pNHU4/YX6Ank8RHKkOdB0A=="
+          "hash": "2ahQR2AWjMKjNPxfzi/57w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/detailed_window_hierarchy_and_customization.html",
-          "hash": "uwHYLMoro85+4DvJlb0vPw=="
+          "hash": "OzpUy/SyErY36IVxPTSGAw=="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/getting_started.html",
-          "hash": "Eg62h4hOrGTPJcutPjb++w=="
+          "hash": "D7yW+sGVZCHvAaGQk6EMDA=="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/implementing_undo_redo.html",
-          "hash": "ywr/vJUliErimYA00FJIUA=="
+          "hash": "4XpaYU4/p9pDE0IMUpLOsw=="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/known_issues.html",
-          "hash": "4yN5P5hG7iOEjogTx9rkAw=="
+          "hash": "HCiL4B3rBz4uvzurYwt23A=="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/programming_model.html",
-          "hash": "T471GRyBz15Hr6InmnUWxA=="
+          "hash": "UjlpUKsgU+Or1YJVbUxdvQ=="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1137,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/saving_and_loading_window_layout.html",
-          "hash": "/PQHmkeZ+gK6ioK9dKWzEQ=="
+          "hash": "2oq7PEXKQbaNq3st9g6c5Q=="
         }
       },
       "is_incremental": false,
@@ -1194,10 +1194,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "dV0ogQ4QHGvuPq/WZ3159A=="
+          "hash": "nbMg+UkBZf2EIwZU3HCpXA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1216,7 +1216,8 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
         "incrementalPhase": "build"
       },
       "processors": {
@@ -1225,17 +1226,17 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }
