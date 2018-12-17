@@ -4,3 +4,5 @@
   href: programming_model.md
 - name: Saving and Loading Window Layout
   href: saving_and_loading_window_layout.md
+- name: Implementing Undo Redo
+  href: implementing_undo_redo.md
