@@ -1,5 +1,4 @@
-- name: Articles
+- name: Programming Guide
   href: articles/
-- name: Api Documentation
-  href: api/
-  homepage: api/index.md
+- name: Class Library
+  href: api/DevZest.Windows.Docking.yml
