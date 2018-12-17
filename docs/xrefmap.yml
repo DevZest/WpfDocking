@@ -7559,3 +7559,6 @@ references:
   isSpec: "True"
   fullName: DevZest.Windows.WindowPanel.MeasureOverride
   nameWithType: WindowPanel.MeasureOverride
+- uid: getting_started
+  name: Getting Started
+  href: articles/getting_started.html

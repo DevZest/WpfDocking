@@ -38,5 +38,6 @@ Window switcher:
 
 - Create a project in Visual Studio or other IDE, targeting .Net Framework 3.5 or later;
 - Add nuget package [DevZest.WpfDocking](https://www.nuget.org/packages/DevZest.WpfDocking/) to your project.
-- Source code is available at [https://github.com/DevZest/WpfDocking](https://github.com/DevZest/WpfDocking).
-- Samples are available at [https://github.com/DevZest/WpfDocking.Samples](https://github.com/DevZest/WpfDocking.Samples).
+- Documentation available: [Programming Guide](xref:getting_started) and [Class Reference](xref:DevZest.Windows.Docking)
+- Source code available: [https://github.com/DevZest/WpfDocking](https://github.com/DevZest/WpfDocking).
+- Samples available: [https://github.com/DevZest/WpfDocking.Samples](https://github.com/DevZest/WpfDocking.Samples).
