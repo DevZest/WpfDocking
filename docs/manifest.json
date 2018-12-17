@@ -1080,6 +1080,18 @@
           "hash": "YceBydeJMMvpglK8R/rqMQ=="
         }
       },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/programming_model.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/programming_model.html",
+          "hash": "T471GRyBz15Hr6InmnUWxA=="
+        }
+      },
       "is_incremental": false,
       "version": ""
     },
@@ -1089,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "KSfwNQ64KCnQobOet9mTDA=="
+          "hash": "CLOCgsxpoQ0Ym+SFAm4NqQ=="
         }
       },
       "is_incremental": false,
@@ -1137,7 +1149,7 @@
           "hash": "jM/HoUQy1DkaPYGtE4apVA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1160,6 +1172,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
@@ -1171,11 +1188,6 @@
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

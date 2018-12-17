@@ -1,2 +1,4 @@
 - name: Getting Started
   href: getting_started.md
+- name: Programming Model
+  href: programming_model.md

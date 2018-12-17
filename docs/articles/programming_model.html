@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Programming Model </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Programming Model ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="programming_model">
+<h1 id="programming-model">Programming Model</h1>
+
+<p>Although WPF Docking is a very sophisticated UI library, it has a very simple programming model. In most cases, you, as a programmer, only need to deal with two classes: <a class="xref" href="../api/DevZest.Windows.Docking.DockControl.html">DockControl</a> and <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html">DockItem</a>.</p>
+<h2 id="implement-your-dockitem-objects">Implement Your DockItem Objects</h2>
+<p>Implement your individual window as <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html">DockItem</a> object, which derives from <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol">ContentControl</a> class. Set the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.contentcontrol.content">Content</a> property to organize the UI. For example, the following XAML code defines a simple dockable window displays a welcome message:</p>
+<pre><code class="lang-xaml">&lt;dz:DockItem
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    xmlns:dz=&quot;http://schemas.devzest.com/presentation/docking&quot;
+    TabText=&quot;Welcome&quot; Title=&quot;Welcome&quot;&gt;
+    &lt;FlowDocumentScrollViewer&gt;
+        &lt;FlowDocumentScrollViewer.Document&gt;
+            &lt;FlowDocument FontFamily=&quot;Calibri&quot; FontSize=&quot;14.5&quot; TextAlignment=&quot;Left&quot;&gt;
+                &lt;Paragraph FontSize=&quot;22&quot; FontWeight=&quot;Bold&quot;&gt;Welcome to DevZest Docking&lt;/Paragraph&gt;
+            &lt;/FlowDocument&gt;
+        &lt;/FlowDocumentScrollViewer.Document&gt;
+    &lt;/FlowDocumentScrollViewer&gt;
+&lt;/dz:DockItem&gt;
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You may define the DockItem object as the root element of the XAML element tree, and add a <code>x:Class</code> attribute to join the code-behind partial class.</p>
+</div>
+<h2 id="place-a-dockcontrol-in-your-application-main-formwindow">Place a DockControl in Your Application Main Form/Window</h2>
+<p><a class="xref" href="../api/DevZest.Windows.Docking.DockControl.html">DockControl</a> is the core of docking window layout. You need to place a DockControl in your application main form/window. For example:</p>
+<pre><code class="lang-xaml">&lt;Window
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    xmlns:dz=&quot;http://schemas.devzest.com/presentation/docking&quot;
+    Title=&quot;DockControl Sample&quot;
+    WindowState=&quot;Maximized&quot;&gt;
+    &lt;dz:DockControl&gt;
+    ...
+    &lt;/dz:DockControl&gt;
+&lt;/Window&gt;
+</code></pre>
+<h2 id="show-dockitem-by-xaml-or-code">Show DockItem by XAML or Code</h2>
+<h3 id="show-dockitem-by-xaml">Show DockItem by XAML</h3>
+<p>To show DockItem by XAML, add DockItem objects to DockItems collection, with its ShowAction set:</p>
+<pre><code class="lang-xaml">&lt;Window
+    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+    xmlns:dz=&quot;http://schemas.devzest.com/presentation/docking&quot;
+    Title=&quot;DockControl Sample&quot;
+    WindowState=&quot;Maximized&quot;&gt;
+    &lt;dz:DockControl&gt;
+        &lt;dz:DockItem TabText=&quot;Welcome&quot; Title=&quot;Welcome&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Document}&quot;&gt;
+            &lt;FlowDocumentScrollViewer&gt;
+                &lt;FlowDocumentScrollViewer.Document&gt;
+                    &lt;FlowDocument FontFamily=&quot;Calibri&quot; FontSize=&quot;14.5&quot; TextAlignment=&quot;Left&quot;&gt;
+                        &lt;Paragraph FontSize=&quot;22&quot; FontWeight=&quot;Bold&quot;&gt;Welcome to DevZest Docking&lt;/Paragraph&gt;
+                    &lt;/FlowDocument&gt;
+                &lt;/FlowDocumentScrollViewer.Document&gt;
+            &lt;/FlowDocumentScrollViewer&gt;
+        &lt;/dz:DockItem&gt;
+        &lt;dz:DockItem TabText=&quot;Saved State&quot; Title=&quot;Saved State&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Bottom}&quot;&gt;
+            &lt;TextBox /&gt;
+        &lt;/dz:DockItem&gt;
+        &lt;dz:DockItem TabText=&quot;Output&quot; Title=&quot;Output&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Bottom}&quot;&gt;
+            &lt;TextBox /&gt;
+        &lt;/dz:DockItem&gt;
+        &lt;dz:DockItem TabText=&quot;Solution Explorer&quot; Title=&quot;Solution Explorer&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Right}&quot;&gt;
+            &lt;TextBox /&gt;
+        &lt;/dz:DockItem&gt;
+        &lt;dz:DockItem TabText=&quot;Properties&quot; Title=&quot;Properties&quot; ShowAction=&quot;{dz:ShowAsDockPositionAction DockPosition=Right}&quot;&gt;
+            &lt;TextBox /&gt;
+        &lt;/dz:DockItem&gt;
+    &lt;/dz:DockControl&gt;
+&lt;/Window&gt;
+</code></pre>
+<p>List of ShowAction values:</p>
+<table>
+<thead>
+<tr>
+<th>ShowAction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../api/DevZest.Windows.Docking.ShowAsDockPositionAction.html">ShowAsDockPositionAction</a></td>
+<td>Show DockItem as specified dock position.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Windows.Docking.ShowAsFloatingAction.html">ShowAsFloatingAction</a></td>
+<td>Show DockItem as floating window.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Windows.Docking.ShowAsSidePaneAction.html">ShowAsSidePaneAction</a></td>
+<td>Show DockItem as side by side <a class="xref" href="../api/DevZest.Windows.Docking.DockPane.html">DockPane</a>.</td>
+</tr>
+<tr>
+<td><a class="xref" href="../api/DevZest.Windows.Docking.ShowAsTabbedAction.html">ShowAsTabbedAction</a></td>
+<td>Show DockItem as tabbed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="show-dockitem-by-code">Show DockItem by Code</h2>
+<p>To show DockItem by code is extremely easy: simply call one of the overloaded <a class="xref" href="../api/DevZest.Windows.Docking.DockItem.html#DevZest_Windows_Docking_DockItem_Show_DevZest_Windows_Docking_DockControl_">Show</a> methods. The following code snippet is equivalent of the previous XAML code:</p>
+<pre><code class="lang-csharp">... // Code omitted: create instance of welcome, savedState, output, solutionExplorer, properties
+welcome.Show(dockControl, DockPosition.Document);
+savedState.Show(dockControl, DockPosition.Bottom);
+output.Show(dockControl, DockPosition.Bottom);
+solutionExplorer.Show(dockControl, DockPosition.Right);
+properties.Show(dockControl, DockPosition.Right);
+</code></pre>
+<pre><code class="lang-vb">... ' Code omitted: create instance of welcome, savedState, output, solutionExplorer, properties
+welcome.Show(dockControl, DockPosition.Document)
+savedState.Show(dockControl, DockPosition.Bottom)
+output.Show(dockControl, DockPosition.Bottom)
+solutionExplorer.Show(dockControl, DockPosition.Right)
+properties.Show(dockControl, DockPosition.Right)
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Calling Show method will implicitly add this DockItem into DockItems collection, you don't need to add it to the collection explicitly.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/DevZest/WpfDocking/blob/master/docs_src/articles/programming_model.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

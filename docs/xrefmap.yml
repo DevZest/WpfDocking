@@ -7562,3 +7562,6 @@ references:
 - uid: getting_started
   name: Getting Started
   href: articles/getting_started.html
+- uid: programming_model
+  name: Programming Model
+  href: articles/programming_model.html
