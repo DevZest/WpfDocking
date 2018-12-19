@@ -8,7 +8,7 @@ You can save the window layout as @DevZest.Windows.Docking.DockLayout object, th
 
 ## Saving Window Layout as DockLayout Object
 
-Simply call [DockControl.Save](xref:DevZest.Windows.Docking.DockControl#DevZest_Windows_Docking_DockControl_Save) method to save the current window layout as a DockLayout object. This DockLayout object, can be further persisted as XAML string:
+Simply call [DockControl.Save](xref:DevZest.Windows.Docking.DockControl.Save*) method to save the current window layout as a @DevZest.Windows.Docking.DockLayout object. This @DevZest.Windows.Docking.DockLayout object, can be further persisted as XAML string:
 
 ```csharp
 DockLayout layout = dockControl.Save();
@@ -65,11 +65,11 @@ A sample of persisted XAML string:
 ```
 
 >[!IMPORTANT]
->When saving the window layout, an instance of @DevZest.Windows.Docking.DockItemReference is created for each DockItem, with its [Target](xref:DevZest.Windows.Docking.DockItemReference#DevZest_Windows_Docking_DockItemReference_Target) property set to the object instance returned by [DockItem.Save](xref:DevZest.Windows.Docking.DockItem#DevZest_Windows_Docking_DockItem_Save) method. By default[DockItem.Save](xref:DevZest.Windows.Docking.DockItem#DevZest_Windows_Docking_DockItem_Save) method returns the string of the type when [HideOnPerformClose](xref:DevZest.Windows.Docking.DockItem#DevZest_Windows_Docking_DockItem_HideOnPerformClose) property is true, otherwise returns this DockItem itself. You may override [DockItem.Save](xref:DevZest.Windows.Docking.DockItem#DevZest_Windows_Docking_DockItem_Save) to provide your own implementation. When loading the window layout, you need to provide a callback delegate to convert this saved object back into a @DevZest.Windows.Docking.DockItem.
+>When saving the window layout, an instance of @DevZest.Windows.Docking.DockItemReference is created for each DockItem, with its [Target](xref:DevZest.Windows.Docking.DockItemReference.Target) property set to the object instance returned by [DockItem.Save](xref:DevZest.Windows.Docking.DockItem.Save*) method. By default[DockItem.Save](xref:DevZest.Windows.Docking.DockItem.Save*) method returns the string of the type when [HideOnPerformClose](xref:DevZest.Windows.Docking.DockItem.HideOnPerformClose) property is true, otherwise returns this DockItem itself. You may override [DockItem.Save](xref:DevZest.Windows.Docking.DockItem.Save*) to provide your own implementation. When loading the window layout, you need to provide a callback delegate to convert this saved object back into a @DevZest.Windows.Docking.DockItem.
 
 ## Loading Window Layout from DockLayout Object
 
-You can call [DockControl.Load](xref:DevZest.Windows.Docking.DockControl#DevZest_Windows_Docking_DockControl_Load_DevZest_Windows_Docking_DockLayout_System_Func_System_Object_DevZest_Windows_Docking_DockItem__) method to load the previous saved window layout. This method, takes two parameters, one is the previously saved @DevZest.Windows.Docking.DockLayout, the other is a callback delegate to convert the object instance as [DockItemReference.Target](xref:DevZest.Windows.Docking.DockItemReference#DevZest_Windows_Docking_DockItemReference_Target) to @DevZest.Windows.Docking.DockItem:
+You can call [DockControl.Load](xref:DevZest.Windows.Docking.DockControl.Load*) method to load the previous saved window layout. This method, takes two parameters, one is the previously saved @DevZest.Windows.Docking.DockLayout, the other is a callback delegate to convert the object instance as [DockItemReference.Target](xref:DevZest.Windows.Docking.DockItemReference.Target) to @DevZest.Windows.Docking.DockItem:
 
 ```csharp
 private void LoadLayout_Click(object sender, RoutedEventArgs e)

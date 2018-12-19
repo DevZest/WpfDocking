@@ -96,7 +96,7 @@ List of ShowAction values:
 
 ## Show DockItem by Code
 
-To show DockItem by code is extremely easy: simply call one of the overloaded [Show](xref:DevZest.Windows.Docking.DockItem#DevZest_Windows_Docking_DockItem_Show_DevZest_Windows_Docking_DockControl_) methods. The following code snippet is equivalent of the previous XAML code:
+To show DockItem by code is extremely easy: simply call one of the overloaded [Show](xref:DevZest.Windows.Docking.DockItem.Show*) methods. The following code snippet is equivalent of the previous XAML code:
 
 ```csharp
 ... // Code omitted: create instance of welcome, savedState, output, solutionExplorer, properties

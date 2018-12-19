@@ -101,9 +101,9 @@ public struct SplitterDistance : IEquatable&lt;SplitterDistance&gt;</code></pre>
   </div>
   <h5 id="DevZest_Windows_SplitterDistance_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
-When <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is <span class="xref">System.Double.NaN</span>, it represents auto sizing: the
+When <a class="xref" href="DevZest.Windows.SplitterDistance.Value.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is <span class="xref">System.Double.NaN</span>, it represents auto sizing: the
 actual size will be determined by the content&apos;s desired size.
-When <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Star">Star</a>, the size
+When <a class="xref" href="DevZest.Windows.SplitterDistance.UnitType.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Star">Star</a>, the size
 will be calculated based on weighted proportion of available space.
 </p>
 <p>The <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> value can have following values in <strong>XAML</strong> (&quot;?&quot; represents a double value):</p>
@@ -119,684 +119,170 @@ will be calculated based on weighted proportion of available space.
 </div>
   <h3 id="constructors">Constructors
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance__ctor_System_Double_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.%23ctor(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L38">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance__ctor_" data-uid="DevZest.Windows.SplitterDistance.#ctor*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance__ctor_System_Double_" data-uid="DevZest.Windows.SplitterDistance.#ctor(System.Double)">SplitterDistance(Double)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SplitterDistance(double pixels)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">pixels</span></td>
-        <td><p>The number of device-independent pixels (96 pixels-per-inch).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">pixels</code> is negtive, or equal to <span class="xref">System.Double.NegativeInfinity</span> or <span class="xref">System.Double.PositiveInfinity</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance__ctor_System_Double_DevZest_Windows_SplitterUnitType_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.%23ctor(System.Double%2CDevZest.Windows.SplitterUnitType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L47">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance__ctor_" data-uid="DevZest.Windows.SplitterDistance.#ctor*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance__ctor_System_Double_DevZest_Windows_SplitterUnitType_" data-uid="DevZest.Windows.SplitterDistance.#ctor(System.Double,DevZest.Windows.SplitterUnitType)">SplitterDistance(Double, SplitterUnitType)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SplitterDistance(double value, SplitterUnitType unitType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The initial value of this instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
+        <td id="DevZest_Windows_SplitterDistance__ctor_System_Double_" data-uid="DevZest.Windows.SplitterDistance.#ctor(System.Double)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.-ctor.html#DevZest_Windows_SplitterDistance__ctor_System_Double_">SplitterDistance(Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> class.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a></td>
-        <td><span class="parametername">unitType</span></td>
-        <td><p>The <a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a> held by this instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is negtive, or equal to <span class="xref">System.Double.NegativeInfinity</span> or <span class="xref">System.Double.PositiveInfinity</span>.</p>
+        <td id="DevZest_Windows_SplitterDistance__ctor_System_Double_DevZest_Windows_SplitterUnitType_" data-uid="DevZest.Windows.SplitterDistance.#ctor(System.Double,DevZest.Windows.SplitterUnitType)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.-ctor.html#DevZest_Windows_SplitterDistance__ctor_System_Double_DevZest_Windows_SplitterUnitType_">SplitterDistance(Double, SplitterUnitType)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> class.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_AutoPixel.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.AutoPixel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L172">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_AutoPixel_" data-uid="DevZest.Windows.SplitterDistance.AutoPixel*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_AutoPixel" data-uid="DevZest.Windows.SplitterDistance.AutoPixel">AutoPixel</h4>
-  <div class="markdown level1 summary"><p>Gets an instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> that holds a value whose size is determined
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_AutoPixel" data-uid="DevZest.Windows.SplitterDistance.AutoPixel">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.AutoPixel.html#DevZest_Windows_SplitterDistance_AutoPixel">AutoPixel</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets an instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> that holds a value whose size is determined
 by the size of the content object, and expressed in pixels.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SplitterDistance AutoPixel { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><p>A instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> whose <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is set <span class="xref">System.Double.NaN</span>
-and <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is set to <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Pixel">Pixel</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_AutoStar.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.AutoStar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L185">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_AutoStar_" data-uid="DevZest.Windows.SplitterDistance.AutoStar*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_AutoStar" data-uid="DevZest.Windows.SplitterDistance.AutoStar">AutoStar</h4>
-  <div class="markdown level1 summary"><p>Gets an instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> that holds a value whose size is determined
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_AutoStar" data-uid="DevZest.Windows.SplitterDistance.AutoStar">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.AutoStar.html#DevZest_Windows_SplitterDistance_AutoStar">AutoStar</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets an instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> that holds a value whose size is determined
 by the size of the content object, and expressed as a weighted proportion of available space.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SplitterDistance AutoStar { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><p>A instance of <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> whose <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is set <span class="xref">System.Double.NaN</span>
-and <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is set to <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Star">Star</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_IsAbsolute.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.IsAbsolute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L99">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_IsAbsolute_" data-uid="DevZest.Windows.SplitterDistance.IsAbsolute*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_IsAbsolute" data-uid="DevZest.Windows.SplitterDistance.IsAbsolute">IsAbsolute</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value that is expressed in pixels.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAbsolute { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Pixel">Pixel</a>; otherwise, <span class="xref">false</span>.</p>
+        <td id="DevZest_Windows_SplitterDistance_IsAbsolute" data-uid="DevZest.Windows.SplitterDistance.IsAbsolute">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.IsAbsolute.html#DevZest_Windows_SplitterDistance_IsAbsolute">IsAbsolute</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value that is expressed in pixels.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_IsAuto.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.IsAuto%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L106">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_IsAuto_" data-uid="DevZest.Windows.SplitterDistance.IsAuto*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_IsAuto" data-uid="DevZest.Windows.SplitterDistance.IsAuto">IsAuto</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose size is determined by the size properties of the content object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAuto { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is <span class="xref">System.Double.NaN</span>; otherwise, <span class="xref">false</span>.</p>
+        <td id="DevZest_Windows_SplitterDistance_IsAuto" data-uid="DevZest.Windows.SplitterDistance.IsAuto">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.IsAuto.html#DevZest_Windows_SplitterDistance_IsAuto">IsAuto</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose size is determined by the size properties of the content object.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_IsAutoPixel.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.IsAutoPixel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L117">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_IsAutoPixel_" data-uid="DevZest.Windows.SplitterDistance.IsAutoPixel*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_IsAutoPixel" data-uid="DevZest.Windows.SplitterDistance.IsAutoPixel">IsAutoPixel</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_IsAutoPixel" data-uid="DevZest.Windows.SplitterDistance.IsAutoPixel">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.IsAutoPixel.html#DevZest_Windows_SplitterDistance_IsAutoPixel">IsAutoPixel</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose
 size is determined by the size properties of the content object, and expressed in pixels.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAutoPixel { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is <span class="xref">System.Double.NaN</span>
-and <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Pixel">Pixel</a>; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_IsAutoStar.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.IsAutoStar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L129">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_IsAutoStar_" data-uid="DevZest.Windows.SplitterDistance.IsAutoStar*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_IsAutoStar" data-uid="DevZest.Windows.SplitterDistance.IsAutoStar">IsAutoStar</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_IsAutoStar" data-uid="DevZest.Windows.SplitterDistance.IsAutoStar">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.IsAutoStar.html#DevZest_Windows_SplitterDistance_IsAutoStar">IsAutoStar</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value whose
 size is determined by the desired size of the content object, and expressed
 as a weighted proportion of available space.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsAutoStar { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_Value">Value</a> property is <span class="xref">System.Double.NaN</span>
-and <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Star">Star</a>; otherwise, <span class="xref">false</span>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_IsStar.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.IsStar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L136">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_IsStar_" data-uid="DevZest.Windows.SplitterDistance.IsStar*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_IsStar" data-uid="DevZest.Windows.SplitterDistance.IsStar">IsStar</h4>
-  <div class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value that is expressed as a weighted proportion of available space.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsStar { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the <a class="xref" href="DevZest.Windows.SplitterDistance.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a> property is <a class="xref" href="DevZest.Windows.SplitterUnitType.html#DevZest_Windows_SplitterUnitType_Star">Star</a>; otherwise, <span class="xref">false</span>.</p>
+        <td id="DevZest_Windows_SplitterDistance_IsStar" data-uid="DevZest.Windows.SplitterDistance.IsStar">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.IsStar.html#DevZest_Windows_SplitterDistance_IsStar">IsStar</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a value that indicates whether the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a> holds a value that is expressed as a weighted proportion of available space.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_UnitType.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.UnitType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L153">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_UnitType_" data-uid="DevZest.Windows.SplitterDistance.UnitType*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_UnitType" data-uid="DevZest.Windows.SplitterDistance.UnitType">UnitType</h4>
-  <div class="markdown level1 summary"><p>Gets the associated <a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a> for the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SplitterUnitType UnitType { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a></td>
-        <td><p>One of the <a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a> values.</p>
+        <td id="DevZest_Windows_SplitterDistance_UnitType" data-uid="DevZest.Windows.SplitterDistance.UnitType">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.UnitType.html#DevZest_Windows_SplitterDistance_UnitType">UnitType</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the associated <a class="xref" href="DevZest.Windows.SplitterUnitType.html">SplitterUnitType</a> for the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_Value.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L146">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_Value_" data-uid="DevZest.Windows.SplitterDistance.Value*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_Value" data-uid="DevZest.Windows.SplitterDistance.Value">Value</h4>
-  <div class="markdown level1 summary"><p>Gets a <span class="xref">System.Double</span> that represents the value of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public double Value { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td><p>A <span class="xref">System.Double</span> that represents the value of the current instance.
-<span class="xref">System.Double.NaN</span> indicates size is determined by the desired size of the content object.</p>
+        <td id="DevZest_Windows_SplitterDistance_Value" data-uid="DevZest.Windows.SplitterDistance.Value">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.Value.html#DevZest_Windows_SplitterDistance_Value">Value</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a <span class="xref">System.Double</span> that represents the value of the <a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_Equals_DevZest_Windows_SplitterDistance_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.Equals(DevZest.Windows.SplitterDistance)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L86">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_Equals_" data-uid="DevZest.Windows.SplitterDistance.Equals*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_Equals_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.Equals(DevZest.Windows.SplitterDistance)">Equals(SplitterDistance)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(SplitterDistance other)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><span class="parametername">other</span></td>
-        <td></td>
+        <td id="DevZest_Windows_SplitterDistance_Equals_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.Equals(DevZest.Windows.SplitterDistance)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.Equals.html#DevZest_Windows_SplitterDistance_Equals_DevZest_Windows_SplitterDistance_">Equals(SplitterDistance)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_Equals_System_Object_" data-uid="DevZest.Windows.SplitterDistance.Equals(System.Object)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.Equals.html#DevZest_Windows_SplitterDistance_Equals_System_Object_">Equals(Object)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_GetHashCode" data-uid="DevZest.Windows.SplitterDistance.GetHashCode">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.GetHashCode.html#DevZest_Windows_SplitterDistance_GetHashCode">GetHashCode()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="DevZest_Windows_SplitterDistance_ToString" data-uid="DevZest.Windows.SplitterDistance.ToString">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.ToString.html#DevZest_Windows_SplitterDistance_ToString">ToString()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_Equals_System_Object_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L75">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_Equals_" data-uid="DevZest.Windows.SplitterDistance.Equals*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_Equals_System_Object_" data-uid="DevZest.Windows.SplitterDistance.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_GetHashCode.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L92">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_GetHashCode_" data-uid="DevZest.Windows.SplitterDistance.GetHashCode*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_GetHashCode" data-uid="DevZest.Windows.SplitterDistance.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_ToString.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L159">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_ToString_" data-uid="DevZest.Windows.SplitterDistance.ToString*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_ToString" data-uid="DevZest.Windows.SplitterDistance.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_op_Equality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.op_Equality(DevZest.Windows.SplitterDistance%2CDevZest.Windows.SplitterDistance)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L60">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_op_Equality_" data-uid="DevZest.Windows.SplitterDistance.op_Equality*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_op_Equality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.op_Equality(DevZest.Windows.SplitterDistance,DevZest.Windows.SplitterDistance)">Equality(SplitterDistance, SplitterDistance)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(SplitterDistance value1, SplitterDistance value2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><span class="parametername">value1</span></td>
-        <td></td>
+        <td id="DevZest_Windows_SplitterDistance_op_Equality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.op_Equality(DevZest.Windows.SplitterDistance,DevZest.Windows.SplitterDistance)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.op_Equality.html#DevZest_Windows_SplitterDistance_op_Equality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_">Equality(SplitterDistance, SplitterDistance)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
       <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><span class="parametername">value2</span></td>
-        <td></td>
+        <td id="DevZest_Windows_SplitterDistance_op_Inequality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.op_Inequality(DevZest.Windows.SplitterDistance,DevZest.Windows.SplitterDistance)">
+          <a class="xref" href="DevZest.Windows.SplitterDistance.op_Inequality.html#DevZest_Windows_SplitterDistance_op_Inequality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_">Inequality(SplitterDistance, SplitterDistance)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/DevZest/WpfDocking/new/master/apiSpec/new?filename=DevZest_Windows_SplitterDistance_op_Inequality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_.md&amp;value=---%0Auid%3A%20DevZest.Windows.SplitterDistance.op_Inequality(DevZest.Windows.SplitterDistance%2CDevZest.Windows.SplitterDistance)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/DevZest/WpfDocking/blob/master/Src/Windows/SplitterDistance.cs/#L66">View Source</a>
-  </span>
-  <a id="DevZest_Windows_SplitterDistance_op_Inequality_" data-uid="DevZest.Windows.SplitterDistance.op_Inequality*"></a>
-  <h4 id="DevZest_Windows_SplitterDistance_op_Inequality_DevZest_Windows_SplitterDistance_DevZest_Windows_SplitterDistance_" data-uid="DevZest.Windows.SplitterDistance.op_Inequality(DevZest.Windows.SplitterDistance,DevZest.Windows.SplitterDistance)">Inequality(SplitterDistance, SplitterDistance)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(SplitterDistance value1, SplitterDistance value2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><span class="parametername">value1</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="DevZest.Windows.SplitterDistance.html">SplitterDistance</a></td>
-        <td><span class="parametername">value2</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IEquatable&lt;T&gt;</span>
-  </div>
 </article>
           </div>
           
